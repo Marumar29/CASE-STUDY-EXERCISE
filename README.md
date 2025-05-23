@@ -62,8 +62,8 @@ URL: https://hrservice.iium.edu.my
 
 1. Raja Muhamad Umar bin Raja Kamarul Izham (2119191)
 URL: https://hrservice.iium.edu.my
-| No |       Vulnerability       |   Risk   |   Affected URL   |   CWE ID   |         Description                                   |         Suggested Fix         |
-|----|---------------------------|----------|------------------|------------|-------------------------------------------------------|-------------------------------|
+| No | Vulnerability       | Risk   | Affected URL   | CWE ID   | Description                                   | Suggested Fix         |
+|----|---------------------|--------|----------------|----------|-----------------------------------------------|-----------------------|
 | 1 | Cross-Domain Misconfiguration | Medium | (https://fonts.googleapis.com/css%3Ffamily=Lato:700,400,300,100%257CSignika:400,700%257CCourgette) | CWE-264 | Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server. | Ensure that sensitive data is not available in an unauthenticated manner |
 | 2 | Missing Anti-clickjacking Header | Medium | (https://hrservice.iium.edu.my/) | CWE-1021 | The response does not protect against 'ClickJacking' attacks | Ensure one the Modern Web Browser supports the Content-Security-Policy and X-Frame-Options HTTP headers of them is set on all web pages returned by your site/app |
 | 3 | Vulnerable JS Library | Medium | (https://nvd.nist.gov/vuln/detail/CVE-2024-6485) | CWE-1395 | The identified library appears to be vulnerable. | Upgrade to the latest version of the affected library. |
