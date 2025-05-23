@@ -98,9 +98,7 @@ URL: https://hrservice.iium.edu.my/
 | Vulnerability                 | Recommendation                                  |
 |-------------------------------|-------------------------------------------------|
 | Cross-Domain Misconfiguration | Limit cross-origin access using strict CORS rules. Do not allow unauthenticated or public domains to load critical resources. |
-| Missing Anti-clickjacking Header | Implement one of the following HTTP headers:
-• X-Frame-Options: DENY or SAMEORIGIN
-• Content-Security-Policy: frame-ancestors 'none'; |
+| Missing Anti-clickjacking Header | Implement one of the following HTTP headers: X-Frame-Options: DENY or SAMEORIGIN, Content-Security-Policy: frame-ancestors 'none'; |
 | Vulnerable JS Library | Check which library is affected (e.g., jQuery, Bootstrap). Update to the latest version after verifying compatibility. Avoid using unsupported or unmaintained libraries. |
 | Information Disclosure in URL | Move sensitive tokens (e.g., session tickets) into secure HTTP headers or encrypted cookies instead of placing them in GET URLs. Also consider using POST for secure data exchange. |
 
