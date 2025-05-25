@@ -4,7 +4,8 @@ Case Study Report
 ## Group Members & Task Assignment
 1 (Raja Muhamad Umar-2119191
 URL: https://hrservice.iium.edu.my)
-2.
+2.(Muhammad Afzal Bin Mohd Nor -2123023
+URL: 
 3.
 
 ---
@@ -24,7 +25,7 @@ URL: https://hrservice.iium.edu.my
 | Name              | Matric No | Task                                                  |
 |-------------------|-----------|-------------------------------------------------------|
 | Raja Muhamad Umar | 2119191   | Scanned https://hrservice.iium.edu.my using OWASP ZAP |
-| Maru | 1234567   | Scanned https://hrservice.iium.edu.my using OWASP ZAP |
+| Muhammad Afzal | 2123023   | Scanned https://hrservice.iium.edu.my using OWASP ZAP |
 | Maru | 1234567   | Scanned https://hrservice.iium.edu.my using OWASP ZAP |
 
 ---
