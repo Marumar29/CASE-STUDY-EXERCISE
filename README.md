@@ -55,6 +55,7 @@ Dr. MUHAMAD SADRY ABU SEMAN
 
 1. Raja Muhamad Umar bin Raja Kamarul Izham (2119191)
 URL: https://hrservice.iium.edu.my
+
 | No | Vulnerability       | Risk   | Affected URL   | CWE ID   | Description                                   | Suggested Fix         |
 |----|---------------------|--------|----------------|----------|-----------------------------------------------|-----------------------|
 | 1 | Cross-Domain Misconfiguration | Medium | (https://fonts.googleapis.com/css%3Ffamily=Lato:700,400,300,100%257CSignika:400,700%257CCourgette) | CWE-264 | Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server. | Ensure that sensitive data is not available in an unauthenticated manner |
