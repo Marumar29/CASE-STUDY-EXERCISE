@@ -1,4 +1,4 @@
-# IIUM Web Application Security 
+# IIUM Web Application Security Report
 Case Study Report
 
 Web Application Security
@@ -6,13 +6,10 @@ INFO 4345
 
 Dr. MUHAMAD SADRY ABU SEMAN
 
-
 ---
 
-# IIUM Web Application Security Report
-
 ## Group Name: Group Last
-
+---
 ### Group Members
 | Name              | Matric No | Task                                                  |
 |-------------------|-----------|-------------------------------------------------------|
