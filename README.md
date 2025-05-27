@@ -13,9 +13,9 @@ Dr. MUHAMAD SADRY ABU SEMAN
 ### Group Members
 | Name              | Matric No | Task                                                  |
 |-------------------|-----------|-------------------------------------------------------|
-| Raja Muhamad Umar | 2119191   | Scanned https://hrservice.iium.edu.my using OWASP ZAP |
-| Muhammad Afzal | 2123023   | Scanned https://hrservice.iium.edu.my using OWASP ZAP |
-| Maru | 1234567   | Scanned https://hrservice.iium.edu.my using OWASP ZAP |
+| Raja Muhamad Umar | 2119191   | Scanned (https://hrservice.iium.edu.my using) OWASP ZAP |
+| Muhammad Afzal | 2123023   | Scanned (http://hrservice.iium.edu.my/apariium) using OWASP ZAP |
+| Maru | 1234567   | Scanned (http://hrservice.iium.edu.my/adm) using OWASP ZAP |
 
 ---
 
