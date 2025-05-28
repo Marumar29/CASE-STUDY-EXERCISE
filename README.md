@@ -63,10 +63,12 @@ URL: https://hrservice.iium.edu.my
 
 
 
-2. A
-URL:
+2. Muhammad Afzal Bin Mohd Nor (2123032)
+URL: http://hrservice.iium.edu.my/apariium
 
-3. A
+
+
+4. A
 URL:
 
 
@@ -81,7 +83,7 @@ URL: https://hrservice.iium.edu.my/
 - Information Disclosure in URL: 	Sensitive tokens in URLs are risky because they may be logged in browser history or server logs. In the worst case, a leaked token could allow session hijacking or unauthorized access.
 
 
-URL: 
+URL: http://hrservice.iium.edu.my/apariium
 URL: 
 
 ---
@@ -95,7 +97,7 @@ URL: https://hrservice.iium.edu.my/
 | Vulnerable JS Library | Check which library is affected (e.g., jQuery, Bootstrap). Update to the latest version after verifying compatibility. Avoid using unsupported or unmaintained libraries. |
 | Information Disclosure in URL | Move sensitive tokens (e.g., session tickets) into secure HTTP headers or encrypted cookies instead of placing them in GET URLs. Also consider using POST for secure data exchange. |
 
-URL:
+URL:http://hrservice.iium.edu.my/apariium
 | Vulnerability                 | Recommendation                                  |
 |-------------------------------|-------------------------------------------------|
 |                               |                                                 |
