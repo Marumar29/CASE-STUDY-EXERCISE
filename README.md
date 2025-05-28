@@ -66,6 +66,12 @@ URL: https://hrservice.iium.edu.my
 2. Muhammad Afzal Bin Mohd Nor (2123032)
 URL: http://hrservice.iium.edu.my/apariium
 
+| No | Vulnerability       | Risk   | Affected URL   | CWE ID   | Description                                   | Suggested Fix         |
+|----|---------------------|--------|----------------|----------|-----------------------------------------------|-----------------------|
+| 1 | Absence of Anti-CSRF Tokens | Medium | (https://fonts.googleapis.com/css%3Ffamily=Lato:700,400,300,100%257CSignika:400,700%257CCourgette) | CWE-352 | Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server. | Ensure that sensitive data is not available in an unauthenticated manner |
+| 2 | Content Security Policy (CSP) Header Not Set | Medium | (https://hrservice.iium.edu.my/) | CWE-693 | The response does not protect against 'ClickJacking' attacks | Ensure one the Modern Web Browser supports the Content-Security-Policy and X-Frame-Options HTTP headers of them is set on all web pages returned by your site/app |
+| 3 | Cookie No HttpOnly Flag | Medium | (https://nvd.nist.gov/vuln/detail/CVE-2024-6485) | CWE-1395 | The identified library appears to be vulnerable. | Upgrade to the latest version of the affected library. |
+| 4 | Cookie Without Secure Flag | Medium(Informational) | (https://hrservice.iium.edu.my/adm/j_spring_cas_security_check%3Fticket=ST-1228398-Y4HU63-WgweM2Nt-6wFTebR-QJs-cas1) | CWE-598 | he request appeared to contain sensitive information leaked in the URL. | Do not pass sensitive information in URIs |
 
 
 4. A
