@@ -129,7 +129,7 @@ URL: http://hrservice.iium.edu.my/apariium
 | Missing Anti-clickjacking Header | Use security headers like X-Frame-Options or Content-Security-Policy to prevent your site from being embedded in other pages, which protects against clickjacking. |
 | Vulnerable JS Library | Keep all JavaScript libraries up to date. Remove unused ones and avoid using versions with known security issues. |
 
-URL: 
+URL: http://hrservice.iium.edu.my/adm
 | Vulnerability                 | Recommendation                                  |
 |-------------------------------|-------------------------------------------------|
 | Content Security Policy (CSP) Header Not Set| Add a CSP header to control which sources the browser is allowed to load content from. This helps prevent cross-site scripting and code injection attacks. |
