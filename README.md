@@ -15,7 +15,7 @@ Dr. MUHAMAD SADRY ABU SEMAN
 |-------------------|-----------|-------------------------------------------------------|
 | Raja Muhamad Umar | 2119191   | Scanned (https://hrservice.iium.edu.my using) OWASP ZAP |
 | Muhammad Afzal | 2123023   | Scanned (http://hrservice.iium.edu.my/apariium) using OWASP ZAP |
-| Maru | 1234567   | Scanned (http://hrservice.iium.edu.my/adm) using OWASP ZAP |
+| Muhammad Afiff Firdaus | 2120573   | Scanned (http://hrservice.iium.edu.my/adm) using OWASP ZAP |
 
 ---
 
