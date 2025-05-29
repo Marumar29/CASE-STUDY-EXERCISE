@@ -90,6 +90,8 @@ URL: https://hrservice.iium.edu.my/
 
 
 URL: http://hrservice.iium.edu.my/apariium
+
+
 URL: 
 
 ---
@@ -103,7 +105,7 @@ URL: https://hrservice.iium.edu.my/
 | Vulnerable JS Library | Check which library is affected (e.g., jQuery, Bootstrap). Update to the latest version after verifying compatibility. Avoid using unsupported or unmaintained libraries. |
 | Information Disclosure in URL | Move sensitive tokens (e.g., session tickets) into secure HTTP headers or encrypted cookies instead of placing them in GET URLs. Also consider using POST for secure data exchange. |
 
-URL:http://hrservice.iium.edu.my/apariium
+URL: http://hrservice.iium.edu.my/apariium
 | Vulnerability                 | Recommendation                                  |
 |-------------------------------|-------------------------------------------------|
 |                               |                                                 |
