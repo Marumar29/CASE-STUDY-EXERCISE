@@ -91,10 +91,10 @@ URL: https://hrservice.iium.edu.my/
 
 
 URL: http://hrservice.iium.edu.my/apariium
--Content Security Policy (CSP) Header Not Set: Without CSP, the site is more exposed to XSS and code injection attacks.
--Cross-Domain Misconfiguration: Misconfigured cross-domain policies can allow unauthorized domains to access sensitive resources.
--Missing Anti-clickjacking Header: Lack of headers like X-Frame-Options makes the site vulnerable to clickjacking attacks.
--Vulnerable JS Library: Using outdated or insecure JavaScript libraries can expose the site to known exploits.
+- Content Security Policy (CSP) Header Not Set: Without CSP, the site is more exposed to XSS and code injection attacks.
+- Cross-Domain Misconfiguration: Misconfigured cross-domain policies can allow unauthorized domains to access sensitive resources.
+- Missing Anti-clickjacking Header: Lack of headers like X-Frame-Options makes the site vulnerable to clickjacking attacks.
+- Vulnerable JS Library: Using outdated or insecure JavaScript libraries can expose the site to known exploits.
 
 
 
