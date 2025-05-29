@@ -132,10 +132,10 @@ URL: http://hrservice.iium.edu.my/apariium
 URL: http://hrservice.iium.edu.my/adm
 | Vulnerability                 | Recommendation                                  |
 |-------------------------------|-------------------------------------------------|
-| Content Security Policy (CSP) Header Not Set| Add a CSP header to control which sources the browser is allowed to load content from. This helps prevent cross-site scripting and code injection attacks. |
-| Cross-Domain Misconfiguration              | Limit access to your site’s resources by only allowing trusted domains. Avoid using wildcards (*) in cross-origin settings.               |
-| Missing Anti-clickjacking Header            | Use security headers like X-Frame-Options or Content-Security-Policy to prevent your site from being embedded in other pages, which protects against clickjacking. |
-| Vulnerable JS Library                       | Keep all JavaScript libraries up to date. Remove unused ones and avoid using versions with known security issues.                        |
+| Content Security Policy (CSP) Header Not Set| Configure your web server or application to set the Content-Security-Policy header. This helps prevent cross-site scripting (XSS) and other code injection attacks by restricting the sources of content that browsers are allowed to load. |
+| Absence of Anti-CSRF Tokens              | Implement anti-CSRF tokens on all forms and sensitive state-changing requests to protect users from cross-site request forgery (CSRF) attacks. |
+| Vulnerable JavaScript Library Detected            | Regularly update and maintain all third-party libraries and dependencies (such as JavaScript frameworks). Replace outdated or vulnerable libraries with their latest, secure versions to prevent attackers from exploiting known issues. |
+| Session Management Response Identified                       | Review and harden session management mechanisms. Ensure that session tokens are generated securely, transmitted over HTTPS, and properly invalidated after logout. Avoid exposing unnecessary session details in responses. |
 
 
 ---
