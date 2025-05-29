@@ -55,7 +55,7 @@ URL: https://hrservice.iium.edu.my
 
 | No | Vulnerability       | Risk   | Affected URL   | CWE ID   | Description                                   | Suggested Fix         |
 |----|---------------------|--------|----------------|----------|-----------------------------------------------|-----------------------|
-| 1 | Cross-Domain Misconfiguration | Medium | (https://fonts.googleapis.com/css%3Ffamily=Lato:700,400,300,100%257CSignika:400,700%257CCourgette) | CWE-264 | Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server. | Ensure that sensitive data is not available in an unauthenticated manner |
+| 1 | Cross-Domain Misconfiguration | Medium | (https://fonts.googleapis.com/css%3Ffamily=Lato:700,400,300,100%257CSignika:400,700%257CCourgette) | CWE-264 | Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server. | Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header |
 | 2 | Missing Anti-clickjacking Header | Medium | (https://hrservice.iium.edu.my/) | CWE-1021 | The response does not protect against 'ClickJacking' attacks | Ensure one the Modern Web Browser supports the Content-Security-Policy and X-Frame-Options HTTP headers of them is set on all web pages returned by your site/app |
 | 3 | Vulnerable JS Library | Medium | (https://nvd.nist.gov/vuln/detail/CVE-2024-6485) | CWE-1395 | The identified library appears to be vulnerable. | Upgrade to the latest version of the affected library. |
 | 4 | Information Disclosure - Sensitive Information in URL | Medium(Informational) | (https://hrservice.iium.edu.my/adm/j_spring_cas_security_check%3Fticket=ST-1228398-Y4HU63-WgweM2Nt-6wFTebR-QJs-cas1) | CWE-598 | he request appeared to contain sensitive information leaked in the URL. | Do not pass sensitive information in URIs |
@@ -68,11 +68,11 @@ URL: http://hrservice.iium.edu.my/apariium
 
 | No | Vulnerability       | Risk   | Affected URL   | CWE ID   | Description                                   | Suggested Fix         |
 |----|---------------------|--------|----------------|----------|-----------------------------------------------|-----------------------|
-| 1 | Content Security Policy (CSP) Header Not Set | Medium | https://cas.iium.edu.my:8448/cas/login%3Fservice=https%253A%252F%252Fhrservice.iium.edu.my%252Fapariium%252Flogin%252Fcas | CWE-693 | Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.| Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.
- |
-| 2 | Content Security Policy (CSP) Header Not Set | Medium | (https://hrservice.iium.edu.my/) | CWE-693 | The response does not protect against 'ClickJacking' attacks | Ensure one the Modern Web Browser supports the Content-Security-Policy and X-Frame-Options HTTP headers of them is set on all web pages returned by your site/app |
-| 3 | Cookie No HttpOnly Flag | Medium | (https://nvd.nist.gov/vuln/detail/CVE-2024-6485) | CWE-1395 | The identified library appears to be vulnerable. | Upgrade to the latest version of the affected library. |
-| 4 | Cookie Without Secure Flag | Medium(Informational) | (https://hrservice.iium.edu.my/adm/j_spring_cas_security_check%3Fticket=ST-1228398-Y4HU63-WgweM2Nt-6wFTebR-QJs-cas1) | CWE-598 | he request appeared to contain sensitive information leaked in the URL. | Do not pass sensitive information in URIs |
+| 1 | Content Security Policy (CSP) Header Not Set | Medium | (https://cas.iium.edu.my:8448/cas/login%3Fservice=https%253A%252F%252Fhrservice.iium.edu.my%252Fapariium%252Flogin%252Fcas) | CWE-693 | CSP is a security feature that blocks threats like XSS by letting sites control which content sources browsers can load.| Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.|
+| 2 | Cross-Domain Misconfiguration | Medium | (https://fonts.googleapis.com/css%3Ffamily=Lato:700,400,300,100%257CSignika:400,700%257CCourgette) | CWE-264 | Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server. | Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance) |
+| 3 | Missing Anti-clickjacking Header | Medium | (https://hrservice.iium.edu.my/) | CWE-1021 | The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options | Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.|
+| 4 | Vulnerable JS Library | Medium | (https://cas.iium.edu.my:8448/cas/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js) | CWE-1395 | The identified library appears to be vulnerable. | Upgrade to the latest version of the affected library.|
+
 
 
 4. A
@@ -91,6 +91,13 @@ URL: https://hrservice.iium.edu.my/
 
 
 URL: http://hrservice.iium.edu.my/apariium
+-Content Security Policy (CSP) Header Not Set: Without CSP, the site is more exposed to XSS and code injection attacks.
+-Cross-Domain Misconfiguration: Misconfigured cross-domain policies can allow unauthorized domains to access sensitive resources.
+-Missing Anti-clickjacking Header: Lack of headers like X-Frame-Options makes the site vulnerable to clickjacking attacks.
+-Vulnerable JS Library: Using outdated or insecure JavaScript libraries can expose the site to known exploits.
+
+
+
 
 
 URL: 
@@ -109,7 +116,10 @@ URL: https://hrservice.iium.edu.my/
 URL: http://hrservice.iium.edu.my/apariium
 | Vulnerability                 | Recommendation                                  |
 |-------------------------------|-------------------------------------------------|
-|                               |                                                 |
+| Content Security Policy (CSP) Header Not Set | Add a CSP header to control which sources the browser is allowed to load content from. This helps prevent cross-site scripting and code injection attacks. |
+| Cross-Domain Misconfiguration | Limit access to your site’s resources by only allowing trusted domains. Avoid using wildcards (*) in cross-origin settings. |
+| Missing Anti-clickjacking Header | Use security headers like X-Frame-Options or Content-Security-Policy to prevent your site from being embedded in other pages, which protects against clickjacking. |
+| Vulnerable JS Library | Keep all JavaScript libraries up to date. Remove unused ones and avoid using versions with known security issues. |
 
 URL: 
 | Vulnerability                 | Recommendation                                  |
