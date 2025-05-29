@@ -76,7 +76,7 @@ URL: http://hrservice.iium.edu.my/apariium
 
 
 4. Muhammad Afiff Firdaus Bin Abdullah (2120573)
-URL:
+URL: http://hrservice.iium.edu.my/adm
 
 | No | Vulnerability                               | Risk           | Affected URL                                                                                                           | CWE ID    | Description                                                                                                                    | Suggested Fix                                                                                                  |
 |----|---------------------------------------------|----------------|------------------------------------------------------------------------------------------------------------------------|-----------|--------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -103,10 +103,12 @@ URL: http://hrservice.iium.edu.my/apariium
 - Vulnerable JS Library: Using outdated or insecure JavaScript libraries can expose the site to known exploits.
 
 
+URL: http://hrservice.iium.edu.my/adm
+- Lack of Security Headers:The absence of important security headers such as Content Security Policy (CSP) and anti-CSRF tokens exposes the application to common web threats, including cross-site scripting (XSS), clickjacking, and cross-site request forgery (CSRF) attacks.
+- Session and Cookie Security Weaknesses:The scan detected missing security attributes in session management and cookies (e.g., missing HttpOnly, Secure, and SameSite flags), which increases the risk of session hijacking and unauthorized access via browser-based attacks.
+- Use of Outdated or Vulnerable Components:The presence of vulnerable JavaScript libraries (e.g., old Bootstrap version) can introduce exploitable weaknesses, allowing attackers to leverage known vulnerabilities if not promptly updated.
+- Potential Information Disclosure:Informational issues, such as session management response identification, may not be directly exploitable but could aid attackers in gathering intelligence about the application’s structure and behavior, potentially supporting future attacks.
 
-
-
-URL: 
 
 ---
 
@@ -130,7 +132,11 @@ URL: http://hrservice.iium.edu.my/apariium
 URL: 
 | Vulnerability                 | Recommendation                                  |
 |-------------------------------|-------------------------------------------------|
-|                               |                                                 |
+| Content Security Policy (CSP) Header Not Set| Add a CSP header to control which sources the browser is allowed to load content from. This helps prevent cross-site scripting and code injection attacks. |
+| Cross-Domain Misconfiguration              | Limit access to your site’s resources by only allowing trusted domains. Avoid using wildcards (*) in cross-origin settings.               |
+| Missing Anti-clickjacking Header            | Use security headers like X-Frame-Options or Content-Security-Policy to prevent your site from being embedded in other pages, which protects against clickjacking. |
+| Vulnerable JS Library                       | Keep all JavaScript libraries up to date. Remove unused ones and avoid using versions with known security issues.                        |
+
 
 ---
 
