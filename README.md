@@ -19,10 +19,8 @@ Dr. MUHAMAD SADRY ABU SEMAN
 3. [Identified Vulnerabilities](#identified-vulnerabilities)
 4. [Evaluation of Vulnerabilities](#evaluation-of-vulnerabilities)
 5. [Prevention Measures](#prevention-measures)
-6. [List of Figures](#list-of-figures)
-7. [List of Tables](#list-of-tables)
-8. [References](#references)
-9. [Appendices](#appendices)
+6. [References](#references)
+7. [Appendices](#appendices)
 
 ---
 
