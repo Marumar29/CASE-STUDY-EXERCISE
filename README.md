@@ -308,6 +308,7 @@ Alert counts by alert type:
 
 Alerts:
 ![Alerts 1)](https://github.com/user-attachments/assets/cd5f4740-cad7-4c5e-9c41-246468687e80)
+
 ![Alerts 2)](https://github.com/user-attachments/assets/c57ca930-d038-4d64-b826-10f5b1946876)
 
 
