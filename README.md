@@ -182,14 +182,29 @@ URL: http://hrservice.iium.edu.my/adm
 
 
 ---
+## List of Tables
 
-## List of Figures
-
+1. [Group members]
+2. [Scan Information]
+3. [Metric Values]
+4. [Key takeaways]
+5. [Identifies Vulnerabilites]
+6. [Prevention Measures]
 
 ---
 
-## List of Tables
+## Appendecies
 
+### 
+1. [Overview]
+2. [Assigned Web Application]
+3. [Objectives]
+4. [Identified Vulnerabilities]
+5. [Evaluation of Vulnerabilities]
+6. [Prevention Measures]
+7. [List of Figures]
+8. [List of Tables]
+9. [References]
 
 ---
 
