@@ -20,7 +20,7 @@ Dr. MUHAMAD SADRY ABU SEMAN
 ### Scan Information
 | URL              | Date of scan | Scan type  | Scan Duration |
 |------------------|--------------|--------------|-------------------------------------------------------|
-|(https://hrservice.iium.edu.my) |    | Automated scan/Manual explore |  |
+|(https://hrservice.iium.edu.my) | 23/5/2025 | Automated scan/Manual explore | 10 minutes |
 | (http://hrservice.iium.edu.my/apariium) | 22/5/2025 | Automated scan/Manual explore | 15 Minutes |
 | (http://hrservice.iium.edu.my/adm) |    | Automated scan/Manual explore |  | |
 
@@ -39,7 +39,14 @@ Dr. MUHAMAD SADRY ABU SEMAN
 
    
 2. Muhammad Afzal Bin Mohd Nor (2123032)
-
+| *Metric*                         | *Value*         |
+|----------------------------------|------------------|
+| Total Issues Identified          | 5                |
+| Critical Issues                  | 0                |
+| High-Risk Issues                 | 0                |
+| Medium-Risk Issues               | 3                |
+| Low-Risk/Informational Issues    | 2                |
+| Remediation Status               | Pending          |
    
 3. Muhammad Afiff Firdaus Bin Abdullah (2120573)
 
