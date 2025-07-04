@@ -19,7 +19,7 @@ Dr. MUHAMAD SADRY ABU SEMAN
 
 ### Scan Information
 | URL              | Date of scan | Scan type  | Scan Duration |
-|-------------------|-----------|-------------------------------------------------------|
+|------------------|--------------|--------------|-------------------------------------------------------|
 |(https://hrservice.iium.edu.my) |    | Automated scan/Manual explore |  |
 | (http://hrservice.iium.edu.my/apariium) | 22/5/2025 | Automated scan/Manual explore | 15 Minutes |
 | (http://hrservice.iium.edu.my/adm) |    | Automated scan/Manual explore |  | |
