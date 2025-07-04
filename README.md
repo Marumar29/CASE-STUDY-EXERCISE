@@ -345,3 +345,7 @@ Alerts:
 
 
 #### URL: http://hrservice.iium.edu.my/adm
+
+file:///C:/Users/Spoofed%20Once%20Again/2025-05-22-ZAP-Report-.html
+
+https://cas.iium.edu.my:8448/cas/login%3Fservice=https%253A%252F%252Fhrservice.iium.edu.my%252Fapariium%252Flogin%252Fcas
