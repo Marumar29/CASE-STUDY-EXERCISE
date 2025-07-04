@@ -254,3 +254,46 @@ The full vulnerability scan report was generated using OWASP ZAP. It includes a 
 2. https://owasp.org/www-project-zap/
 3. CWE Database: https://cwe.mitre.org/
 
+
+
+
+---
+
+## ✅ Prevention Measures (With Code & Explanation)
+
+---
+
+### 🔐 URL: `https://hrservice.iium.edu.my/`
+
+| Vulnerability                    | Recommendation (Code)                                                                                                                             | Explanation                                                                              |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Cross-Domain Misconfiguration    | **Apache**:`Header set Access-Control-Allow-Origin "https://yourdomain.com"`**Express.js**:`app.use(cors({ origin: 'https://yourdomain.com' }));` | Prevents external websites from loading your resources and making unauthorized requests. |
+| Missing Anti-clickjacking Header | **Apache**:`Header set X-Frame-Options "DENY"`**Express.js**:`app.use(helmet.frameguard({ action: 'deny' }))`                                     | Prevents clickjacking by stopping your site from being embedded in an iframe.            |
+| Vulnerable JS Library            | Replace outdated versions:`<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>`                                                   | Ensures libraries are secure and not exploitable via known CVEs.                         |
+| Information Disclosure in URL    | Use POST instead of GET:`<form method="POST"><input type="hidden" name="ticket" value="secure-token"></form>`                                     | Prevents session tokens from being exposed in browser history or server logs.            |
+
+---
+
+### 🔐 URL: `http://hrservice.iium.edu.my/apariium`
+
+| Vulnerability                    | Recommendation (Code)                                                                                                              | Explanation                                                                         |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| CSP Header Not Set               | **Apache**:`Header set Content-Security-Policy "default-src 'self';"`**Express.js**:`app.use(helmet.contentSecurityPolicy({...}))` | Restricts which domains can load content like scripts or styles, reducing XSS risk. |
+| Cross-Domain Misconfiguration    | **Apache**:`Header always set Access-Control-Allow-Origin "https://trusted-domain.com"`                                            | Controls access to web resources by only allowing trusted domains.                  |
+| Missing Anti-clickjacking Header | Same as above:`X-Frame-Options: DENY` or `Content-Security-Policy: frame-ancestors 'none'`                                         | Protects against clickjacking by preventing the site from being framed by others.   |
+| Vulnerable JS Library            | Replace outdated library:`<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>`    | Ensures the JS codebase does not include components with known security holes.      |
+
+---
+
+### 🔐 URL: `http://hrservice.iium.edu.my/adm`
+
+| Vulnerability                          | Recommendation (Code)                                                                                                           | Explanation                                                                       |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| CSP Header Not Set                     | Same as above:`Header set Content-Security-Policy "default-src 'self';"`                                                        | Prevents unauthorized script loading, protecting against XSS.                     |
+| Absence of Anti-CSRF Tokens            | **Laravel Blade:**`@csrf`**PHP:**`<input type='hidden' name='csrf_token' value='<?php echo $_SESSION['csrf_token']; ?>'>`       | Ensures requests are legitimate and not forged from another origin.               |
+| Vulnerable JS Library                  | Update to latest version:`<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>` | Old JS libraries are prone to exploitation; always use supported versions.        |
+| Session Management Response Identified | **PHP**:`session_set_cookie_params(['secure' => true, 'httponly' => true, 'samesite' => 'Strict']);`                            | Enhances session token security against hijacking and CSRF via cookie attributes. |
+
+---
+
+
