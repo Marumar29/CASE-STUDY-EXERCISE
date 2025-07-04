@@ -9,8 +9,25 @@ Dr. MUHAMAD SADRY ABU SEMAN
 ---
 
 ## Prepared by : Group Last
+
 ---
+
+## Table of Contents
+
+1. [Overview](#overview)
+2. [Assigned Web Application](#assigned-web-application)
+3. [Objectives](#objectives)
+4. [Identified Vulnerabilities](#identified-vulnerabilities)
+5. [Evaluation of Vulnerabilities](#evaluation-of-vulnerabilities)
+6. [Prevention Measures](#prevention-measures)
+7. [List of Figures](#list-of-figures)
+8. [List of Tables](#list-of-tables)
+9. [References](#references)
+
+---
+
 ### Group Members
+
 | Name              | Matric No | Task                                                  |
 |-------------------|-----------|-------------------------------------------------------|
 | Raja Muhamad Umar | 2119191   | Scanned (https://hrservice.iium.edu.my using) OWASP ZAP |
@@ -18,6 +35,7 @@ Dr. MUHAMAD SADRY ABU SEMAN
 | Muhammad Afiff Firdaus | 2120573   | Scanned (http://hrservice.iium.edu.my/adm) using OWASP ZAP |
 
 ### Scan Information
+
 | URL              | Date of scan | Scan type  | Scan Duration |
 |------------------|--------------|--------------|-------------------------------------------------------|
 |(https://hrservice.iium.edu.my) | 23/5/2025 | Automated scan/Manual explore | 10 minutes |
@@ -26,6 +44,7 @@ Dr. MUHAMAD SADRY ABU SEMAN
 
 ---
 ### Metric Values
+
 1. Raja Muhamad Umar bin Raja Kamarul Izham (2119191)
 
 | *Metric*                         | *Value*         |
@@ -37,7 +56,6 @@ Dr. MUHAMAD SADRY ABU SEMAN
 | Low-Risk/Informational Issues     | 2                 |
 | Remediation Status                | Pending           |
 
-   
 2. Muhammad Afzal Bin Mohd Nor (2123032)
 
 | *Metric*                         | *Value*         |
@@ -48,7 +66,7 @@ Dr. MUHAMAD SADRY ABU SEMAN
 | Medium-Risk Issues               | 3                |
 | Low-Risk/Informational Issues    | 2                |
 | Remediation Status               | Pending          |
-   
+
 3. Muhammad Afiff Firdaus Bin Abdullah (2120573)
 
 | *Metric*                         | *Value*         |
@@ -62,31 +80,19 @@ Dr. MUHAMAD SADRY ABU SEMAN
 
 ---
 ### Key takeaways
-| URL              | Key takeaways | 
+
+| URL              | Key takeaways |
 |------------------|--------------|
-|(https://hrservice.iium.edu.my) | The scan revealed *2 medium-risk vulnerabilities* that impact client-side security (missing CSP and anti-clickjacking headers). These should be addressed soon. No critical or high-risk issues were found. Two informational findings were also recorded. | 
-| (http://hrservice.iium.edu.my/apariium) | The scan reveals several medium to high-risk vulnerabilities that expose the site to threats like cross-site scripting, clickjacking, and insecure cross-origin access. The absence of key security headers such as CSP and X-Frame-Options, combined with outdated JavaScript libraries, increases the risk of code injection and unauthorized access. Immediate attention should be given to implementing proper security headers, updating vulnerable components, and reviewing cross-domain policies to reduce the site’s exposure to common web attacks.| 
-| (http://hrservice.iium.edu.my/adm) |  The security assessment identified several medium-risk and informational vulnerabilities in the application, primarily due to missing security headers, lack of anti-CSRF protections, and outdated JavaScript libraries. These weaknesses increase the risk of common web attacks such as cross-site scripting (XSS), cross-site request forgery (CSRF), and clickjacking. Addressing these issues through the recommended security measures will significantly strengthen the application's resilience against exploitation and enhance overall web security.  | 
-
-
----
-
-## Table of Contents
-1. [Overview](#overview)
-2. [Assigned Web Application](#assigned-web-application)
-3. [Objectives](#objectives)
-4. [Identified Vulnerabilities](#identified-vulnerabilities)
-5. [Evaluation of Vulnerabilities](#evaluation-of-vulnerabilities)
-6. [Prevention Measures](#prevention-measures)
-7. [List of Figures](#list-of-figures)
-8. [List of Tables](#list-of-tables)
-9. [References](#references)
+|(https://hrservice.iium.edu.my) | The scan revealed *2 medium-risk vulnerabilities* that impact client-side security (missing CSP and anti-clickjacking headers). These should be addressed soon. No critical or high-risk issues were found. Two informational findings were also recorded. |
+| (http://hrservice.iium.edu.my/apariium) | The scan reveals several medium to high-risk vulnerabilities that expose the site to threats like cross-site scripting, clickjacking, and insecure cross-origin access. The absence of key security headers such as CSP and X-Frame-Options, combined with outdated JavaScript libraries, increases the risk of code injection and unauthorized access. Immediate attention should be given to implementing proper security headers, updating vulnerable components, and reviewing cross-domain policies to reduce the site’s exposure to common web attacks.|
+| (http://hrservice.iium.edu.my/adm) |  The security assessment identified several medium-risk and informational vulnerabilities in the application, primarily due to missing security headers, lack of anti-CSRF protections, and outdated JavaScript libraries. These weaknesses increase the risk of common web attacks such as cross-site scripting (XSS), cross-site request forgery (CSRF), and clickjacking. Addressing these issues through the recommended security measures will significantly strengthen the application's resilience against exploitation and enhance overall web security.  |
 
 ---
 
 ## Assigned Web Application
+
 **Name**: IIUM Human Resource Services  
-**URL**: 
+**URL**:
 1. https://hrservice.iium.edu.my/
 2. http://hrservice.iium.edu.my/apariium
 3. http://hrservice.iium.edu.my/adm
@@ -94,6 +100,7 @@ Dr. MUHAMAD SADRY ABU SEMAN
 ---
 
 ## Objectives
+
 - Scan and analyze vulnerabilities using OWASP ZAP.
 - Evaluate the potential risks and impact.
 - Suggest mitigation steps to enhance web application security.
@@ -137,10 +144,10 @@ URL: http://hrservice.iium.edu.my/adm
 | 3  | Session Management Response Identified      | Informational  | https://hrservice.iium.edu.my/adm/                                                                                     | -         | Session management response detected; informational only, but check if session management is secure.                           | Review session management implementation for security best practices.                                           |
 
 
-
 ---
 
 ## Evaluation of Vulnerabilities
+
 URL: https://hrservice.iium.edu.my/
 - Cross-Domain Misconfiguration: This could allow attackers to load or manipulate external resources
 - Missing Anti-clickjacking Header: Without X-Frame-Options or Content-Security-Policy, the site is vulnerable to clickjacking attacks — tricking users into clicking hidden elements embedded via iframes. This is a common and preventable issue.
@@ -164,106 +171,9 @@ URL: http://hrservice.iium.edu.my/adm
 
 ---
 
-## Prevention Measures
-URL: https://hrservice.iium.edu.my/
-| Vulnerability                 | Recommendation                                  |
-|-------------------------------|-------------------------------------------------|
-| Cross-Domain Misconfiguration | Limit cross-origin access using strict CORS rules. Do not allow unauthenticated or public domains to load critical resources. |
-| Missing Anti-clickjacking Header | Implement one of the following HTTP headers: X-Frame-Options: DENY or SAMEORIGIN, Content-Security-Policy: frame-ancestors 'none'; |
-| Vulnerable JS Library | Check which library is affected (e.g., jQuery, Bootstrap). Update to the latest version after verifying compatibility. Avoid using unsupported or unmaintained libraries. |
-| Information Disclosure in URL | Move sensitive tokens (e.g., session tickets) into secure HTTP headers or encrypted cookies instead of placing them in GET URLs. Also consider using POST for secure data exchange. |
+## Prevention Measures (With Code & Explanation)
 
-URL: http://hrservice.iium.edu.my/apariium
-| Vulnerability                 | Recommendation                                  |
-|-------------------------------|-------------------------------------------------|
-| Content Security Policy (CSP) Header Not Set | Add a CSP header to control which sources the browser is allowed to load content from. This helps prevent cross-site scripting and code injection attacks. |
-| Cross-Domain Misconfiguration | Limit access to your site’s resources by only allowing trusted domains. Avoid using wildcards (*) in cross-origin settings. |
-| Missing Anti-clickjacking Header | Use security headers like X-Frame-Options or Content-Security-Policy to prevent your site from being embedded in other pages, which protects against clickjacking. |
-| Vulnerable JS Library | Keep all JavaScript libraries up to date. Remove unused ones and avoid using versions with known security issues. |
-
-URL: http://hrservice.iium.edu.my/adm
-| Vulnerability                 | Recommendation                                  |
-|-------------------------------|-------------------------------------------------|
-| Content Security Policy (CSP) Header Not Set| Configure your web server or application to set the Content-Security-Policy header. This helps prevent cross-site scripting (XSS) and other code injection attacks by restricting the sources of content that browsers are allowed to load. |
-| Absence of Anti-CSRF Tokens              | Implement anti-CSRF tokens on all forms and sensitive state-changing requests to protect users from cross-site request forgery (CSRF) attacks. |
-| Vulnerable JavaScript Library Detected            | Regularly update and maintain all third-party libraries and dependencies (such as JavaScript frameworks). Replace outdated or vulnerable libraries with their latest, secure versions to prevent attackers from exploiting known issues. |
-| Session Management Response Identified                       | Review and harden session management mechanisms. Ensure that session tokens are generated securely, transmitted over HTTPS, and properly invalidated after logout. Avoid exposing unnecessary session details in responses. |
-
-
----
-## List of Tables
-
-1. [Group members]
-2. [Scan Information]
-3. [Metric Values]
-4. [Key takeaways]
-5. [Identifies Vulnerabilites]
-6. [Prevention Measures]
-
----
-
-## Appendecies
-
-### ZAP Scan Report (HTML/PDF)
-
-The full vulnerability scan report was generated using OWASP ZAP. It includes a breakdown of detected issues categorized by risk level, affected URLs, and suggested remediations.
-**File Attached:**
-
-### Summary of Alerts
-
-(https://hrservice.iium.edu.my)
-
-| **Vulnerability**                  | **Risk Level** | **CWE ID** |
-|-----------------------------------|----------------|------------|
-| Information Disclosure in URL     | Medium(Informational) | CWE-598    | 
-| Vulnerable JS Library             | Medium         | CWE-264    | 
-| Missing Anti-clickjacking Header  | Medium            | CWE-1021   | 
-| Vulnerable JavaScript Library     | Medium         | CWE-1104   | 
-
-
-(http://hrservice.iium.edu.my/apariium)
-
-| **Vulnerability**                  | **Risk Level** | **CWE ID** | 
-|-----------------------------------|----------------|------------|
-| Content Security Policy Not Set   | Medium         | CWE-693    | 
-| Cross-Domain Misconfiguration     | Medium         | CWE-264    | 
-| Missing Anti-clickjacking Header  | Low            | CWE-1021   | 
-| Vulnerable JavaScript Library     | Medium         | CWE-1104   | 
-| Session Token Identified          | Informational  | - | 
-
-(http://hrservice.iium.edu.my/adm
-
-| **Vulnerability**                  | **Risk Level** | **CWE ID** |
-|-----------------------------------|----------------|------------|
-| Content Security Policy Not Set   | Medium         | CWE-693    | 
-| Absence of Anti-CSRF Tokens       | Medium         | CWE-352    | 
-| Session Management Response Identified  | Informational | - |
-
-
-### Vulnerable JS Library Detail**
-
-- **Library Name:** jQuery 1.x (outdated)  
-- **Risk:** Known XSS and DOM-based injection vulnerabilities  
-- **Recommendation:** Upgrade to latest stable version (3.x or above)  
-- **Reference:** [https://snyk.io/vuln/npm:jquery](https://snyk.io/vuln/npm:jquery)
-
----
-
-## References
-1. OWASP Top 10
-2. https://owasp.org/www-project-zap/
-3. CWE Database: https://cwe.mitre.org/
-
-
-
-
----
-
-## ✅ Prevention Measures (With Code & Explanation)
-
----
-
-### 🔐 URL: `https://hrservice.iium.edu.my/`
+### URL: `https://hrservice.iium.edu.my/`
 
 | Vulnerability                    | Recommendation (Code)                                                                                                                             | Explanation                                                                              |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
@@ -274,7 +184,7 @@ The full vulnerability scan report was generated using OWASP ZAP. It includes a 
 
 ---
 
-### 🔐 URL: `http://hrservice.iium.edu.my/apariium`
+### URL: `http://hrservice.iium.edu.my/apariium`
 
 | Vulnerability                    | Recommendation (Code)                                                                                                              | Explanation                                                                         |
 | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
@@ -285,7 +195,7 @@ The full vulnerability scan report was generated using OWASP ZAP. It includes a 
 
 ---
 
-### 🔐 URL: `http://hrservice.iium.edu.my/adm`
+### URL: `http://hrservice.iium.edu.my/adm`
 
 | Vulnerability                          | Recommendation (Code)                                                                                                           | Explanation                                                                       |
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
@@ -296,4 +206,65 @@ The full vulnerability scan report was generated using OWASP ZAP. It includes a 
 
 ---
 
+## Appendices
 
+### Appendix A: ZAP Scan Reports
+These are the exported vulnerability scan reports from OWASP ZAP for each assigned system. The reports include detected issues, risk levels, confidence ratings, affected URLs, and recommendations.
+
+**Files Attached (in GitHub repo):**
+- [scan-report-hrservice.html](./scan-report-hrservice.html)
+- [scan-report-apariium.html](./scan-report-apariium.html)
+- [scan-report-adm.html](./scan-report-adm.html)
+
+---
+
+### Appendix B: Summary of Alerts
+
+#### URL: https://hrservice.iium.edu.my
+
+| Vulnerability                     | Risk Level        | CWE ID  |
+|----------------------------------|-------------------|---------|
+| Information Disclosure in URL    | Informational     | CWE-598 |
+| Missing Anti-clickjacking Header | Medium            | CWE-1021|
+| Vulnerable JavaScript Library    | Medium            | CWE-1104|
+| Cross-Domain Misconfiguration    | Medium            | CWE-264 |
+
+---
+
+#### URL: http://hrservice.iium.edu.my/apariium
+
+| Vulnerability                     | Risk Level        | CWE ID  |
+|----------------------------------|-------------------|---------|
+| CSP Header Not Set               | Medium            | CWE-693 |
+| Cross-Domain Misconfiguration    | Medium            | CWE-264 |
+| Missing Anti-clickjacking Header | Medium            | CWE-1021|
+| Vulnerable JavaScript Library    | Medium            | CWE-1104|
+| Session Token Identified         | Informational     | -       |
+
+---
+
+#### URL: http://hrservice.iium.edu.my/adm
+
+| Vulnerability                          | Risk Level    | CWE ID  |
+|---------------------------------------|---------------|---------|
+| CSP Header Not Set                    | Medium        | CWE-693 |
+| Absence of Anti-CSRF Tokens           | Medium        | CWE-352 |
+| Session Management Response Identified| Informational | -       |
+
+---
+
+### Appendix C: Vulnerable JS Library Details
+
+- **Library Name:** jQuery 1.x, Bootstrap 3.3.7  
+- **Risk:** Known vulnerabilities include XSS and DOM-based injection  
+- **Reference:**  
+  - https://snyk.io/vuln/npm:jquery  
+  - https://snyk.io/vuln/npm:bootstrap  
+
+---
+
+### Appendix D: Tools Used
+
+- **OWASP ZAP v2.16.1** – Used for scanning and exporting reports  
+- **Browser (ZAP Internal Firefox)** – Manual exploration  
+- **VS Code + GitHub** – Documentation and submission  
