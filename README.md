@@ -235,10 +235,10 @@ These are the exported vulnerability scan reports from OWASP ZAP for each assign
 |---------------------------------------|---------------|----------|
 | Content Security Policy Header Missing| Medium        | CWE-693  |
 | Missing Anti-clickjacking Header      | Medium        | CWE-1021 |
-| Server Version Disclosure             | Informational | CWE-200  |
+| Server Version Disclosure             | Informational | CWE-497  |
 | Strict-Transport-Security Missing     | Medium        | CWE-319  |
-| X-Content-Type-Options Missing        | Medium        | CWE-16   |
-| Cache-Control Insecure Settings       | Informational | CWE-524  |
+| X-Content-Type-Options Missing        | Medium        | CWE-693  |
+| Cache-Control Insecure Settings       | Informational | CWE-525  |
 
 ---
 
