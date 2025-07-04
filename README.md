@@ -195,16 +195,31 @@ URL: http://hrservice.iium.edu.my/adm
 
 ## Appendecies
 
-### 
-1. [Overview]
-2. [Assigned Web Application]
-3. [Objectives]
-4. [Identified Vulnerabilities]
-5. [Evaluation of Vulnerabilities]
-6. [Prevention Measures]
-7. [List of Figures]
-8. [List of Tables]
-9. [References]
+### ZAP Scan Report (HTML/PDF)
+
+The full vulnerability scan report was generated using OWASP ZAP. It includes a breakdown of detected issues categorized by risk level, affected URLs, and suggested remediations.
+**File Attached:**[Uploading 2025-05-29-ZAP-Report-apaariium.txt…]()
+
+
+
+### Summary of Alerts
+
+
+
+| **Vulnerability**                  | **Risk Level** | **CWE ID** | **Affected URLs**                |
+|-----------------------------------|----------------|------------|----------------------------------|
+| Content Security Policy Not Set   | Medium         | CWE-693    | `/apariium/home.php`, `/index`  |
+| Cross-Domain Misconfiguration     | Medium         | CWE-264    | `/apariium/`, `/apariium/assets/` |
+| Missing Anti-clickjacking Header  | Low            | CWE-1021   | Multiple                         |
+| Vulnerable JavaScript Library     | Medium         | CWE-1104   | `/apariium/assets/jquery.js`    |
+| Session Token Identified          | Informational  | CWE-384    | `/login`, `/dashboard`          |
+
+### Vulnerable JS Library Detail**
+
+- **Library Name:** jQuery 1.x (outdated)  
+- **Risk:** Known XSS and DOM-based injection vulnerabilities  
+- **Recommendation:** Upgrade to latest stable version (3.x or above)  
+- **Reference:** [https://snyk.io/vuln/npm:jquery](https://snyk.io/vuln/npm:jquery)
 
 ---
 
