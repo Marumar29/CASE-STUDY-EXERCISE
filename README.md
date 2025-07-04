@@ -8,7 +8,7 @@ Dr. MUHAMAD SADRY ABU SEMAN
 
 ---
 
-## Group Name: Group Last
+## Prepared by : Group Last
 ---
 ### Group Members
 | Name              | Matric No | Task                                                  |
@@ -16,6 +16,23 @@ Dr. MUHAMAD SADRY ABU SEMAN
 | Raja Muhamad Umar | 2119191   | Scanned (https://hrservice.iium.edu.my using) OWASP ZAP |
 | Muhammad Afzal | 2123023   | Scanned (http://hrservice.iium.edu.my/apariium) using OWASP ZAP |
 | Muhammad Afiff Firdaus | 2120573   | Scanned (http://hrservice.iium.edu.my/adm) using OWASP ZAP |
+
+### Scan Information
+| URL              | Date of scan | Scan type  | Scan Duration |
+|-------------------|-----------|-------------------------------------------------------|
+|(https://hrservice.iium.edu.my) |    | Automated scan/Manual explore |  |
+| (http://hrservice.iium.edu.my/apariium) | 22/5/2025 | Automated scan/Manual explore | 15 Minutes |
+| (http://hrservice.iium.edu.my/adm) |    | Automated scan/Manual explore |  | |
+
+---
+### Metric Values
+
+
+---
+
+---
+### Key takeaways
+
 
 ---
 
