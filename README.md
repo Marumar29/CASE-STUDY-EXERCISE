@@ -14,15 +14,15 @@ Dr. MUHAMAD SADRY ABU SEMAN
 
 ## Table of Contents
 
-1. [Overview](#overview)
-2. [Assigned Web Application](#assigned-web-application)
-3. [Objectives](#objectives)
-4. [Identified Vulnerabilities](#identified-vulnerabilities)
-5. [Evaluation of Vulnerabilities](#evaluation-of-vulnerabilities)
-6. [Prevention Measures](#prevention-measures)
-7. [List of Figures](#list-of-figures)
-8. [List of Tables](#list-of-tables)
-9. [References](#references)
+1. [Assigned Web Application](#assigned-web-application)
+2. [Objectives](#objectives)
+3. [Identified Vulnerabilities](#identified-vulnerabilities)
+4. [Evaluation of Vulnerabilities](#evaluation-of-vulnerabilities)
+5. [Prevention Measures](#prevention-measures)
+6. [List of Figures](#list-of-figures)
+7. [List of Tables](#list-of-tables)
+8. [References](#references)
+9. [Appendices](#appendices)
 
 ---
 
@@ -203,6 +203,13 @@ URL: http://hrservice.iium.edu.my/adm
 | Absence of Anti-CSRF Tokens            | **Laravel Blade:**`@csrf`**PHP:**`<input type='hidden' name='csrf_token' value='<?php echo $_SESSION['csrf_token']; ?>'>`       | Ensures requests are legitimate and not forged from another origin.               |
 | Vulnerable JS Library                  | Update to latest version:`<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>` | Old JS libraries are prone to exploitation; always use supported versions.        |
 | Session Management Response Identified | **PHP**:`session_set_cookie_params(['secure' => true, 'httponly' => true, 'samesite' => 'Strict']);`                            | Enhances session token security against hijacking and CSRF via cookie attributes. |
+
+---
+
+## References
+1. OWASP Top 10
+2. https://owasp.org/www-project-zap/
+3. CWE Database: https://cwe.mitre.org/
 
 ---
 
