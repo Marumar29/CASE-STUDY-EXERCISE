@@ -224,6 +224,7 @@ These are the exported vulnerability scan reports from OWASP ZAP for each assign
 
 **Files Attached (in GitHub repo):**
 - [scan-report-hrservice.html](./scan-report-hrservice.html)
+- [scan-report-hrservice-apariium](./scan-report-hrservice-apariium.html)
 
 ---
 
