@@ -204,7 +204,27 @@ The full vulnerability scan report was generated using OWASP ZAP. It includes a 
 
 ### Summary of Alerts
 
+(https://hrservice.iium.edu.my)
 
+| **Vulnerability**                  | **Risk Level** | **CWE ID** | **Affected URLs**                |
+|-----------------------------------|----------------|------------|----------------------------------|
+| Information Disclosure in URL     | Medium         | CWE-693    | `/apariium/home.php`, `/index`  |
+| Cross-Domain Misconfiguration     | Medium         | CWE-264    | `/apariium/`, `/apariium/assets/` |
+| Missing Anti-clickjacking Header  | Low            | CWE-1021   | Multiple                         |
+| Vulnerable JavaScript Library     | Medium         | CWE-1104   | `/apariium/assets/jquery.js`    |
+
+
+(http://hrservice.iium.edu.my/apariium)
+
+| **Vulnerability**                  | **Risk Level** | **CWE ID** | **Affected URLs**                |
+|-----------------------------------|----------------|------------|----------------------------------|
+| Content Security Policy Not Set   | Medium         | CWE-693    | `/apariium/home.php`, `/index`  |
+| Cross-Domain Misconfiguration     | Medium         | CWE-264    | `/apariium/`, `/apariium/assets/` |
+| Missing Anti-clickjacking Header  | Low            | CWE-1021   | Multiple                         |
+| Vulnerable JavaScript Library     | Medium         | CWE-1104   | `/apariium/assets/jquery.js`    |
+| Session Token Identified          | Informational  | CWE-384    | `/login`, `/dashboard`          |
+
+(http://hrservice.iium.edu.my/adm
 
 | **Vulnerability**                  | **Risk Level** | **CWE ID** | **Affected URLs**                |
 |-----------------------------------|----------------|------------|----------------------------------|
