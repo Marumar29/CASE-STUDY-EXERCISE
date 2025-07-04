@@ -123,12 +123,13 @@ Dr. MUHAMAD SADRY ABU SEMAN
 2. Muhammad Afzal Bin Mohd Nor (2123032)
 URL: http://hrservice.iium.edu.my/apariium
 
-| No | Vulnerability                    | Risk         | Affected URL                                                                                       | CWE ID   | Description                                                                                              | Suggested Fix                                                                                      |
-|----|----------------------------------|--------------|------------------------------------------------------------------------------------------------------|----------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| 1  | CSP Header Not Set               | Medium (High)| https://cas.iium.edu.my:8448/cas/login?service=https%3A%2F%2Fhrservice.iium.edu.my%2Fapariium%2Flogin%2Fcas | CWE-693 | The site lacks a Content Security Policy (CSP), increasing exposure to XSS and injection attacks.       | Configure your web server or application to include a secure `Content-Security-Policy` header.     |
-| 2  | Cross-Domain Misconfiguration    | Medium       | https://fonts.googleapis.com/css?family=Lato,Signika,Courgette                                     | CWE-264 | CORS is misconfigured, allowing resources to load across domains, which may expose sensitive data.       | Restrict cross-origin access to trusted domains using strict CORS policy or origin validation.     |
-| 3  | Missing Anti-clickjacking Header | Medium       | https://hrservice.iium.edu.my/                                                                      | CWE-1021 | The response lacks headers that prevent clickjacking, allowing the site to be embedded in iframes.      | Add `X-Frame-Options: DENY` or use CSP's `frame-ancestors` directive to restrict iframe usage.     |
-| 4  | Vulnerable JS Library            | Medium       | https://cas.iium.edu.my:8448/cas/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js                      | CWE-1395 | The site uses an outdated Bootstrap version with known security issues.                                | Update the Bootstrap library to the latest secure version (preferably 5.x or the latest stable).   |
+| No | Vulnerability                       | Risk         | Affected URL                                                                                           | CWE ID   | Description                                                                                 | Suggested Fix                                                                 |
+|----|-------------------------------------|--------------|----------------------------------------------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------|
+| 1  | CSP Header Not Set                  | Medium (High)| https://cas.iium.edu.my:8448/cas/login?service=https%3A%2F%2Fhrservice.iium.edu.my%2Fapariium%2Flogin%2Fcas | CWE-693 | CSP blocks threats like XSS by controlling which sources browsers can load.                | Configure the server to set the `Content-Security-Policy` header.             |
+| 2  | Cross-Domain Misconfiguration       | Medium       | https://fonts.googleapis.com/css?family=Lato,Signika,Courgette                                           | CWE-264 | CORS misconfig may expose data across origins.                                             | Restrict access to trusted domains or use IP whitelisting.                    |
+| 3  | Missing Anti-clickjacking Header    | Medium       | https://hrservice.iium.edu.my/                                                                           | CWE-1021 | The site does not prevent Clickjacking via headers.                                        | Add `X-Frame-Options` or `Content-Security-Policy: frame-ancestors`.          |
+| 4  | Vulnerable JS Library               | Medium       | https://cas.iium.edu.my:8448/cas/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js                           | CWE-1395 | An outdated JS library was found with known vulnerabilities.                              | Upgrade to the latest version of Bootstrap.                                   |
+
 
 
 
@@ -277,4 +278,14 @@ These are the exported vulnerability scan reports from OWASP ZAP for each assign
 
 - **OWASP ZAP v2.16.1** – Used for scanning and exporting reports  
 - **Browser (ZAP Internal Firefox)** – Manual exploration  
-- **VS Code + GitHub** – Documentation and submission  
+- **VS Code + GitHub** – Documentation and submission
+
+---
+
+### Appendix E: Screenshots
+
+#### URL: https://hrservice.iium.edu.my
+
+#### URL: http://hrservice.iium.edu.my/apariium
+
+#### URL: http://hrservice.iium.edu.my/adm
