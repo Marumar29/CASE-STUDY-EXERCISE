@@ -26,7 +26,12 @@ Dr. MUHAMAD SADRY ABU SEMAN
 
 ---
 ### Metric Values
+1. Raja Muhamad Umar bin Raja Kamarul Izham (2119191)
+   
+2. Muhammad Afzal Bin Mohd Nor (2123032)
 
+   
+3. Muhammad Afiff Firdaus Bin Abdullah (2120573)
 
 ---
 
