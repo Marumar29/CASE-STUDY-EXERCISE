@@ -116,10 +116,10 @@ Dr. MUHAMAD SADRY ABU SEMAN
 |----|----------------------------------------|------------|---------------------------------------------|---------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
 | 1  | Content Security Policy Header Missing | Medium     | https://hrservice.iium.edu.my/              | CWE-693 | No CSP set in HTTP response, increasing risk of cross-site scripting (XSS).                  | Configure Content-Security-Policy header to restrict allowable sources for scripts and styles.         |
 | 2  | Missing Anti-clickjacking Header       | Medium     | https://hrservice.iium.edu.my/              | CWE-1021| No X-Frame-Options or frame-ancestors CSP found.                                               | Use 'X-Frame-Options: DENY' or CSP 'frame-ancestors' to prevent UI redress attacks.                    |
-| 3  | Server Version Disclosure              | Informational | https://hrservice.iium.edu.my/           | CWE-200 | HTTP response reveals the server version, which can assist attackers in targeted exploits.    | Configure server to hide version details using Apache or Nginx directives.                            |
+| 3  | Server Leaks Version Information via "Server" HTTP Response Header Field              | Informational | https://hrservice.iium.edu.my/           | CWE-497 | HTTP response reveals the server version, which can assist attackers in targeted exploits.    | Configure server to hide version details using Apache or Nginx directives.                            |
 | 4  | Strict-Transport-Security Missing      | Medium     | https://hrservice.iium.edu.my/              | CWE-319 | Lack of HSTS header allows attackers to downgrade HTTPS connections.                         | Set Strict-Transport-Security header to enforce secure communication over HTTPS.                       |
-| 5  | X-Content-Type-Options Missing         | Medium     | https://hrservice.iium.edu.my/              | CWE-16  | Without this header, browsers may MIME-sniff responses, leading to execution of malicious files.| Add 'X-Content-Type-Options: nosniff' in the HTTP response headers.                                |
-| 6  | Re-examine Cache-control Directives    | Informational | https://hrservice.iium.edu.my/           | CWE-524 | Response headers allow content caching, which may leak sensitive data.                        | Configure cache-control headers to prevent sensitive content from being cached.                       |
+| 5  | X-Content-Type-Options Missing         | Medium     | https://hrservice.iium.edu.my/              | CWE-693  | Without this header, browsers may MIME-sniff responses, leading to execution of malicious files.| Add 'X-Content-Type-Options: nosniff' in the HTTP response headers.                                |
+| 6  | Re-examine Cache-control Directives    | Informational | https://hrservice.iium.edu.my/           | CWE-525 | Response headers allow content caching, which may leak sensitive data.                        | Configure cache-control headers to prevent sensitive content from being cached.                       |
 
 
 2. Muhammad Afzal Bin Mohd Nor (2123032)
@@ -224,8 +224,6 @@ These are the exported vulnerability scan reports from OWASP ZAP for each assign
 
 **Files Attached (in GitHub repo):**
 - [scan-report-hrservice.html](./scan-report-hrservice.html)
-- [scan-report-apariium.html](./scan-report-apariium.html)
-- [scan-report-adm.html](./scan-report-adm.html)
 
 ---
 
