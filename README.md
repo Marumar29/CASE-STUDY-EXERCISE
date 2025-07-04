@@ -58,11 +58,11 @@ Dr. MUHAMAD SADRY ABU SEMAN
 
 | *Metric*                         | *Value*         |
 |----------------------------------|------------------|
-| Total Issues Identified          | 5                |
+| Total Issues Identified          | 15               |
 | Critical Issues                  | 0                |
 | High-Risk Issues                 | 0                |
-| Medium-Risk Issues               | 3                |
-| Low-Risk/Informational Issues    | 2                |
+| Medium-Risk Issues               | 5                |
+| Low-Risk/Informational Issues    | 10               |
 
 
 3. Muhammad Afiff Firdaus Bin Abdullah (2120573)
