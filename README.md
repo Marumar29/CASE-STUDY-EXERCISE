@@ -39,6 +39,7 @@ Dr. MUHAMAD SADRY ABU SEMAN
 
    
 2. Muhammad Afzal Bin Mohd Nor (2123032)
+
 | *Metric*                         | *Value*         |
 |----------------------------------|------------------|
 | Total Issues Identified          | 5                |
