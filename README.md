@@ -28,7 +28,15 @@ Dr. MUHAMAD SADRY ABU SEMAN
 ### Metric Values
 1. Raja Muhamad Umar bin Raja Kamarul Izham (2119191)
 
-   
+| *Metric*                         | *Value*         |
+|-----------------------------------|-------------------|
+| Total Issues Identified           | 4                 |
+| Critical Issues                   | 0                 |
+| High-Risk Issues                  | 0                 |
+| Medium-Risk Issues                | 2                 |
+| Low-Risk/Informational Issues     | 2                 |
+| Remediation Status                | Pending           |
+
    
 2. Muhammad Afzal Bin Mohd Nor (2123032)
 
