@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>scan-report-hrservice/apariium</title>
+<link
+	href="2025-07-04-ZAP-Report-2/normalize/normalize.css" rel="stylesheet">
+<link
+	href="2025-07-04-ZAP-Report-2/themes/original/main.css" rel="stylesheet">
+<link
+	href="2025-07-04-ZAP-Report-2/themes/original/colors.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<h1>scan-report-hrservice/apariium</h1>
+		<p>
+			<span>Generated with</span> <a href="https://zaproxy.org"><img
+				src="2025-07-04-ZAP-Report-2/zap32x32.png" alt="The ZAP logo" class="zap-logo">ZAP</a>
+			<span>on Fri 4 Jul 2025, at 21:04:08</span>
+		</p>
+		<p>ZAP Version: 2.16.1</p>
+		<p>
+			ZAP by <a href="https://checkmarx.com/">Checkmarx</a>
+		</p>
+	</header>
+
+	<main>
+
+		<section id="contents" class="contents">
+			<h2>Contents</h2>
+			<nav>
+				<ol>
+					<li><a
+						href="#about-this-report">About This Report</a>
+						<ol>
+							
+							<li><a
+								href="#report-parameters">Report Parameters</a></li>
+						</ol></li>
+					<data-th-block>
+					<li><a
+						href="#summaries">Summaries</a>
+						<ol>
+							<li><a
+								href="#risk-confidence-counts">Alert Counts by Risk and Confidence</a></li>
+							<li><a
+								href="#site-risk-counts">Alert Counts by Site and Risk</a></li>
+							<li><a
+								href="#alert-type-counts">Alert Counts by Alert Type</a></li>
+						</ol></li>
+					<li><a
+						href="#alerts">Alerts</a>
+						<ol>
+							
+							 
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-2-confidence-3"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">High</span> <span>(1)</span></a></li>
+							
+							<li><a
+								href="#alerts--risk-2-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Medium</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(3)</span></a></li>
+							  
+							
+							
+							
+							
+							
+							
+							<li><a
+								href="#alerts--risk-0-confidence-2"><span>Risk</span>=<span
+									class="risk-level">Informational</span>, <span>Confidence</span>=<span
+									class="confidence-level">Medium</span> <span>(1)</span></a></li>
+							  
+						</ol></li>
+					<li><a
+						href="#appendix">Appendix</a>
+						<ol>
+							<li><a
+								href="#alert-types">Alert Types</a></li>
+						</ol></li>
+					</data-th-block>
+				</ol>
+			</nav>
+		</section>
+
+		<section
+			id="about-this-report" class="about-this-report">
+			<h2>About This Report</h2>
+
+			
+
+			<section
+				id="report-parameters">
+				<h3>Report Parameters</h3>
+				<div class="report-parameters--container">
+					<h4>Contexts</h4>
+					
+					
+					<p>No contexts were selected, so all contexts were included by default.</p>
+					  
+
+					<h4>Sites</h4>
+					
+					<p>The following sites were included:</p>
+					<ul class="sites-list">
+						<li><span class="site">https://chromewebstore.googleapis.com</span></li>
+						<li><span class="site">https://clientservices.googleapis.com</span></li>
+						<li><span class="site">https://update.googleapis.com</span></li>
+						<li><span class="site">https://optimizationguide-pa.googleapis.com</span></li>
+						<li><span class="site">https://content-autofill.googleapis.com</span></li>
+						<li><span class="site">https://fonts.googleapis.com</span></li>
+						<li><span class="site">https://android.clients.google.com</span></li>
+						<li><span class="site">https://cas.iium.edu.my:8448</span></li>
+						<li><span class="site">https://hrservice.iium.edu.my</span></li>
+						<li><span class="site">https://www.googleapis.com</span></li>
+						<li><span class="site">https://accounts.google.com</span></li>
+						<li><span class="site">http://clients2.google.com</span></li>
+					</ul>
+					
+					<p>(If no sites were selected, all sites were included by default.)</p>
+					<p>An included site must also be within one of the included contexts for its data to be included in the report.</p>
+
+					<h4>Risk levels</h4>
+					<p>
+						<span>Included</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Informational</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						 
+						<span class="included-risk-codes"><span class="risk-level">High</span>, <span class="risk-level">Medium</span>, <span class="risk-level">Low</span>, <span class="risk-level">Informational</span></span>
+					</p>
+
+					<h4>Confidence levels</h4>
+					<p>
+						<span>Included</span>:
+						
+						
+						<span class="included-confidence-codes"><span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span></span>
+					</p>
+					<p>
+						<span>Excluded</span>:
+						
+						
+						<span class="included-confidence-codes"> <span class="confidence-level">User Confirmed</span>, <span class="confidence-level">High</span>, <span class="confidence-level">Medium</span>, <span class="confidence-level">Low</span>, <span class="confidence-level">False Positive</span></span>
+					</p>
+				</div>
+			</section>
+		</section>
+
+		
+		<section>
+			
+		</section>
+		
+		<section id="summaries" class="summaries">
+			<h2>Summaries</h2>
+
+			<section
+				id="risk-confidence-counts">
+				<h3>Alert Counts by Risk and Confidence</h3>
+				<table class="risk-confidence-counts-table">
+					<caption>
+						<p>This table shows the number of alerts for each level of risk and confidence included in the report.</p>
+						<p>(The percentages in brackets represent the count as a percentage of the total number of alerts included in the report, rounded to one decimal place.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 17.5%"><col
+							style="width: 17.5%"><col
+							style="width: 17.5%">
+						<col style="width: 17.5%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup"
+								colspan="4">Confidence</th>
+						</tr>
+						<tr>
+							<th scope="col">User Confirmed</th>
+							<th scope="col">High</th>
+							<th scope="col">Medium</th>
+							<th scope="col">Total</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="4">Risk</th>
+							<th scope="row">High</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span class="additional-info-percentages">(0.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Medium</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(60.0%)</span></td>
+							<td><span>4</span><br> <span class="additional-info-percentages">(80.0%)</span></td>
+						</tr>
+						<tr>
+							
+							<th scope="row">Informational</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>1</span><br> <span class="additional-info-percentages">(20.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row">Total</th>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0.0%)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+							<td><span>4</span><br> <span
+								class="additional-info-percentages">(80.0%)</span></td>
+							<td><span>5</span><br> <span
+								class="additional-info-percentages">(100%)</span></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="site-risk-counts">
+				<h3>Alert Counts by Site and Risk</h3>
+				<table class="site-risk-counts-table">
+					<caption>
+						<p>This table shows, for each site for which one or more alerts were raised, the number of alerts raised at each risk level.</p>
+						<p>Alerts with a confidence level of &quot;False Positive&quot; have been excluded from these counts.</p>
+						<p>(The numbers in brackets are the number of alerts raised for the site at or above that risk level.)</p>
+					</caption>
+					<colgroup>
+						<col>
+						<col>
+					</colgroup>
+					<colgroup>
+						<col
+							style="width: 21.666666666666668%"><col
+							style="width: 21.666666666666668%"><col
+							style="width: 21.666666666666668%">
+					</colgroup>
+					<thead>
+						<tr>
+							<td colspan="2" rowspan="2"></td>
+							<th scope="colgroup" colspan="3">Risk</th>
+						</tr>
+						<tr>
+							<th scope="col">
+								<span>High</span><br>  <span
+									class="additional-info-percentages">(= High)</span>  
+							</th>
+							<th scope="col">
+								<span>Medium</span><br>   <span
+									class="additional-info-percentages">(&gt;= Medium)</span> 
+							</th>
+							<th scope="col">
+								<span>Informational</span><br>   <span
+									class="additional-info-percentages">(&gt;= Informational)</span> 
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="rowgroup"
+								rowspan="4">Site</th>
+							<th scope="row">https://optimizationguide-pa.googleapis.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							
+						</tr>
+						<tr>
+							
+							<th scope="row">https://fonts.googleapis.com</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							
+						</tr>
+						<tr>
+							
+							<th scope="row">https://cas.iium.edu.my:8448</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(2)</span></td>
+							
+						</tr>
+						<tr>
+							
+							<th scope="row">https://hrservice.iium.edu.my</th>
+							
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>0</span><br> <span
+								class="additional-info-percentages">(0)</span></td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(1)</span></td>
+							
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section
+				id="alert-type-counts">
+				<h3>Alert Counts by Alert Type</h3>
+				<table class="alert-type-counts-table">
+					<caption>
+						<p>This table shows the number of alerts of each alert type, together with the alert type&#39;s risk level.</p>
+						<p>(The percentages in brackets represent each count as a percentage, rounded to one decimal place, of the total number of alerts included in this report.)</p>
+					</caption>
+					<thead>
+						<tr>
+							<th scope="col">Alert type</th>
+							<th scope="col">Risk</th>
+							<th scope="col">Count</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>10</span><br> <span
+								class="additional-info-percentages">(200.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-1">Cross-Domain Misconfiguration</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>1</span><br> <span
+								class="additional-info-percentages">(20.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-2">Missing Anti-clickjacking Header</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>9</span><br> <span
+								class="additional-info-percentages">(180.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-3">Vulnerable JS Library</a></th>
+							<td class="risk-level">Medium</td>
+							<td><span>3</span><br> <span
+								class="additional-info-percentages">(60.0%)</span></td>
+						</tr>
+						<tr>
+							<th scope="row"><a
+								href="#alert-type-4">Session Management Response Identified</a></th>
+							<td class="risk-level">Informational</td>
+							<td><span>2</span><br> <span
+								class="additional-info-percentages">(40.0%)</span></td>
+						</tr>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th scope="row">Total</th>
+							<td></td>
+							<td>5</td>
+						</tr>
+					</tfoot>
+				</table>
+			</section>
+		</section>
+
+		<section id="alerts" class="alerts">
+			<h2>Alerts</h2>
+			<ol>
+				
+				 
+				 
+				
+				
+				<li id="alerts--risk-2-confidence-3">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">High</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://cas.iium.edu.my:8448</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-0">Content Security Policy (CSP) Header Not Set</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://cas.iium.edu.my:8448/cas/login?service=https%3A%2F%2Fhrservice.iium.edu.my%2Fapariium%2Flogin%2Fcas</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/693.html">CWE-693</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Content Security Policy (CSP) is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement or distribution of malware. CSP provides a set of standard HTTP headers that allow website owners to declare approved sources of content that browsers should be allowed to load on that page — covered types are JavaScript, CSS, HTML frames, fonts, images and embeddable objects such as Java applets, ActiveX, audio and video files.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (733 bytes)</summary>
+				
+				<pre><code>GET https://cas.iium.edu.my:8448/cas/login?service=https%3A%2F%2Fhrservice.iium.edu.my%2Fapariium%2Flogin%2Fcas HTTP/1.1
+host: cas.iium.edu.my:8448
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+sec-ch-ua: &quot;Not)A;Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;138&quot;, &quot;Google Chrome&quot;;v=&quot;138&quot;
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: &quot;Windows&quot;
+Accept-Language: en-US,en;q=0.9
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (689 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 200
+Date: Fri, 04 Jul 2025 12:36:17 GMT
+Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Set-Cookie: SESSION=ee6bbe28-c70e-4691-886c-f21da922f939;path=/cas/;Secure;HttpOnly
+Content-Type: text/html;charset=UTF-8
+Content-Language: en
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Set-Cookie: YpN9wASukHaMGkYA=v1cyFLgw__wKC; Expires=Fri, 04-Jul-2025 14:36:17 GMT; Path=/; Secure
+content-length: 6889
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (6889 bytes)</summary>
+				
+				<pre><code>&lt;!DOCTYPE html&gt;&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Login - CAS &amp;#8211; Central Authentication Service&lt;/title&gt;
+    &lt;meta charset=&quot;UTF-8&quot;/&gt;&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;/&gt;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;/&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/cas/webjars/font-awesome/4.7.0/css/font-awesome.min.css&quot;/&gt;&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/cas/webjars/bootstrap/3.3.7-1/css/bootstrap.min.css&quot;/&gt;&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/cas/webjars/lato/0.3.0/css/lato.min.css&quot;/&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;/cas/css/cas.css&quot;/&gt;&lt;link rel=&quot;icon&quot; href=&quot;/cas/favicon.ico&quot; type=&quot;image/x-icon&quot;/&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;/cas/webjars/zxcvbn/4.3.0/zxcvbn.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/cas/webjars/jquery/3.3.1/dist/jquery.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/cas/webjars/jquery-ui/1.12.1/jquery-ui.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script type=&quot;text/javascript&quot; src=&quot;/cas/webjars/jquery-cookie/1.4.1-1/jquery.cookie.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;/cas/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+
+    &lt;script&gt;
+        /*&lt;![CDATA[*/
+
+        var trackGeoLocation = false;
+
+        var googleAnalyticsTrackingId = null;
+
+        if (googleAnalyticsTrackingId != null &amp;&amp; googleAnalyticsTrackingId != &#39;&#39;) {
+            (function(i,s,o,g,r,a,m){i[&#39;GoogleAnalyticsObject&#39;]=r;i[r]=i[r]||function(){
+                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window, document, &#39;script&#39;, &#39;https://www.google-analytics.com/analytics.js&#39;, &#39;ga&#39;);
+
+            ga(&#39;create&#39;, googleAnalyticsTrackingId, &#39;auto&#39;);
+            ga(&#39;send&#39;, &#39;pageview&#39;);
+        }
+
+        /*]]&gt;*/
+    &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body id=&quot;cas&quot; class=&quot;login&quot;&gt;
+&lt;div id=&quot;container&quot; class=&quot;container&quot;&gt;
+    &lt;header&gt;
+    &lt;!--a id=&quot;logo&quot; href=&quot;http://www.apereo.org&quot; th:title=&quot;#{logo.title}&quot;&gt;Apereo&lt;/a&gt;
+    &lt;h1&gt;Central Authentication Service (CAS)&lt;/h1--&gt;&lt;/header&gt;
+&lt;div id=&quot;content&quot;&gt;
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div id=&quot;notices&quot; class=&quot;col-sm-12 col-md-6 col-md-push-6&quot;&gt;
+                &lt;div id=&quot;cookiesDisabled&quot; class=&quot;alert alert-info&quot; style=&quot;display:none;&quot;&gt;
+    &lt;h2&gt;Browser cookies disabled&lt;/h2&gt;
+    &lt;p&gt;Your browser does not accept cookies. Single Sign On WILL NOT WORK.&lt;/p&gt;
+&lt;/div&gt;
+&lt;!--div th:replace=&quot;fragments/serviceui&quot;/--&gt;&lt;!--div th:replace=&quot;fragments/cas-resources-list&quot; /--&gt;&lt;/div&gt;
+            &lt;div class=&quot;col-sm-12 col-md-6 col-md-pull-6&quot;&gt;
+                &lt;div class=&quot;box&quot; id=&quot;login&quot;&gt;
+    &lt;div class=&quot;login-header-iium&quot;&gt;
+        &lt;!--h2 th:text=&quot;#{cas.login.pagetitle}&quot;&gt;&lt;/h2--&gt;&lt;!--a id=&quot;logo&quot; href=&quot;http://www.iium.edu.my&quot; th:title=&quot;#{logo.title}&quot;&gt;Apereo&lt;/a--&gt;&lt;img src=&quot;./images/iium_logo.gif&quot; width=&quot;100%&quot; height=&quot;100%&quot;&gt;&lt;!--span class=&quot;fa-stack fa-2x hidden-xs&quot;&gt;
+		&lt;img src=&quot;../images/iium_logo.gif&quot; width=&quot;42&quot; height=&quot;42&quot;&gt;
+          &lt;i class=&quot;fa fa-circle fa-stack-2x&quot;&gt;&lt;/i&gt;
+          &lt;i class=&quot;fa fa-lock fa-stack-1x fa-inverse&quot;&gt;&lt;/i&gt;
+        &lt;/span--&gt;&lt;/div&gt;
+
+    &lt;form method=&quot;post&quot; id=&quot;fm1&quot;&gt;
+
+        &lt;h2&gt;Enter your Username and Password&lt;/h2&gt;
+
+        &lt;section class=&quot;row&quot;&gt;
+            &lt;label for=&quot;username&quot;&gt;&lt;span class=&quot;accesskey&quot;&gt;U&lt;/span&gt;sername:&lt;/label&gt;
+
+            &lt;div&gt;
+                &lt;input class=&quot;required&quot;
+                       id=&quot;username&quot;
+                       size=&quot;25&quot;
+                       tabindex=&quot;1&quot;
+                       type=&quot;text&quot;
+                       accesskey=&quot;u&quot;
+                       autocomplete=&quot;off&quot; name=&quot;username&quot; value=&quot;&quot;/&gt;&lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section class=&quot;row&quot;&gt;
+            &lt;label for=&quot;password&quot;&gt;&lt;span class=&quot;accesskey&quot;&gt;P&lt;/span&gt;assword:&lt;/label&gt;
+            
+            &lt;div&gt;
+                &lt;input class=&quot;required&quot;
+                       type=&quot;password&quot;
+                       id=&quot;password&quot;
+                       size=&quot;25&quot;
+                       tabindex=&quot;2&quot;
+                       accesskey=&quot;p&quot;
+                       autocomplete=&quot;off&quot; name=&quot;password&quot; value=&quot;&quot;/&gt;&lt;span id=&quot;capslock-on&quot; style=&quot;display:none;&quot;&gt;
+                    &lt;p&gt;
+                        &lt;i class=&quot;fa fa-exclamation-circle&quot;&gt;&lt;/i&gt;
+                        &lt;span&gt;CAPSLOCK key is turned on!&lt;/span&gt;
+                    &lt;/p&gt;
+                &lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+        &lt;section class=&quot;row check&quot;&gt;
+            &lt;/section&gt;
+        
+        &lt;section class=&quot;row btn-row&quot;&gt;
+            &lt;input type=&quot;hidden&quot; name=&quot;execution&quot; value=&quot;e1s1&quot;/&gt;&lt;input type=&quot;hidden&quot; name=&quot;_eventId&quot; value=&quot;submit&quot;/&gt;&lt;input type=&quot;hidden&quot; name=&quot;geolocation&quot;/&gt;&lt;input class=&quot;btn btn-submit btn-block&quot;
+                   name=&quot;submit&quot;
+                   accesskey=&quot;l&quot;
+                   value=&quot;LOGIN&quot;
+                   tabindex=&quot;6&quot;
+                   type=&quot;submit&quot;/&gt;&lt;/section&gt;
+    &lt;/form&gt;
+
+    &lt;!--div th:unless=&quot;${passwordManagementEnabled}&quot;&gt;
+        &lt;span class=&quot;fa fa-question-circle&quot;&gt;&lt;/span&gt;
+        &lt;span th:utext=&quot;#{screen.pm.button.forgotpwd}&quot; /&gt;
+        &lt;p/&gt;
+    &lt;/div--&gt;&lt;script type=&quot;text/javascript&quot;&gt;
+        var i = &quot;One moment please...&quot;
+        $(&quot;#fm1&quot;).submit(function() {
+            $(&quot;:submit&quot;).attr(&quot;disabled&quot;, true);
+            $(&quot;:submit&quot;).attr(&quot;value&quot;, i);
+            return true;
+        });
+    &lt;/script&gt;
+    &lt;div id=&quot;sidebar&quot;&gt;
+    &lt;div class=&quot;sidebar-content&quot;&gt;
+        &lt;p&gt;For security reasons, please &lt;a href=&quot;logout&quot;&gt;log out&lt;/a&gt; and exit your web browser when you are done accessing services that require authentication!&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;footer&gt;
+    &lt;div id=&quot;copyright&quot; class=&quot;containerx&quot;&gt;
+        &lt;!--p th:utext=&quot;#{copyright}&quot;&gt;&lt;/p--&gt;&lt;p&gt;&lt;span&gt;Copyright &amp;copy; 2005&amp;ndash;2017 Apereo, Inc.&lt;/span&gt;
+		    Powered by &lt;a href=&quot;http://www.apereo.org/cas&quot;&gt;
+            &lt;!--Apereo Central Authentication Service--&gt;CAS
+            &lt;span&gt;5.2.4&lt;/span&gt;
+            &lt;!--span th:text=&quot;${T(org.apereo.cas.util.CasVersion).getDateTime()}&quot;&gt;&lt;/span--&gt;&lt;/a&gt;
+			
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+&lt;div&gt;&lt;script src=&quot;/cas/webjars/headjs/1.0.3/head.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/cas/js/cas.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+head.ready(document, function () {
+    if (!window.jQuery) {
+    	var jqueryUrl = &quot;\/cas\/webjars\/jquery\/3.3.1\/dist\/jquery.min.js&quot;; 
+        head.load(jqueryUrl, loadjQueryUI);
+    } else {
+        notifyResourcesAreLoaded(resourceLoadedSuccessfully);
+    }
+});
+
+function loadjQueryUI() {
+	var jqueryUrl = &quot;\/cas\/webjars\/jquery-ui\/1.12.1\/jquery-ui.min.js&quot;; 
+	head.load(jqueryUrl, loadjQueryCookies);
+}
+
+function loadjQueryCookies() {
+	var jqueryUrl = &quot;\/cas\/webjars\/jquery-cookie\/1.4.1-1\/jquery.cookie.js&quot;; 
+	head.load(jqueryUrl, notifyResourcesAreLoaded(resourceLoadedSuccessfully));
+}
+
+function notifyResourcesAreLoaded(callback) {
+    if (typeof callback === &quot;function&quot;) {
+        callback();
+    }
+}
+&lt;/script&gt;
+
+
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						
+						
+					</ol>
+				</li>
+				
+				<li id="alerts--risk-2-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Medium</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(3)</span>
+					</h3>
+					<ol>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://optimizationguide-pa.googleapis.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-2">Missing Anti-clickjacking Header</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://optimizationguide-pa.googleapis.com/downloads?name=1745312779&amp;target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/11-Client-side_Testing/09-Testing_for_Clickjacking">WSTG-v42-CLNT-09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A05_2021-Security_Misconfiguration/">OWASP_2021_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration.html">OWASP_2017_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1021.html">CWE-1021</a></span> 
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The response does not protect against &#39;ClickJacking&#39; attacks. It should include either Content-Security-Policy with &#39;frame-ancestors&#39; directive or X-Frame-Options.</p>
+ </td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (502 bytes)</summary>
+				
+				<pre><code>GET https://optimizationguide-pa.googleapis.com/downloads?name=1745312779&amp;target=OPTIMIZATION_TARGET_NOTIFICATION_PERMISSION_PREDICTIONS HTTP/1.1
+host: optimizationguide-pa.googleapis.com
+Connection: keep-alive
+X-Goog-Api-Key: AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+Accept-Language: en-US,en;q=0.9
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (453 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+X-GUploader-UploadID: ABgVH89b78YCHEh2SHDEy4kOYh08fINeAQ8UofkAjo1dVDG1W2KkUJiwls6I4-7VA43Ihx6xOQ4Sseg
+Date: Fri, 04 Jul 2025 12:36:33 GMT
+Expires: Sat, 05 Jul 2025 12:36:33 GMT
+Accept-Ranges: bytes
+Vary: X-Goog-Api-Key
+Cache-Control: public, max-age=86400
+X-Goog-Hash: crc32c=MvWUXQ==
+Content-Length: 18266
+Server: UploadServer
+Content-Type: text/html; charset=UTF-8
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (18266 bytes)</summary>
+				
+				<pre><code>Cr24   E  �
+�0�&quot;0	*�H�� � 0�
+� �:2�W�))���I��5_U(I7nzԂ��2[�;�H�ǦS��٨/���nb%Yx�6�]i�����u���PDF�iLJK�?��l����R��|���j�C�j!%&#39;�s��[�&quot;�
+�Gy�
+�=l).�=�l\���4蠕�Q!$e�=���C�1�%d��B�ݖK�[�l,�����7��	�y�$7J�G&amp;TT��W�-=jgs[���&amp;�@/гj$���+��yk|l^��Km)\Yx��}OCXf��	��A5s7�8�o����L�(p[��^e�Ȃ���㟪?&amp;X�:~,�)��C�nʯ��Hh�����&lt;�N�0.����woa6��&#39;&amp;y����tHƔ�*7@�a�t�����F�YQU�����&lt;�����m!.^�#f�&#39;F&quot;��lt�97U3f��WM˦�]Lw���)�x��)��Hy Z���l�a�)J~&#39;�y�o�NS�#�,6D�9UMW�l&gt;pa�WG䍇^�L,��B���&quot;p�Y�	ĸ��&lt;��� ���&amp;D\B�s4�)��qܫ�t���IѠq��A�-��ۿ��q,pj��7�H�����@F������[�Fs����?7��d�T��&quot;�݃��n�)�5�ng����&lt;Q��Q���2���؏$4�dl�ͮk��9�s��سv���-&amp;v����qH��W�/b�[���%ͯ�;�5�J�|���N~1�o��&quot;�6�W��KZ8 ���yo͋�PR�Ѻŷ]���h��f�|m�y��,s��\����)�O6Ҽ9�,��W�&amp;4)�!S��x&amp;/�豀y��~���u&gt;*�VԖ�	�����&amp;T��C��u�����/O�~�l&#39;&amp;���W��W;^�^��yN��c��&amp;�&amp;`��?���/ҡ_�ptEYў1��ɑ~4�2�=n�I�%���=���j�L�R�������&amp;��N�oK*��JW끖��5
+Ir����ȋ�~h�&gt;S���+�ܵ�wZt,�b�4}	�� i�33Z#��/�s���i&amp;��SsU\�zE�&amp;.k��
+0xE:?�Җ*��PK    !              - model-info.pbUT \h
+         ����e��                ����1� ����TF���ʂT�������Ă�b���\}W��(�,1�R�&lt;5� �(7��83?��(5%3��*�+3�OM
+�� �|�SRs|SKSK�t�x��YX��98��y%�TϞ���e`h�e``��e`p�W�g��  PK���W�   �   PK    !              - model.tfliteUT \h
+         ����e��                �wxW���U˽�Cq�-X2��BHBH @h��f�M��n�&amp;���� 	`�Tӌm�{��{�^�#&lt;[�����^]�i��ϙ�&gt;stFh�l ���˦���2@
+H ����1��P�p	�� �A�� ��#&quot;� �)v$�g��&#39;��xl톍����V|=�[^��+ ;���[��Z�Vt�d���4����,����PK!=�/߶�x����oݱw;�)�(����@n۸�x����&lt;����Y�m��ūv�߶|���`��*#�b�#b6�޾eϞ-;w\��y/��C�?�Xoʍ��۱s���7¿���~�Q�o۽~G�L0^-ŏ��h˞�ތQc��aC�o��k����#�\�ޮ�ZX�z]�����aL��)�c�
+�0��������gH1-0����p��}׽��Xy��w����U��_5�W͵1����b�oٱv���[�o\�����}����
+�&quot;�s��}��!�B���l�����,�h!���W���	�@��(d?d��f�*H$��!�|�?�r�!���!OA6@�C�����h��p� A�b��@j���4�8�� d?�c�;��!�C�A{��m��!� � � Z�H&gt;$�I�h 8���!N�	���\�����C��������u��g Őm��!� � � Z�H&gt;$�I���w�3|���r	rr&lt;|&lt;�ǖ4W|y&#39;&lt;wIc��b��^&#39;�Jw}�$Hs
+�ɮ=�w�ǲ��͋��\ᓒsSg٦!�8�6B�M�6e� ���J��������n��͐m�]�b�S�g �B���y����ǐ�!�!�B@~����!�!�K�JH��逘 V��!���}��%DI��@2 ِH.d$222��AA�@�A�CVAVC���l�l�l��C��&lt;y�&lt;�e��}�w @&gt;���{�6�%;��OY�&gt;��p�Qx���c�ן+��O��U,�O�̂��򄲏]~���d,ӧ�ӘG��&gt;~�^W�n9}�Rd	Ɂ�c��$7�XȢE��zb��	$o��y�nʺE����j6�o.���{H��~��S&#39;���Iܲd��=�M[8k�ARc�Y?g�.��;fb��t�(a�§��c�7���21g&lt;���%i:h ���l�����z���Ÿnp�%���M�e�� N�NO۩_7��8�[r���s�_���L���# E���ƽI�i=r�LP��8�h�Vݲ�?������U�܁-��\�Nݱj��M���2By��ڃ��N2�F\	�#?!F������`���R^��}T�L�2&amp;He�BO�L#�-�xRH��F�W��Ϳ�b˔j���X3iX��&gt;�[����n��+��։ϧ��կޞ��[wͥ�*��r�?�Rl��DM�ϯ&#39;��^qK�T.��i����{������VϜ��c�q[�L�o��&#39;�R�O�/��H!�F��w����~(͜���7335)1���4�ݚ�LNs�&gt;V�m/0h^�U3M��.̾-)��}\��MLF��D��Ŧ+N~b8&gt;���C[�#�&amp;�E�L]�}��:+`���5��?��E���n��k:����Te�¬�5����G�%rf̿cs��?Tg[c��7�~� :�\m�E?摧t+]y�&quot;}�;�G��}�&lt;&quot;����~�ӓ�5�Ek|&amp;�=3�T&gt;VE:�o!_�!�]7�b����ڠ9�r�~z洱㓒��Z��S�&#39;��qu�)�c��o�vBB�C�o�������S�M�B�d��m�����L�U�MA��p�
+�3��L2[9��ph��ii����Y����r��3&quot;�k/�0J[����3�!��)x� ��J4�߆A��K���S��g��Rz�����;Ųb2�Ef���~�Q���A��m�����Q5�o&#39;L���xS�n�*;E��H��O��M��^�&#39;�}��r��M.�Ԯ\��g&#39;�fR5U�~Rr�TU��R�q#�t=���.�:r8f��#�;x`�6�Թ��(�p�
+�m�¼������|k�ƿq.��!�6C�s��g�=I�͡�8��H��˝uL���k�3,D�1�yE�R��ߜR=�y��Mz�L����W!N�o\���5�Ή�T~��c~Rd&amp;�3��_��~�������3yF&lt;���	�ǎ�����T��/�c�nɒ�cr�?o���ë[K�yb�x^y�f���&gt;��S�lJ([��1�^Y=jZ��Vk�`����մ��i&gt;���=G)�M�i��wm�)|���L=׽��מ�V�5ȏkZ�U=r���dC�`�%��S�N�]s�S��KWf�Ӄ^� ^9���cnִ�]:hH&gt;n��ps�N�Wy���ز/�U��ߴN�7mXh�e��߯?=yD�Ι����_Oo�;��QΫ\l����	E[�?��6{L`�]tZ�E��Tm�ߜ%��;�|��yp��{�7��Cv ��W�\�i˼�t�
+z��oo1eXcS�,U���N$-O,i�*~��q�h���ʧ�ݷD�ȟ
+G�)j�S���Vh��!x.�\�]�/H�,b��_�7Ľ�����F���&#39;��?׈�~���sV-\f�~�0Z�)����D�sU���e�j:v�=SǷ?g�g�|4���^�$���0�~���ewdn����$b�8xR����W��lY����9��1}�X��i��1��i�=t��	������V����9w$���YGI�&amp;O~��Gۼ����g	��&#39;�����s0b&#39;�aռq/��K����iFF�]�0Ko������Յ/_}�MO�����;�@&lt;������u������v�~̈́��;s����b$)�L�Z&quot;��Lj���hTŨ���ykf����5����i
+������s��OL&#39;���b&gt;��h2��&gt;�-�k1Y�0y�Ҿ4���s��ٳ��_����#�����(v�~��,��Y(B�N%�3g�U�����CcR��1�:�&amp;5�]ë���Jk�����	�ꠂ��W�aCuJ���c!��],���j&#39;oD?cܟ��b�^2h�}�%��R۪$��*T���a�Ɗ���p1/��iFW��&#39;�d&lt;ae�,B	x-�dXo}E���8�H�m&#39;ダ�+�&lt;�ß#�����*x}&quot;��1�rl�ulmLj�&#39;1ǈ礙�\���)Vr��!�Ɋ�z���-@�6%�0q骎4EH�h!��X3�
+n�Q���R&amp;3?�T��&#39;�yg}�C/ެ!=��E�Fߓ���B�Hs��6�0��flU1_Kْ�R���N�~N�ĸ&lt;�:�D�l7{Қ�sG��&gt;�:���P�`N$�[��N����(�M����d�Lj��,8��)誼���8�RiR(9��huP��WNye*A&lt;Y9����SЊW�d)�� PgX	���`L�:���K|{P໭z� 4��tF~�\���d��l#2�$ٙ֞s.T��hט=�K4��&amp;:����*���qT��z&lt;�%KE��.v�h��)b�1� �)@r�4A&amp;����jg����-�Gyě٭�L�V�N[l�T���*�V�nq3! x\��ݭ
+uˀ�-�^}��Gt�๙�Ú�&quot;OR&gt;x�̠��N	p�rn�o�,Z��k�V�x��LA챣�_L�a����d��A�����D� %zb9ԙPH��A�ϟ�&amp;�;׺RT���A��#w��[������{�
+�Ԟ��0�b6]i���&quot;A���S��h�dRҚ�������=�i�P��K�1��2��Ȣ�=~�sY�p���GS��ʪ	i�.GY�-�kYn7�ΙL���1�`�,�P@N�� ��U���T2so��@h9�ZMS�A)U|6��&#39;�wq�J*E�$ݱv���qc8�r��SI�������P�5q��g!�=�n�5��&quot;^�d,!�cW\u)D�O�)�D@�����g��J2��B�\��*���-�;e���=����&quot;���G̟��y�j;͠�]��X�1�\�I*(xJ� �h�L������,�~T�|��TԣP�(Cq&quot;Ќ�x0� ���p�_�b����o�8�S��f j�`x����p�7�q�1�ʹY,GH�q�(9�y��߉�p��U��y��� w&quot;Tw����e.�r�G�ZKФCN����yν�_0��F���U��2�˂U��Z`��
+2�(&#39;��B�Oz&amp;�ɻnVD�&quot;x)SF�.�d�&#39;xb��i4�z�=s&lt;N�.;ՙ&gt;�w���Ӊ	����=��cX��t����`�A	�����2�f��Y�&lt;�V�����6\�Q�Av�󡝂�lu]cP.�Jg�!?Mw��V�����Z%�A9�T�J��{U��1�j��	 &lt;L�M�W��YjTvΫH@Y��@�&quot;��K�_
+&lt;��n���\[��.�����!�c��*���g�ظ n�:�H����%�&amp;UI�Y�0kKA\ܭ*���9�(E z1�m�&lt;&quot;�j}�LL��A}s9`˷�@�E�%�0��, [�#et��`��&amp;$;��C�W����	���{3~�Z�k��pu�ؒjUL����Ͳ�����Ɛ�P��*y)�&amp;���G/���l�;	;c�ihץ��O��S++[R�S��Ѵ�3_���&gt;.���GiC˕3�pEɥ1�g��9s�,=��歞��}���ٍ�i
+X�(�u�Hl���O�2Y&lt;G��q1$���0L��p�� #�)&lt;h�)���8��YA��&quot;,U��R���sqa��8�@�&gt;�C�sb:/W;&#39;����Sȯ&quot; �oG���CH���a�(vyx�}�४p�)�&quot;&quot;�y-�#�� `&quot;=A+�Q,���ğ�v4�Hnlp��2A���ǻ�&amp;`����i�`Uυ��f���p^$;��*����/�(���6���jyK7VO��M@�h�.�і�r��F_!&#39;��ܖH$&gt;iX]����R)��vb؟0NV�b&quot;��3�(���L�@P&gt;�bD+ъ�r�����ID(\ ^��7�~��	�C�
+��=�=�ha�sTe^&lt;):��x^Q�	#)��9��LW��k
+K���3�͠|�dM����T��Ԃ&amp;Q������&lt;(&#39;ce~�fR�V�:���&quot;��p���z��2�m� ���*���n�j��@�Dd��hO !�j\pY���	���Yi*�j��l�yͿ���)�y�/�k�S�q�L�%��)�L1Tv� )�;�!3�n��/t�@;+���XN_��(ϣz���4��jd�#ȇ/�qp�?�3^��D!�c&lt;��Q��)&#39;P&lt;�&quot;#[�`G��K������fE8&gt;�&quot;�-I4M�����˨W/�.�&gt;Ȥq��E*�ABN��8K�b{���֡�&#39;&amp;[G���y�A\^��!�h�A�\��&amp;sl�ΥB�I���jw;��v�ً�� AE@�;�|�|�`ݡ�t���o9Cg������f�I���+����/�\��8p�����U¤�y�����2��(�����zB�t�K��7[(g�����ih�_O����z&amp;��3+���&lt;�z~�n�O�pU��lV\��ų��m1���T!���G�VV�J!&amp;PU~��;�tZv#9JIO`Y�!e39#O3	�w6HA��L�x	�v�D�\�*�������nD1.���di�@�N`�,?�F�&lt;DW�8��2���c;�*�R9�4q��X�B��$I�q XEJ�:��oǆ�DM{q�ыrOH���*5Ǉp��R�\Ä���I�S0F��HePa��J�H�7�
+���	�0F���|¸��⥐�N���6�.5!�~��A�8�1gPpr��$�!�t�ħ�r���ȫH�~U�P�j���4�?�w���(�d��2LXt�� �`pc�08&#39;B@� ������;�a���^�1��gP���Et��Ŝ����dA8kf�1���X��.p(�;��� űBs	���&lt;̡Ɵe7�x\�gU�?�sn$Μ|�)�����V*�PRWP[k���r�K�*��u���r��������jQ�⣖��%����4���/�0����Ոo����[����oP/�[M&quot;\^v�|R�泯��v��K��rQ���{�U9P�l�\!��r�(��J&#39;�!����&amp;�w�2.�E��Au\��	f��NӸ�&gt;�[��F�&amp;�`�a[�y�!���p���A-m�r�4�JXys-�5��#n����2�Wd;*Ywb��!Xp��U{���6�Yc������]֌�Ω��]U�u����F�Ds����:G�Ի;� yA���Wy�]��;Z��6&amp;��u9�����&#39;�Ǟ,&#39;ۻ቏�E;=�;^�����~	�O�Z���6�O5���&lt;��f�����P��%��zn^��nt[pҒ�:�#C&gt;��@�+˼��d�tG}����6Q��f婡 ��p��\�= G�� �HTdGx� �1�8�#�n�\S�������PZԓ*�B`f�P�Q�5/L��X^Lx����!��%��$�d�Bx^(��%��R�&gt;��k��.7�^�qil�]N�=^��W]��.&amp;����*�)#�KN�O�e�N����!C��{�Gֻ7��$�]ޓ	�i�l�e���c�?c�zL�#�&lt;�n��1��u=� Ɣ�v�2.(��9A�r�L�-�6UBV�ٕ� ��_)��SVY+�d;,xS^h�M©���g�sf��.0�VO%��j�|X~iU��{�v����OMrM7���I���|��L�-9�]�ʹ�O1!��V3��j��%��0�@)q���8�kX�/���d���1�{P�gXAQ���&quot;�d���k�X/�2�lp��4� ��BN=%��/W׍��ox9�a��Fw��͆���[Ϥ&quot;
+K+�Y��	,`���OH����&amp;���L�W�	���Ƞ�X�u,JʲG�3U�Ǩk4y�^ޗ�Y�&quot;4٢�,\:Uo�jp�k�̸
+M���:����-����u��H��p��F�p6����g������&gt;��~&amp;H�|�%�N��% 6�|��^Ľ��X\�Á��!)7���h��*�hxA��Ƣ�K0܍�NA$Y
+���B�9��9�E�.�[X��DPe��&lt;��p?ʄ����+�m���7���),]&gt;�����â��6�.�q��Fu�f�I�/�/��&amp;e	kw���n����0d���|E��h��@�������O���,&quot;Zd!�M6��*�Q;�����$3Y2��s k$�A��x���)�*&gt;�!Q%Q����5+j���&quot;���p�1^�#U8�դ�oo�3��_��i�ʄ������d�ZK��X�_jJ�P��X�^�3~�3s1	�$�k��^�����u��ۓ�,s_�O�B��1�B�sJ���:M��O+d�VA��U�0����	ռ�8V��c/ƽ_�fb��z�� ����3y&lt;`��&lt;�/��v��&quot;&#39;�&quot;��09^)b{��+QC�y� f�c5�?���.&quot;��l0EEs�%�!���[D�݀PY�x.����:����IMy�L�}&#39;��	�����Y&quot;8���6��T�����G�sqI͞e��dʔZ�f�u��QG��x������kM��y���t���x��L��K&quot;&lt;����s��&#39;�;�i�I��g�~څ�M���1�|�� iajN4}8�����.�Cʚyw:��;O��	�2��C8W��8�,?���}�JN�!C��$bRA��S�&quot;&#39;p�t��\x����y-���BW��r��&amp;�u�\�&lt;u��X�j9]����64�����wsL��Zau�ɘ��e��Ū�hǛD�c��~�|uP�&lt;���5�-!���X�i��;v���G�:]x�,6)FL�tB7����buv�[q#Ȭn�i��� �ْɸ�q���Bv��T���Z�����[2:F	�	:)s��B\�b�9���ǜ!�Zj��%9ɦ����^�x�;��T�&amp;����l IQ|������1jN� �Y&lt;Kl�Y�L��G0�����$� ,���
+8��n��9�,&amp;ı�,���G�!{e*@O�dKc58��z�Ob�Zt�f�I6-��Q{t����M�Q��j�����HFE� I�;��Y�!,	�2��CCGb�
+�ȱj6�9Z�V��%97\*�͜�A��M�L&#39;��&amp;�x�p,C��^��vb�75U2��w�VUЇe����T^������j�~��K����Y\�?&#39;��+�0-rK�ܿ��+&amp;��*�S&lt;oĎt���OUt��|�W)v�7y�z&amp;ֻ��Y
+��C��v�4M=SӒ�&gt;N����&lt;�]��:���ܣ3;��k�y9a�����(�!e��_��VV�䑝?��P����QH���s@8Ҍ��2��q�p&amp;��R��}{�s�?&quot;v�7�wEU:������v���RU�@]�#�&amp;CU�O�l����!�z�r�J/�r�2Q����z����6EE��F�Hl7�Q��&quot;��s�EF&lt;jW��i� ��:���C2*������h��{Nǻ���x&#39;�I
+����J(�!i@+�G�	��#B5����.!�T�$r��K9�adI��n�� �M��r.&amp;��0���U�&amp;p8�B��6ϵ�@�p601,�{	&#39;{hK{���8�&amp;#oO6ٽB&quot;1�HP��Ք�3U�s�68o�z,��p� ޓ�%̎服�\����B �p�J�H:��k8g�1�lF�.
+h�e��rc$˫cc.��ǹ�1-h�b.�x���N/�s&lt;hW+��aRL���mVf&lt;�V&gt;��Q�� ���HFu��̔���@�5�hOT�ܡT��T����:AA)�[�@T�&quot;q���v������V!8�2&amp;��%�BUB��zQ@k��.����&lt;?��ɘ3�.�Q�c�*�a(M�ֈ&#39;��4���xd\ .��/��@����K5\�ub^�.�5[D���@�
+&quot;+�\&gt;�o���ӗ��Ļ_��jD8�·n����!�E���O�]vD0�^�&lt;ag��|T������q�Ltav������YWQ�d��.����8�����ñ�i���D&amp;vWjHo�(g9�Q��͞�����H�p$�P���$sx�d��G���	�����)��ֶ�p��]�O� ���םL��ec���؄�8G���N�,]�x�vK6�:�T��q����K��f)F����#�N�N&amp;mB�����yu�7�Y3���e�=6+h��&#39;5���5\i�O/:Mr�ڸ��j�#?ƚ����v9��I�xs���3	���mr�x�yVy2=x5��8�B*B�:��;w(�e���R���6�_�~K-6[yUI=/��?�8	�]i �?%&amp;g���$d�1{��,&gt;+-�W�J[kS��4�S�JM�u�=��b�%O�hЌ�����t����@:*�g�n�����&quot;.�&quot;������#X ����p�A�D����h�|�?P\�IiD�[E�^�.�*e, ��W)9d ��f��|�U�� �� #�1(R����Y|)�hEx����;�[x��e��(���)�3#BS�ȫD�&quot;\Y&quot;�2�K	o/pX&#39;
+Ԗ��,�L��P���(�t#.&quot;J�Tv�O\�e���f�-cQ�F�,`ǒ.�ը5�D���Sl�g��ʞ���M��n�)O�ݜ��LB-�dE����+.~���-���y���� Jz�9��@��{LT��-�(XDJ����2�!��Oj?m� ,���$��2B-�Su�x��X%��!�4;�&amp;J-�Q!�*��
+�8�1��+@ST�HY����ʬ�J+Y�0�L����&#39;�T���oU(�Ⱥ24��9`tva#D�)t�G�Aq���a$I#�y�:�؆��-9!�P&quot;pI�p|,���$��C-J��ӇA��P ���8�!ȂY���(g����d�&lt;&lt;U@qf�&lt;�&#39;�,{;QO�Kp��[i	�^�S�6���u�3�G������nW�5��My������D���2�S\�(��;T�e]���4��V�[�//�F�����;F���%��
+I�@ ��貊�v&quot;��J��q|�wA��+�s~(�;P�g����u�O��;����sڍLz��E{߉œ���_�s&gt;�U���9�����Y�\��\�Y�����o��[��ubO����ʟN���=&gt;鍗u��L9��������G��ﾢw�Z��Q&#39;K��~�Ă��-��C��5Z7f�����K[��#n/��DZ��0h|���?0E-����ȝU���7K_[yEw����J�.L��,&lt;����yyI�K�n+��+���Vd�ɥ/���
+��k^{V���o�W������n-�������M���V�d��7��W�b��?�S�^���&amp;~�o�U�@��~۷��):�o��������m}�����4C!�o�O�����
+��mk7����moO]X8��v�ّ����?Uο���o=_n��!��{��6 ��{q�6 ��۾����}M��+�#ʈ�q�K�0��/;�x���1������񾹥e3�,7������PV���e���]Z��ԓ�&lt;Y*�))�&amp;�?Yh�Y6=�G�&#39;;K��O&amp;l��,7�]�V��Lau3�Ug&#39;�U�|V�u��lդ������7��߼VZ����uE�egrה�&lt;Z��?+ʲ��?�n����$�4-�RJ��e�&amp;���ߴ�����OV��NT�d���_J�#��M�&gt;l)�e��tz���e�����5���2r�~S�Y4�d�-ϔ&gt;�Im\�U/����5���Z� n�����s�Ǖf�y���ٿ[�,��Ӹ��O���oe;7�\��%��U�]ɲ9U��?}��&#39;�מ�`����v�xW���0��%��ڲ�����r{&gt;�m&lt;�Jb��v[�-wo2.}�T�{x|��W�%k�����u9�E�W���QR45�4��J��R�\�O��K��1�~e�q�M猍��=�o|��?Ǝ�bJ���e��U�囷7���[o��(��Ȍ�����m#v���[�O)#��*��}��X^U���ˆ0Έn�[��w�Bʊb�Q���F��}F_�����e�|����K�����xp��2C�?��ˏ��ec�Z��-��M)iwV����ݒҳGJ��7��QdLU&gt;QbY�]���S��e�x�V^���I�Ƚ�e���ld�/6�TM+۪�\��ae_Y_,+}⽒��YR��H~2�7�l����x����~&#39;����Zc��Е�JJ&amp;��/��:9=U�1�Ų��u�|��j�j^�fÝe�����@Y��J�|�ø��ܒ���g�nU����K��֖?}wY�ėˬ_�V�и����q���JDq���ȳ��!/C^�샼� �1$|]ѝ�n_��p�&#39;7�.޸aҵ��\;�J?��8���u5�a�⍗��[v�3�&lt;�[Ʌt��_ �@��B�pt�:d5d@.i � �2�i��[H1d$�Up�&lt;d9$�T�|�;�u�|����[�.���4( �y��1�8y�2��}��&lt;�BpH%��!� s ����d5$╮yY�&amp;$���t��r�����m�����k5W_��Z��&quot;�ڳ��N&lt;%����/��&gt;e��M�ڬbc�5C�^����z�!�[���}��S�TF)&gt;���^���0�ˑ����R^���kO˯��Oc���Vd|����Ѷ����&quot;/��E����V��Rm����N�{���ݐ�b[ �ï���3�j�׳e��{z�Lp�����H���R��!�;��&#39;���x��	&#39;{�wI�S���`��&quot;)~��^�_&lt;D�.)~�����K�ۥ��R��C�WJ�ۤx�_7D&lt;8�����/E��&quot;�o����g݈������A&#39;��[8&#39;&lt;�sQx\�����ڻan���ϑr�_�ԧ�ܸ������?����u�R��� ��� o�z�E����_�&#39;&#39;�����۝r�W��z�Rf݈_�no��A���ȍ�Ծذ��R��v8v,�7����qǥ�G�����p͉�pJ����y� �Cb`-�I�k!Id�Zh��ꭕ�X��2z-�I�K��vw��k������i���kQ.�?(Ň���� �ׂ�����r�^Hx=ۿk���!#��Xr�W�~���R-��))~��n�i*z-�K��I���1��赨������O:���^�\o�=R�VA�Y	�g��b�t�2��^�U��J��R-���k��B���&quot;��H���ñ�!�����K�a� f:z-�{���v��RH	=�wI�wBf1�k�NһSj{�T�ML�Z��I��v��D��q)�i;;
+r��^��T�_&#39;�F��D�E����ۥ���C��r�X�%��m�l�Zl��n��_,�b7�K�%�p����kQ.��*m�cs l�ZPR�&quot;)~bX&quot;��k1�Bo�B�o � ��:v`-H��!wq�k�7_j�H��߸��V�/����~�E�E�;O�ǎ�4q�k�_�/��&#39;HS��k1C��I}�Bn�߃����V�/�����yI�@j�T�W��8$�ϕ����עC��E�ǆ�G��G�E¥��9R|���5�iB�ZI��Y��i7?������MB�Z��f����{B�Z���v�ݓB�Z8����v86��~!z-�/��O��÷�� ���b�?U�[��!�FX�)��d�n1z-&gt;��&amp;K�O�j�����I�v��
+1z-()�fi;ۻ�qN��:�6s*z����eA�ā�9��ΐ��{F�RN_��^n�Gj��#��Xĥ��k�B�P���Nx&gt;�d	,n%,Z1$�,H&gt;����;&gt;R	;��ℝ�����T� � �+&lt;�&lt; ������qȳ�E%�\��d@Z�&quot;�s�:H6�(|�Z_x FX�]r .^���_��m$.C�A����s�r�	N֯C�4e�R�g ��8X��L���g$r��9O��h ���� 	����x��&amp;�,���,��R�B����h��&lt;��=Ʌ�H�]�C:��@A��{K Ah��eJ�N��h�wP�Cz��a�4V�� H�4n�%�gHc��|��R��+��oܴw������oٹcㆅ�m�;�8w�����&quot;t�����=l߹a��{ݹ{��w�/�sﶂ�-ز~���ӟ���N���m��)����vV\og�6�X�m�_6�^;m`{[�q����ޣ����A��ϓ�y�O��?S�K�ٟ���n�Q��7���|d��ɸޟGw�x��&quot;=�_�p�=�nq�y����t]�֧v�߱aі�{��2�ǹ5���D��&lt;�ޜ�z�F��E��Pz��5E�{&quot;���f�Y�&amp;���Eo�Pz3�=Eog�o�қ1P�B�Q������˪��=�ޒ�!����Eo[��қ:P�(z�Gѳ��/�z���k�_�`��{]9��¯�s�z��N�k7�,��q�1�F�����g�z��K��� ����dH����[;�u�u����G�o۸�x�ڧ�^�x&#39;�ܸm���N�o;{�2��+������i��vӣi.\�&#39;��&gt;�Y���I�}�ֺ���� ����	}Z���1b_@�aѴ�޸{瞵۶&lt;��^u�p����qPoR4���{7n��d��&gt;���F�g5n����ob���}d��G�z$r�����[n�ݧ��y���%��k����jJn��c^��&gt;�����P/-��5ǯ��G�
+��8����Pkxt�~���&lt;E3�^�~�^�9-��P���;��I̓�y(������5���Q���}���������?�w�i���}D��&gt;����%�C��o��u���4���辗D�\ỵy�������Z�s_��o�|�E���?n��ك}_�&gt;��{���m��ك}Ok��U�[�:�����#Q�VF��z��ώ���(�+&quot;|�h���C�&gt;;�����S��o�|�Eky��������/����Q|��������u��]�;�}���5��5Q������!|�����h.��}�g�����:�sG����|$����_�����}��=��ۣ���1��3{}�&gt;�w�㒈���9������(Z�E��L��ό���Q4G�^�9��3��}f��q݃۹5r�wY������(��细�}�`ߧ��}a����}�`߅(}\��㺇��}_j�5?����!|���O�hE�^�=��3��}F�����̋��!�0��Q�
+#|�4����&gt;�2�w]�+MC�&gt;}�&lt;OD�6bsz����}_`�U����!|�����h΍���3��Ӈ�}z��B�vn���!�0�����Zs&quot;|/6��������}v���C�&gt;m���(}����!�w�@��Zk͌�}�eߧE���(�3&quot;|?j��iC�&gt;-�w&quot;J;�#ǿu�:�}�m�ִ߷Y��}�`߳�}��w�uߧ����S&quot;�7�6��N��4�`���?h����}1������ԡ}��;J;7G�!�&gt;d�&gt;�1X+?Bk�=��i����Gњ���PZ3j�뽡�+���ExSM��H�cQ�����������۳��-i��yKu�*_,�ؚ�{enP�&gt;y�V��ӽ|����+�+���q��t&lt;�WP��@��P�N�O���G��3;
+�ٯ�6�px�_}��t?��m��l��6V�R��K��7���� �Y�+�����./x�bCA����.ϋ)Ȋ���l�R���1�S��T���T���w��N�˖��{��W�_[��y�X��&gt;A�La�n���Ѣ��h���U8US�ݿ*��M�����M٭6djϿ�C�4�Y�T��s��m|���h~@[���i��&gt;�g��&amp;�VA�����4�r�lnm�M��/5̽��GچU��뾪�+~����su��u��ι��M*���&lt;��,�m�i�O�ڗ�혻���:ݬw�O^^�3��PгX���­���J����h�yp�.�hc�Wꖯkԝ_�� �Q3��W�.ԍj���g��]&lt;����&amp;��F��}*&amp;��;Y�n��r��-4�0��;��A~�Sf��_F
+�uTk�̞����\��=Ww� ��HN��@wLAk��s�5?�tٷ�S�ɜ^�7���_[�m�v�ٸw�εO&lt;�sǞb�����#�g���)9�)X�u��^����O�(�ߋ������������[�\��v��CYG����)xO|L��㵿-?�=pj��}��&amp;�Ծ��_������d��m�_S0j\�6i~���i76��&gt;��&gt;���w�V]zLi���i_�m�����ڼN�:�3w����Lޟ����������
+w�PP+Tw�N�2�wE��9���=I��;[R⊵ʞ&amp;��/��O�YoG���*�OmS�,����h�v^y�������j?ݑ���0W{���౭�R�~�[�e��C	�YS�����W�?��nm��n|��Y����
+k}�ϒ��������o�t-s���i�N��e)sc����akt�Y}�E��&#39;����7�//��7V�[=oF_�∼\)o_���}y��#�Gϛ֗w8&quot;o����yS���y���9�����q�r$vE͛zK_��y#��o�����{/&quot;o���=ov_^ED�p)/���w}����y}��,��w}�F���^��w}�&lt;��%���]/?E�eJyT�������!�M���]/#��y�R���y��˽yiRM?�z���;\^��I�rj��������Ϩ(�h9�����,�h����&lt;q`N���+jN��X��(�쏚�;4ތ���Qs�_??&gt;�/�%0��]�c��d\�Z�U��7�5����Iz���~��YI/���C���屽�hX�Ԍ��p��Bx=��s/A�~�#��
+����ʛ���S�I��6=��&gt;�j؏)��m����k�\o��X����w7���3�f���&quot;���ۇ���UD�28�A���_�5�p#}m4E�2Jߟ�팈�N��u��=?���@���o}��k����ﻋ��.��޿-�F��7#��Kx��s��_�׮V���ۗI�k�����i�F�����������k�ȁ�K����&gt;/�O�j��o����&gt;�/��}�u�����#������пM$��&quot;�����v���|����!�@�\�����*i&lt;���ɛg��9��4����ƹf�u��n��b��l���|��������y�{�������_q�_��͇z�{�*�~�ޒ�Y��s�k�]rm^kOZ���?PKV�l�@  Pv  PK    ! ���W�   �    -        $    model-info.pbUT \h
+         ����e��                PK    ! V�l�@  Pv   -        $�   model.tfliteUT \h
+         ����e��                PK      �   $B    </code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>x-frame-options</code></pre></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.</p>
+
+<p>If you expect the page to be framed only by pages on your server (e.g. it&#39;s part of a FRAMESET) then you&#39;ll want to use SAMEORIGIN, otherwise if you never expect the page to be framed, you should use DENY. Alternatively consider implementing Content Security Policy&#39;s &quot;frame-ancestors&quot; directive.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://fonts.googleapis.com</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-1">Cross-Domain Misconfiguration</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://fonts.googleapis.com/css?family=Lato:700,400,300,100%7CSignika:400,700%7CCourgette</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://owasp.org/Top10/A01_2021-Broken_Access_Control/">OWASP_2021_A01</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A5_2017-Broken_Access_Control.html">OWASP_2017_A05</a></span> 
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/264.html">CWE-264</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The CORS misconfiguration on the web server permits cross-domain read requests from arbitrary third party domains, using unauthenticated APIs on this domain. Web browser implementations do not permit arbitrary third parties to read the response from authenticated APIs, however. This reduces the risk somewhat. This misconfiguration could be used by an attacker to access data that is available in an unauthenticated manner, but which uses some other form of security, such as IP address white-listing.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (821 bytes)</summary>
+				
+				<pre><code>GET https://fonts.googleapis.com/css?family=Lato:700,400,300,100%7CSignika:400,700%7CCourgette HTTP/1.1
+host: fonts.googleapis.com
+Connection: keep-alive
+sec-ch-ua-platform: &quot;Windows&quot;
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+sec-ch-ua: &quot;Not)A;Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;138&quot;, &quot;Google Chrome&quot;;v=&quot;138&quot;
+sec-ch-ua-mobile: ?0
+Accept: text/css,*/*;q=0.1
+X-Browser-Channel: stable
+X-Browser-Year: 2025
+X-Browser-Validation: 6h3XF8YcD8syi2FF2BbuE2KllQo=
+X-Browser-Copyright: Copyright 2025 Google LLC. All rights reserved.
+X-Client-Data: CMn7ygE=
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: style
+Sec-Fetch-Storage-Access: active
+Referer: https://cas.iium.edu.my:8448/
+Accept-Language: en-US,en;q=0.9
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (780 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 OK
+Content-Type: text/css; charset=utf-8
+Access-Control-Allow-Origin: *
+Timing-Allow-Origin: *
+Link: &lt;https://fonts.gstatic.com&gt;; rel=preconnect; crossorigin
+Strict-Transport-Security: max-age=31536000
+Expires: Fri, 04 Jul 2025 12:36:19 GMT
+Date: Fri, 04 Jul 2025 12:36:19 GMT
+Cache-Control: private, max-age=86400, stale-while-revalidate=604800
+Last-Modified: Fri, 04 Jul 2025 12:34:33 GMT
+Cross-Origin-Opener-Policy: same-origin-allow-popups
+Cross-Origin-Resource-Policy: cross-origin
+Server: ESF
+X-XSS-Protection: 0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Alt-Svc: h3=&quot;:443&quot;; ma=2592000,h3-29=&quot;:443&quot;; ma=2592000
+Accept-Ranges: none
+Vary: Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding
+content-length: 6360
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (6360 bytes)</summary>
+				
+				<pre><code>/* latin-ext */
+@font-face {
+  font-family: &#39;Courgette&#39;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/courgette/v18/wEO_EBrAnc9BLjLQAUk1WPoK7Es.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#39;Courgette&#39;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/courgette/v18/wEO_EBrAnc9BLjLQAUk1VvoK.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#39;Lato&#39;;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u8w4BMUTPHh30AUi-qJCY.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#39;Lato&#39;;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u8w4BMUTPHh30AXC-q.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#39;Lato&#39;;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwaPGR_p.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#39;Lato&#39;;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USSwiPGQ.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#39;Lato&#39;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjxAwXjeu.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#39;Lato&#39;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHjx4wXg.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#39;Lato&#39;;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwaPGR_p.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#39;Lato&#39;;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVSwiPGQ.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: &#39;Signika&#39;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/signika/v28/vEFO2_JTCgwQ5ejvMV0Ox_Kg1UwJ0tKfX6bOjM7sfA.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#39;Signika&#39;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/signika/v28/vEFO2_JTCgwQ5ejvMV0Ox_Kg1UwJ0tKfX6bPjM7sfA.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#39;Signika&#39;;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/signika/v28/vEFO2_JTCgwQ5ejvMV0Ox_Kg1UwJ0tKfX6bBjM4.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: &#39;Signika&#39;;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/signika/v28/vEFO2_JTCgwQ5ejvMV0Ox_Kg1UwJ0tKfX6bOjM7sfA.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: &#39;Signika&#39;;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/signika/v28/vEFO2_JTCgwQ5ejvMV0Ox_Kg1UwJ0tKfX6bPjM7sfA.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: &#39;Signika&#39;;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://fonts.gstatic.com/s/signika/v28/vEFO2_JTCgwQ5ejvMV0Ox_Kg1UwJ0tKfX6bBjM4.woff2) format(&#39;woff2&#39;);
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>Access-Control-Allow-Origin: *</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance).</p>
+
+<p>Configure the &quot;Access-Control-Allow-Origin&quot; HTTP header to a more restrictive set of domains, or remove all CORS headers entirely, to allow the web browser to enforce the Same Origin Policy (SOP) in a more restrictive manner.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://cas.iium.edu.my:8448</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-3">Vulnerable JS Library</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://cas.iium.edu.my:8448/cas/webjars/jquery/3.3.1/dist/jquery.min.js</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				<li>
+					<span><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-11023">CVE-2020-11023</a></span> 
+				</li>
+				<li>
+					<span><a href="https://owasp.org/www-project-top-ten/2017/A9_2017-Using_Components_with_Known_Vulnerabilities.html">OWASP_2017_A09</a></span> 
+				</li>
+				<li>
+					<span><a href="https://nvd.nist.gov/vuln/detail/CVE-2020-11022">CVE-2020-11022</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_QA_STD = </span>
+				</li>
+				<li>
+					<span><a href="https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/">OWASP_2021_A06</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_PENTEST = </span>
+				</li>
+				<li>
+					<span><a href="https://cwe.mitre.org/data/definitions/1395.html">CWE-1395</a></span> 
+				</li>
+				<li>
+					<span><a href="https://nvd.nist.gov/vuln/detail/CVE-2019-11358">CVE-2019-11358</a></span> 
+				</li>
+				<li>
+					 <span>POLICY_DEV_STD = </span>
+				</li>
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The identified library appears to be vulnerable.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>The identified library jquery, version 3.3.1 is vulnerable.</p>
+
+<p>CVE-2020-11023</p>
+
+<p>CVE-2020-11022</p>
+
+<p>CVE-2019-11358</p>
+
+<p>https://blog.jquery.com/2019/04/10/jquery-3-4-0-released/</p>
+
+<p>https://nvd.nist.gov/vuln/detail/CVE-2019-11358</p>
+
+<p>https://github.com/jquery/jquery/commit/753d591aea698e57d6db58c9f722cd0808619b1b</p>
+
+<p>https://blog.jquery.com/2020/04/10/jquery-3-5-0-released/</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (724 bytes)</summary>
+				
+				<pre><code>GET https://cas.iium.edu.my:8448/cas/webjars/jquery/3.3.1/dist/jquery.min.js HTTP/1.1
+host: cas.iium.edu.my:8448
+Connection: keep-alive
+sec-ch-ua-platform: &quot;Windows&quot;
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+sec-ch-ua: &quot;Not)A;Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;138&quot;, &quot;Google Chrome&quot;;v=&quot;138&quot;
+sec-ch-ua-mobile: ?0
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: https://cas.iium.edu.my:8448/cas/login?service=https%3A%2F%2Fhrservice.iium.edu.my%2Fapariium%2Flogin%2Fcas
+Accept-Language: en-US,en;q=0.9
+Cookie: SESSION=ee6bbe28-c70e-4691-886c-f21da922f939; YpN9wASukHaMGkYA=v1cyFLgw__wKC
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (570 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 200 200
+Date: Fri, 04 Jul 2025 12:36:18 GMT
+Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/5.4.16
+Strict-Transport-Security: max-age=15768000 ; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Last-Modified: Mon, 22 Jan 2018 01:02:36 GMT
+Accept-Ranges: bytes
+Content-Type: application/javascript;charset=UTF-8
+Content-Length: 86927
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Set-Cookie: YpN9wASukHaMGkYA=v1cyFLgw__wKC; Expires=Fri, 04-Jul-2025 14:36:18 GMT; Path=/; Secure
+
+</code></pre>
+				
+				
+			</details> <details class="response-body">
+				<summary>Response body (86927 bytes)</summary>
+				
+				<pre><code>/*! jQuery v3.3.1 | (c) JS Foundation and other contributors | jquery.org/license */
+!function(e,t){&quot;use strict&quot;;&quot;object&quot;==typeof module&amp;&amp;&quot;object&quot;==typeof module.exports?module.exports=e.document?t(e,!0):function(e){if(!e.document)throw new Error(&quot;jQuery requires a window with a document&quot;);return t(e)}:t(e)}(&quot;undefined&quot;!=typeof window?window:this,function(e,t){&quot;use strict&quot;;var n=[],r=e.document,i=Object.getPrototypeOf,o=n.slice,a=n.concat,s=n.push,u=n.indexOf,l={},c=l.toString,f=l.hasOwnProperty,p=f.toString,d=p.call(Object),h={},g=function e(t){return&quot;function&quot;==typeof t&amp;&amp;&quot;number&quot;!=typeof t.nodeType},y=function e(t){return null!=t&amp;&amp;t===t.window},v={type:!0,src:!0,noModule:!0};function m(e,t,n){var i,o=(t=t||r).createElement(&quot;script&quot;);if(o.text=e,n)for(i in v)n[i]&amp;&amp;(o[i]=n[i]);t.head.appendChild(o).parentNode.removeChild(o)}function x(e){return null==e?e+&quot;&quot;:&quot;object&quot;==typeof e||&quot;function&quot;==typeof e?l[c.call(e)]||&quot;object&quot;:typeof e}var b=&quot;3.3.1&quot;,w=function(e,t){return new w.fn.init(e,t)},T=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;w.fn=w.prototype={jquery:&quot;3.3.1&quot;,constructor:w,length:0,toArray:function(){return o.call(this)},get:function(e){return null==e?o.call(this):e&lt;0?this[e+this.length]:this[e]},pushStack:function(e){var t=w.merge(this.constructor(),e);return t.prevObject=this,t},each:function(e){return w.each(this,e)},map:function(e){return this.pushStack(w.map(this,function(t,n){return e.call(t,n,t)}))},slice:function(){return this.pushStack(o.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(e){var t=this.length,n=+e+(e&lt;0?t:0);return this.pushStack(n&gt;=0&amp;&amp;n&lt;t?[this[n]]:[])},end:function(){return this.prevObject||this.constructor()},push:s,sort:n.sort,splice:n.splice},w.extend=w.fn.extend=function(){var e,t,n,r,i,o,a=arguments[0]||{},s=1,u=arguments.length,l=!1;for(&quot;boolean&quot;==typeof a&amp;&amp;(l=a,a=arguments[s]||{},s++),&quot;object&quot;==typeof a||g(a)||(a={}),s===u&amp;&amp;(a=this,s--);s&lt;u;s++)if(null!=(e=arguments[s]))for(t in e)n=a[t],a!==(r=e[t])&amp;&amp;(l&amp;&amp;r&amp;&amp;(w.isPlainObject(r)||(i=Array.isArray(r)))?(i?(i=!1,o=n&amp;&amp;Array.isArray(n)?n:[]):o=n&amp;&amp;w.isPlainObject(n)?n:{},a[t]=w.extend(l,o,r)):void 0!==r&amp;&amp;(a[t]=r));return a},w.extend({expando:&quot;jQuery&quot;+(&quot;3.3.1&quot;+Math.random()).replace(/\D/g,&quot;&quot;),isReady:!0,error:function(e){throw new Error(e)},noop:function(){},isPlainObject:function(e){var t,n;return!(!e||&quot;[object Object]&quot;!==c.call(e))&amp;&amp;(!(t=i(e))||&quot;function&quot;==typeof(n=f.call(t,&quot;constructor&quot;)&amp;&amp;t.constructor)&amp;&amp;p.call(n)===d)},isEmptyObject:function(e){var t;for(t in e)return!1;return!0},globalEval:function(e){m(e)},each:function(e,t){var n,r=0;if(C(e)){for(n=e.length;r&lt;n;r++)if(!1===t.call(e[r],r,e[r]))break}else for(r in e)if(!1===t.call(e[r],r,e[r]))break;return e},trim:function(e){return null==e?&quot;&quot;:(e+&quot;&quot;).replace(T,&quot;&quot;)},makeArray:function(e,t){var n=t||[];return null!=e&amp;&amp;(C(Object(e))?w.merge(n,&quot;string&quot;==typeof e?[e]:e):s.call(n,e)),n},inArray:function(e,t,n){return null==t?-1:u.call(t,e,n)},merge:function(e,t){for(var n=+t.length,r=0,i=e.length;r&lt;n;r++)e[i++]=t[r];return e.length=i,e},grep:function(e,t,n){for(var r,i=[],o=0,a=e.length,s=!n;o&lt;a;o++)(r=!t(e[o],o))!==s&amp;&amp;i.push(e[o]);return i},map:function(e,t,n){var r,i,o=0,s=[];if(C(e))for(r=e.length;o&lt;r;o++)null!=(i=t(e[o],o,n))&amp;&amp;s.push(i);else for(o in e)null!=(i=t(e[o],o,n))&amp;&amp;s.push(i);return a.apply([],s)},guid:1,support:h}),&quot;function&quot;==typeof Symbol&amp;&amp;(w.fn[Symbol.iterator]=n[Symbol.iterator]),w.each(&quot;Boolean Number String Function Array Date RegExp Object Error Symbol&quot;.split(&quot; &quot;),function(e,t){l[&quot;[object &quot;+t+&quot;]&quot;]=t.toLowerCase()});function C(e){var t=!!e&amp;&amp;&quot;length&quot;in e&amp;&amp;e.length,n=x(e);return!g(e)&amp;&amp;!y(e)&amp;&amp;(&quot;array&quot;===n||0===t||&quot;number&quot;==typeof t&amp;&amp;t&gt;0&amp;&amp;t-1 in e)}var E=function(e){var t,n,r,i,o,a,s,u,l,c,f,p,d,h,g,y,v,m,x,b=&quot;sizzle&quot;+1*new Date,w=e.document,T=0,C=0,E=ae(),k=ae(),S=ae(),D=function(e,t){return e===t&amp;&amp;(f=!0),0},N={}.hasOwnProperty,A=[],j=A.pop,q=A.push,L=A.push,H=A.slice,O=function(e,t){for(var n=0,r=e.length;n&lt;r;n++)if(e[n]===t)return n;return-1},P=&quot;checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped&quot;,M=&quot;[\\x20\\t\\r\\n\\f]&quot;,R=&quot;(?:\\\\.|[\\w-]|[^\0-\\xa0])+&quot;,I=&quot;\\[&quot;+M+&quot;*(&quot;+R+&quot;)(?:&quot;+M+&quot;*([*^$|!~]?=)&quot;+M+&quot;*(?:&#39;((?:\\\\.|[^\\\\&#39;])*)&#39;|\&quot;((?:\\\\.|[^\\\\\&quot;])*)\&quot;|(&quot;+R+&quot;))|)&quot;+M+&quot;*\\]&quot;,W=&quot;:(&quot;+R+&quot;)(?:\\(((&#39;((?:\\\\.|[^\\\\&#39;])*)&#39;|\&quot;((?:\\\\.|[^\\\\\&quot;])*)\&quot;)|((?:\\\\.|[^\\\\()[\\]]|&quot;+I+&quot;)*)|.*)\\)|)&quot;,$=new RegExp(M+&quot;+&quot;,&quot;g&quot;),B=new RegExp(&quot;^&quot;+M+&quot;+|((?:^|[^\\\\])(?:\\\\.)*)&quot;+M+&quot;+$&quot;,&quot;g&quot;),F=new RegExp(&quot;^&quot;+M+&quot;*,&quot;+M+&quot;*&quot;),_=new RegExp(&quot;^&quot;+M+&quot;*([&gt;+~]|&quot;+M+&quot;)&quot;+M+&quot;*&quot;),z=new RegExp(&quot;=&quot;+M+&quot;*([^\\]&#39;\&quot;]*?)&quot;+M+&quot;*\\]&quot;,&quot;g&quot;),X=new RegExp(W),U=new RegExp(&quot;^&quot;+R+&quot;$&quot;),V={ID:new RegExp(&quot;^#(&quot;+R+&quot;)&quot;),CLASS:new RegExp(&quot;^\\.(&quot;+R+&quot;)&quot;),TAG:new RegExp(&quot;^(&quot;+R+&quot;|[*])&quot;),ATTR:new RegExp(&quot;^&quot;+I),PSEUDO:new RegExp(&quot;^&quot;+W),CHILD:new RegExp(&quot;^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\(&quot;+M+&quot;*(even|odd|(([+-]|)(\\d*)n|)&quot;+M+&quot;*(?:([+-]|)&quot;+M+&quot;*(\\d+)|))&quot;+M+&quot;*\\)|)&quot;,&quot;i&quot;),bool:new RegExp(&quot;^(?:&quot;+P+&quot;)$&quot;,&quot;i&quot;),needsContext:new RegExp(&quot;^&quot;+M+&quot;*[&gt;+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\(&quot;+M+&quot;*((?:-\\d)?\\d*)&quot;+M+&quot;*\\)|)(?=[^-]|$)&quot;,&quot;i&quot;)},G=/^(?:input|select|textarea|button)$/i,Y=/^h\d$/i,Q=/^[^{]+\{\s*\[native \w/,J=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,K=/[+~]/,Z=new RegExp(&quot;\\\\([\\da-f]{1,6}&quot;+M+&quot;?|(&quot;+M+&quot;)|.)&quot;,&quot;ig&quot;),ee=function(e,t,n){var r=&quot;0x&quot;+t-65536;return r!==r||n?t:r&lt;0?String.fromCharCode(r+65536):String.fromCharCode(r&gt;&gt;10|55296,1023&amp;r|56320)},te=/([\0-\x1f\x7f]|^-?\d)|^-$|[^\0-\x1f\x7f-\uFFFF\w-]/g,ne=function(e,t){return t?&quot;\0&quot;===e?&quot;\ufffd&quot;:e.slice(0,-1)+&quot;\\&quot;+e.charCodeAt(e.length-1).toString(16)+&quot; &quot;:&quot;\\&quot;+e},re=function(){p()},ie=me(function(e){return!0===e.disabled&amp;&amp;(&quot;form&quot;in e||&quot;label&quot;in e)},{dir:&quot;parentNode&quot;,next:&quot;legend&quot;});try{L.apply(A=H.call(w.childNodes),w.childNodes),A[w.childNodes.length].nodeType}catch(e){L={apply:A.length?function(e,t){q.apply(e,H.call(t))}:function(e,t){var n=e.length,r=0;while(e[n++]=t[r++]);e.length=n-1}}}function oe(e,t,r,i){var o,s,l,c,f,h,v,m=t&amp;&amp;t.ownerDocument,T=t?t.nodeType:9;if(r=r||[],&quot;string&quot;!=typeof e||!e||1!==T&amp;&amp;9!==T&amp;&amp;11!==T)return r;if(!i&amp;&amp;((t?t.ownerDocument||t:w)!==d&amp;&amp;p(t),t=t||d,g)){if(11!==T&amp;&amp;(f=J.exec(e)))if(o=f[1]){if(9===T){if(!(l=t.getElementById(o)))return r;if(l.id===o)return r.push(l),r}else if(m&amp;&amp;(l=m.getElementById(o))&amp;&amp;x(t,l)&amp;&amp;l.id===o)return r.push(l),r}else{if(f[2])return L.apply(r,t.getElementsByTagName(e)),r;if((o=f[3])&amp;&amp;n.getElementsByClassName&amp;&amp;t.getElementsByClassName)return L.apply(r,t.getElementsByClassName(o)),r}if(n.qsa&amp;&amp;!S[e+&quot; &quot;]&amp;&amp;(!y||!y.test(e))){if(1!==T)m=t,v=e;else if(&quot;object&quot;!==t.nodeName.toLowerCase()){(c=t.getAttribute(&quot;id&quot;))?c=c.replace(te,ne):t.setAttribute(&quot;id&quot;,c=b),s=(h=a(e)).length;while(s--)h[s]=&quot;#&quot;+c+&quot; &quot;+ve(h[s]);v=h.join(&quot;,&quot;),m=K.test(e)&amp;&amp;ge(t.parentNode)||t}if(v)try{return L.apply(r,m.querySelectorAll(v)),r}catch(e){}finally{c===b&amp;&amp;t.removeAttribute(&quot;id&quot;)}}}return u(e.replace(B,&quot;$1&quot;),t,r,i)}function ae(){var e=[];function t(n,i){return e.push(n+&quot; &quot;)&gt;r.cacheLength&amp;&amp;delete t[e.shift()],t[n+&quot; &quot;]=i}return t}function se(e){return e[b]=!0,e}function ue(e){var t=d.createElement(&quot;fieldset&quot;);try{return!!e(t)}catch(e){return!1}finally{t.parentNode&amp;&amp;t.parentNode.removeChild(t),t=null}}function le(e,t){var n=e.split(&quot;|&quot;),i=n.length;while(i--)r.attrHandle[n[i]]=t}function ce(e,t){var n=t&amp;&amp;e,r=n&amp;&amp;1===e.nodeType&amp;&amp;1===t.nodeType&amp;&amp;e.sourceIndex-t.sourceIndex;if(r)return r;if(n)while(n=n.nextSibling)if(n===t)return-1;return e?1:-1}function fe(e){return function(t){return&quot;input&quot;===t.nodeName.toLowerCase()&amp;&amp;t.type===e}}function pe(e){return function(t){var n=t.nodeName.toLowerCase();return(&quot;input&quot;===n||&quot;button&quot;===n)&amp;&amp;t.type===e}}function de(e){return function(t){return&quot;form&quot;in t?t.parentNode&amp;&amp;!1===t.disabled?&quot;label&quot;in t?&quot;label&quot;in t.parentNode?t.parentNode.disabled===e:t.disabled===e:t.isDisabled===e||t.isDisabled!==!e&amp;&amp;ie(t)===e:t.disabled===e:&quot;label&quot;in t&amp;&amp;t.disabled===e}}function he(e){return se(function(t){return t=+t,se(function(n,r){var i,o=e([],n.length,t),a=o.length;while(a--)n[i=o[a]]&amp;&amp;(n[i]=!(r[i]=n[i]))})})}function ge(e){return e&amp;&amp;&quot;undefined&quot;!=typeof e.getElementsByTagName&amp;&amp;e}n=oe.support={},o=oe.isXML=function(e){var t=e&amp;&amp;(e.ownerDocument||e).documentElement;return!!t&amp;&amp;&quot;HTML&quot;!==t.nodeName},p=oe.setDocument=function(e){var t,i,a=e?e.ownerDocument||e:w;return a!==d&amp;&amp;9===a.nodeType&amp;&amp;a.documentElement?(d=a,h=d.documentElement,g=!o(d),w!==d&amp;&amp;(i=d.defaultView)&amp;&amp;i.top!==i&amp;&amp;(i.addEventListener?i.addEventListener(&quot;unload&quot;,re,!1):i.attachEvent&amp;&amp;i.attachEvent(&quot;onunload&quot;,re)),n.attributes=ue(function(e){return e.className=&quot;i&quot;,!e.getAttribute(&quot;className&quot;)}),n.getElementsByTagName=ue(function(e){return e.appendChild(d.createComment(&quot;&quot;)),!e.getElementsByTagName(&quot;*&quot;).length}),n.getElementsByClassName=Q.test(d.getElementsByClassName),n.getById=ue(function(e){return h.appendChild(e).id=b,!d.getElementsByName||!d.getElementsByName(b).length}),n.getById?(r.filter.ID=function(e){var t=e.replace(Z,ee);return function(e){return e.getAttribute(&quot;id&quot;)===t}},r.find.ID=function(e,t){if(&quot;undefined&quot;!=typeof t.getElementById&amp;&amp;g){var n=t.getElementById(e);return n?[n]:[]}}):(r.filter.ID=function(e){var t=e.replace(Z,ee);return function(e){var n=&quot;undefined&quot;!=typeof e.getAttributeNode&amp;&amp;e.getAttributeNode(&quot;id&quot;);return n&amp;&amp;n.value===t}},r.find.ID=function(e,t){if(&quot;undefined&quot;!=typeof t.getElementById&amp;&amp;g){var n,r,i,o=t.getElementById(e);if(o){if((n=o.getAttributeNode(&quot;id&quot;))&amp;&amp;n.value===e)return[o];i=t.getElementsByName(e),r=0;while(o=i[r++])if((n=o.getAttributeNode(&quot;id&quot;))&amp;&amp;n.value===e)return[o]}return[]}}),r.find.TAG=n.getElementsByTagName?function(e,t){return&quot;undefined&quot;!=typeof t.getElementsByTagName?t.getElementsByTagName(e):n.qsa?t.querySelectorAll(e):void 0}:function(e,t){var n,r=[],i=0,o=t.getElementsByTagName(e);if(&quot;*&quot;===e){while(n=o[i++])1===n.nodeType&amp;&amp;r.push(n);return r}return o},r.find.CLASS=n.getElementsByClassName&amp;&amp;function(e,t){if(&quot;undefined&quot;!=typeof t.getElementsByClassName&amp;&amp;g)return t.getElementsByClassName(e)},v=[],y=[],(n.qsa=Q.test(d.querySelectorAll))&amp;&amp;(ue(function(e){h.appendChild(e).innerHTML=&quot;&lt;a id=&#39;&quot;+b+&quot;&#39;&gt;&lt;/a&gt;&lt;select id=&#39;&quot;+b+&quot;-\r\\&#39; msallowcapture=&#39;&#39;&gt;&lt;option selected=&#39;&#39;&gt;&lt;/option&gt;&lt;/select&gt;&quot;,e.querySelectorAll(&quot;[msallowcapture^=&#39;&#39;]&quot;).length&amp;&amp;y.push(&quot;[*^$]=&quot;+M+&quot;*(?:&#39;&#39;|\&quot;\&quot;)&quot;),e.querySelectorAll(&quot;[selected]&quot;).length||y.push(&quot;\\[&quot;+M+&quot;*(?:value|&quot;+P+&quot;)&quot;),e.querySelectorAll(&quot;[id~=&quot;+b+&quot;-]&quot;).length||y.push(&quot;~=&quot;),e.querySelectorAll(&quot;:checked&quot;).length||y.push(&quot;:checked&quot;),e.querySelectorAll(&quot;a#&quot;+b+&quot;+*&quot;).length||y.push(&quot;.#.+[+~]&quot;)}),ue(function(e){e.innerHTML=&quot;&lt;a href=&#39;&#39; disabled=&#39;disabled&#39;&gt;&lt;/a&gt;&lt;select disabled=&#39;disabled&#39;&gt;&lt;option/&gt;&lt;/select&gt;&quot;;var t=d.createElement(&quot;input&quot;);t.setAttribute(&quot;type&quot;,&quot;hidden&quot;),e.appendChild(t).setAttribute(&quot;name&quot;,&quot;D&quot;),e.querySelectorAll(&quot;[name=d]&quot;).length&amp;&amp;y.push(&quot;name&quot;+M+&quot;*[*^$|!~]?=&quot;),2!==e.querySelectorAll(&quot;:enabled&quot;).length&amp;&amp;y.push(&quot;:enabled&quot;,&quot;:disabled&quot;),h.appendChild(e).disabled=!0,2!==e.querySelectorAll(&quot;:disabled&quot;).length&amp;&amp;y.push(&quot;:enabled&quot;,&quot;:disabled&quot;),e.querySelectorAll(&quot;*,:x&quot;),y.push(&quot;,.*:&quot;)})),(n.matchesSelector=Q.test(m=h.matches||h.webkitMatchesSelector||h.mozMatchesSelector||h.oMatchesSelector||h.msMatchesSelector))&amp;&amp;ue(function(e){n.disconnectedMatch=m.call(e,&quot;*&quot;),m.call(e,&quot;[s!=&#39;&#39;]:x&quot;),v.push(&quot;!=&quot;,W)}),y=y.length&amp;&amp;new RegExp(y.join(&quot;|&quot;)),v=v.length&amp;&amp;new RegExp(v.join(&quot;|&quot;)),t=Q.test(h.compareDocumentPosition),x=t||Q.test(h.contains)?function(e,t){var n=9===e.nodeType?e.documentElement:e,r=t&amp;&amp;t.parentNode;return e===r||!(!r||1!==r.nodeType||!(n.contains?n.contains(r):e.compareDocumentPosition&amp;&amp;16&amp;e.compareDocumentPosition(r)))}:function(e,t){if(t)while(t=t.parentNode)if(t===e)return!0;return!1},D=t?function(e,t){if(e===t)return f=!0,0;var r=!e.compareDocumentPosition-!t.compareDocumentPosition;return r||(1&amp;(r=(e.ownerDocument||e)===(t.ownerDocument||t)?e.compareDocumentPosition(t):1)||!n.sortDetached&amp;&amp;t.compareDocumentPosition(e)===r?e===d||e.ownerDocument===w&amp;&amp;x(w,e)?-1:t===d||t.ownerDocument===w&amp;&amp;x(w,t)?1:c?O(c,e)-O(c,t):0:4&amp;r?-1:1)}:function(e,t){if(e===t)return f=!0,0;var n,r=0,i=e.parentNode,o=t.parentNode,a=[e],s=[t];if(!i||!o)return e===d?-1:t===d?1:i?-1:o?1:c?O(c,e)-O(c,t):0;if(i===o)return ce(e,t);n=e;while(n=n.parentNode)a.unshift(n);n=t;while(n=n.parentNode)s.unshift(n);while(a[r]===s[r])r++;return r?ce(a[r],s[r]):a[r]===w?-1:s[r]===w?1:0},d):d},oe.matches=function(e,t){return oe(e,null,null,t)},oe.matchesSelector=function(e,t){if((e.ownerDocument||e)!==d&amp;&amp;p(e),t=t.replace(z,&quot;=&#39;$1&#39;]&quot;),n.matchesSelector&amp;&amp;g&amp;&amp;!S[t+&quot; &quot;]&amp;&amp;(!v||!v.test(t))&amp;&amp;(!y||!y.test(t)))try{var r=m.call(e,t);if(r||n.disconnectedMatch||e.document&amp;&amp;11!==e.document.nodeType)return r}catch(e){}return oe(t,d,null,[e]).length&gt;0},oe.contains=function(e,t){return(e.ownerDocument||e)!==d&amp;&amp;p(e),x(e,t)},oe.attr=function(e,t){(e.ownerDocument||e)!==d&amp;&amp;p(e);var i=r.attrHandle[t.toLowerCase()],o=i&amp;&amp;N.call(r.attrHandle,t.toLowerCase())?i(e,t,!g):void 0;return void 0!==o?o:n.attributes||!g?e.getAttribute(t):(o=e.getAttributeNode(t))&amp;&amp;o.specified?o.value:null},oe.escape=function(e){return(e+&quot;&quot;).replace(te,ne)},oe.error=function(e){throw new Error(&quot;Syntax error, unrecognized expression: &quot;+e)},oe.uniqueSort=function(e){var t,r=[],i=0,o=0;if(f=!n.detectDuplicates,c=!n.sortStable&amp;&amp;e.slice(0),e.sort(D),f){while(t=e[o++])t===e[o]&amp;&amp;(i=r.push(o));while(i--)e.splice(r[i],1)}return c=null,e},i=oe.getText=function(e){var t,n=&quot;&quot;,r=0,o=e.nodeType;if(o){if(1===o||9===o||11===o){if(&quot;string&quot;==typeof e.textContent)return e.textContent;for(e=e.firstChild;e;e=e.nextSibling)n+=i(e)}else if(3===o||4===o)return e.nodeValue}else while(t=e[r++])n+=i(t);return n},(r=oe.selectors={cacheLength:50,createPseudo:se,match:V,attrHandle:{},find:{},relative:{&quot;&gt;&quot;:{dir:&quot;parentNode&quot;,first:!0},&quot; &quot;:{dir:&quot;parentNode&quot;},&quot;+&quot;:{dir:&quot;previousSibling&quot;,first:!0},&quot;~&quot;:{dir:&quot;previousSibling&quot;}},preFilter:{ATTR:function(e){return e[1]=e[1].replace(Z,ee),e[3]=(e[3]||e[4]||e[5]||&quot;&quot;).replace(Z,ee),&quot;~=&quot;===e[2]&amp;&amp;(e[3]=&quot; &quot;+e[3]+&quot; &quot;),e.slice(0,4)},CHILD:function(e){return e[1]=e[1].toLowerCase(),&quot;nth&quot;===e[1].slice(0,3)?(e[3]||oe.error(e[0]),e[4]=+(e[4]?e[5]+(e[6]||1):2*(&quot;even&quot;===e[3]||&quot;odd&quot;===e[3])),e[5]=+(e[7]+e[8]||&quot;odd&quot;===e[3])):e[3]&amp;&amp;oe.error(e[0]),e},PSEUDO:function(e){var t,n=!e[6]&amp;&amp;e[2];return V.CHILD.test(e[0])?null:(e[3]?e[2]=e[4]||e[5]||&quot;&quot;:n&amp;&amp;X.test(n)&amp;&amp;(t=a(n,!0))&amp;&amp;(t=n.indexOf(&quot;)&quot;,n.length-t)-n.length)&amp;&amp;(e[0]=e[0].slice(0,t),e[2]=n.slice(0,t)),e.slice(0,3))}},filter:{TAG:function(e){var t=e.replace(Z,ee).toLowerCase();return&quot;*&quot;===e?function(){return!0}:function(e){return e.nodeName&amp;&amp;e.nodeName.toLowerCase()===t}},CLASS:function(e){var t=E[e+&quot; &quot;];return t||(t=new RegExp(&quot;(^|&quot;+M+&quot;)&quot;+e+&quot;(&quot;+M+&quot;|$)&quot;))&amp;&amp;E(e,function(e){return t.test(&quot;string&quot;==typeof e.className&amp;&amp;e.className||&quot;undefined&quot;!=typeof e.getAttribute&amp;&amp;e.getAttribute(&quot;class&quot;)||&quot;&quot;)})},ATTR:function(e,t,n){return function(r){var i=oe.attr(r,e);return null==i?&quot;!=&quot;===t:!t||(i+=&quot;&quot;,&quot;=&quot;===t?i===n:&quot;!=&quot;===t?i!==n:&quot;^=&quot;===t?n&amp;&amp;0===i.indexOf(n):&quot;*=&quot;===t?n&amp;&amp;i.indexOf(n)&gt;-1:&quot;$=&quot;===t?n&amp;&amp;i.slice(-n.length)===n:&quot;~=&quot;===t?(&quot; &quot;+i.replace($,&quot; &quot;)+&quot; &quot;).indexOf(n)&gt;-1:&quot;|=&quot;===t&amp;&amp;(i===n||i.slice(0,n.length+1)===n+&quot;-&quot;))}},CHILD:function(e,t,n,r,i){var o=&quot;nth&quot;!==e.slice(0,3),a=&quot;last&quot;!==e.slice(-4),s=&quot;of-type&quot;===t;return 1===r&amp;&amp;0===i?function(e){return!!e.parentNode}:function(t,n,u){var l,c,f,p,d,h,g=o!==a?&quot;nextSibling&quot;:&quot;previousSibling&quot;,y=t.parentNode,v=s&amp;&amp;t.nodeName.toLowerCase(),m=!u&amp;&amp;!s,x=!1;if(y){if(o){while(g){p=t;while(p=p[g])if(s?p.nodeName.toLowerCase()===v:1===p.nodeType)return!1;h=g=&quot;only&quot;===e&amp;&amp;!h&amp;&amp;&quot;nextSibling&quot;}return!0}if(h=[a?y.firstChild:y.lastChild],a&amp;&amp;m){x=(d=(l=(c=(f=(p=y)[b]||(p[b]={}))[p.uniqueID]||(f[p.uniqueID]={}))[e]||[])[0]===T&amp;&amp;l[1])&amp;&amp;l[2],p=d&amp;&amp;y.childNodes[d];while(p=++d&amp;&amp;p&amp;&amp;p[g]||(x=d=0)||h.pop())if(1===p.nodeType&amp;&amp;++x&amp;&amp;p===t){c[e]=[T,d,x];break}}else if(m&amp;&amp;(x=d=(l=(c=(f=(p=t)[b]||(p[b]={}))[p.uniqueID]||(f[p.uniqueID]={}))[e]||[])[0]===T&amp;&amp;l[1]),!1===x)while(p=++d&amp;&amp;p&amp;&amp;p[g]||(x=d=0)||h.pop())if((s?p.nodeName.toLowerCase()===v:1===p.nodeType)&amp;&amp;++x&amp;&amp;(m&amp;&amp;((c=(f=p[b]||(p[b]={}))[p.uniqueID]||(f[p.uniqueID]={}))[e]=[T,x]),p===t))break;return(x-=i)===r||x%r==0&amp;&amp;x/r&gt;=0}}},PSEUDO:function(e,t){var n,i=r.pseudos[e]||r.setFilters[e.toLowerCase()]||oe.error(&quot;unsupported pseudo: &quot;+e);return i[b]?i(t):i.length&gt;1?(n=[e,e,&quot;&quot;,t],r.setFilters.hasOwnProperty(e.toLowerCase())?se(function(e,n){var r,o=i(e,t),a=o.length;while(a--)e[r=O(e,o[a])]=!(n[r]=o[a])}):function(e){return i(e,0,n)}):i}},pseudos:{not:se(function(e){var t=[],n=[],r=s(e.replace(B,&quot;$1&quot;));return r[b]?se(function(e,t,n,i){var o,a=r(e,null,i,[]),s=e.length;while(s--)(o=a[s])&amp;&amp;(e[s]=!(t[s]=o))}):function(e,i,o){return t[0]=e,r(t,null,o,n),t[0]=null,!n.pop()}}),has:se(function(e){return function(t){return oe(e,t).length&gt;0}}),contains:se(function(e){return e=e.replace(Z,ee),function(t){return(t.textContent||t.innerText||i(t)).indexOf(e)&gt;-1}}),lang:se(function(e){return U.test(e||&quot;&quot;)||oe.error(&quot;unsupported lang: &quot;+e),e=e.replace(Z,ee).toLowerCase(),function(t){var n;do{if(n=g?t.lang:t.getAttribute(&quot;xml:lang&quot;)||t.getAttribute(&quot;lang&quot;))return(n=n.toLowerCase())===e||0===n.indexOf(e+&quot;-&quot;)}while((t=t.parentNode)&amp;&amp;1===t.nodeType);return!1}}),target:function(t){var n=e.location&amp;&amp;e.location.hash;return n&amp;&amp;n.slice(1)===t.id},root:function(e){return e===h},focus:function(e){return e===d.activeElement&amp;&amp;(!d.hasFocus||d.hasFocus())&amp;&amp;!!(e.type||e.href||~e.tabIndex)},enabled:de(!1),disabled:de(!0),checked:function(e){var t=e.nodeName.toLowerCase();return&quot;input&quot;===t&amp;&amp;!!e.checked||&quot;option&quot;===t&amp;&amp;!!e.selected},selected:function(e){return e.parentNode&amp;&amp;e.parentNode.selectedIndex,!0===e.selected},empty:function(e){for(e=e.firstChild;e;e=e.nextSibling)if(e.nodeType&lt;6)return!1;return!0},parent:function(e){return!r.pseudos.empty(e)},header:function(e){return Y.test(e.nodeName)},input:function(e){return G.test(e.nodeName)},button:function(e){var t=e.nodeName.toLowerCase();return&quot;input&quot;===t&amp;&amp;&quot;button&quot;===e.type||&quot;button&quot;===t},text:function(e){var t;return&quot;input&quot;===e.nodeName.toLowerCase()&amp;&amp;&quot;text&quot;===e.type&amp;&amp;(null==(t=e.getAttribute(&quot;type&quot;))||&quot;text&quot;===t.toLowerCase())},first:he(function(){return[0]}),last:he(function(e,t){return[t-1]}),eq:he(function(e,t,n){return[n&lt;0?n+t:n]}),even:he(function(e,t){for(var n=0;n&lt;t;n+=2)e.push(n);return e}),odd:he(function(e,t){for(var n=1;n&lt;t;n+=2)e.push(n);return e}),lt:he(function(e,t,n){for(var r=n&lt;0?n+t:n;--r&gt;=0;)e.push(r);return e}),gt:he(function(e,t,n){for(var r=n&lt;0?n+t:n;++r&lt;t;)e.push(r);return e})}}).pseudos.nth=r.pseudos.eq;for(t in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})r.pseudos[t]=fe(t);for(t in{submit:!0,reset:!0})r.pseudos[t]=pe(t);function ye(){}ye.prototype=r.filters=r.pseudos,r.setFilters=new ye,a=oe.tokenize=function(e,t){var n,i,o,a,s,u,l,c=k[e+&quot; &quot;];if(c)return t?0:c.slice(0);s=e,u=[],l=r.preFilter;while(s){n&amp;&amp;!(i=F.exec(s))||(i&amp;&amp;(s=s.slice(i[0].length)||s),u.push(o=[])),n=!1,(i=_.exec(s))&amp;&amp;(n=i.shift(),o.push({value:n,type:i[0].replace(B,&quot; &quot;)}),s=s.slice(n.length));for(a in r.filter)!(i=V[a].exec(s))||l[a]&amp;&amp;!(i=l[a](i))||(n=i.shift(),o.push({value:n,type:a,matches:i}),s=s.slice(n.length));if(!n)break}return t?s.length:s?oe.error(e):k(e,u).slice(0)};function ve(e){for(var t=0,n=e.length,r=&quot;&quot;;t&lt;n;t++)r+=e[t].value;return r}function me(e,t,n){var r=t.dir,i=t.next,o=i||r,a=n&amp;&amp;&quot;parentNode&quot;===o,s=C++;return t.first?function(t,n,i){while(t=t[r])if(1===t.nodeType||a)return e(t,n,i);return!1}:function(t,n,u){var l,c,f,p=[T,s];if(u){while(t=t[r])if((1===t.nodeType||a)&amp;&amp;e(t,n,u))return!0}else while(t=t[r])if(1===t.nodeType||a)if(f=t[b]||(t[b]={}),c=f[t.uniqueID]||(f[t.uniqueID]={}),i&amp;&amp;i===t.nodeName.toLowerCase())t=t[r]||t;else{if((l=c[o])&amp;&amp;l[0]===T&amp;&amp;l[1]===s)return p[2]=l[2];if(c[o]=p,p[2]=e(t,n,u))return!0}return!1}}function xe(e){return e.length&gt;1?function(t,n,r){var i=e.length;while(i--)if(!e[i](t,n,r))return!1;return!0}:e[0]}function be(e,t,n){for(var r=0,i=t.length;r&lt;i;r++)oe(e,t[r],n);return n}function we(e,t,n,r,i){for(var o,a=[],s=0,u=e.length,l=null!=t;s&lt;u;s++)(o=e[s])&amp;&amp;(n&amp;&amp;!n(o,r,i)||(a.push(o),l&amp;&amp;t.push(s)));return a}function Te(e,t,n,r,i,o){return r&amp;&amp;!r[b]&amp;&amp;(r=Te(r)),i&amp;&amp;!i[b]&amp;&amp;(i=Te(i,o)),se(function(o,a,s,u){var l,c,f,p=[],d=[],h=a.length,g=o||be(t||&quot;*&quot;,s.nodeType?[s]:s,[]),y=!e||!o&amp;&amp;t?g:we(g,p,e,s,u),v=n?i||(o?e:h||r)?[]:a:y;if(n&amp;&amp;n(y,v,s,u),r){l=we(v,d),r(l,[],s,u),c=l.length;while(c--)(f=l[c])&amp;&amp;(v[d[c]]=!(y[d[c]]=f))}if(o){if(i||e){if(i){l=[],c=v.length;while(c--)(f=v[c])&amp;&amp;l.push(y[c]=f);i(null,v=[],l,u)}c=v.length;while(c--)(f=v[c])&amp;&amp;(l=i?O(o,f):p[c])&gt;-1&amp;&amp;(o[l]=!(a[l]=f))}}else v=we(v===a?v.splice(h,v.length):v),i?i(null,a,v,u):L.apply(a,v)})}function Ce(e){for(var t,n,i,o=e.length,a=r.relative[e[0].type],s=a||r.relative[&quot; &quot;],u=a?1:0,c=me(function(e){return e===t},s,!0),f=me(function(e){return O(t,e)&gt;-1},s,!0),p=[function(e,n,r){var i=!a&amp;&amp;(r||n!==l)||((t=n).nodeType?c(e,n,r):f(e,n,r));return t=null,i}];u&lt;o;u++)if(n=r.relative[e[u].type])p=[me(xe(p),n)];else{if((n=r.filter[e[u].type].apply(null,e[u].matches))[b]){for(i=++u;i&lt;o;i++)if(r.relative[e[i].type])break;return Te(u&gt;1&amp;&amp;xe(p),u&gt;1&amp;&amp;ve(e.slice(0,u-1).concat({value:&quot; &quot;===e[u-2].type?&quot;*&quot;:&quot;&quot;})).replace(B,&quot;$1&quot;),n,u&lt;i&amp;&amp;Ce(e.slice(u,i)),i&lt;o&amp;&amp;Ce(e=e.slice(i)),i&lt;o&amp;&amp;ve(e))}p.push(n)}return xe(p)}function Ee(e,t){var n=t.length&gt;0,i=e.length&gt;0,o=function(o,a,s,u,c){var f,h,y,v=0,m=&quot;0&quot;,x=o&amp;&amp;[],b=[],w=l,C=o||i&amp;&amp;r.find.TAG(&quot;*&quot;,c),E=T+=null==w?1:Math.random()||.1,k=C.length;for(c&amp;&amp;(l=a===d||a||c);m!==k&amp;&amp;null!=(f=C[m]);m++){if(i&amp;&amp;f){h=0,a||f.ownerDocument===d||(p(f),s=!g);while(y=e[h++])if(y(f,a||d,s)){u.push(f);break}c&amp;&amp;(T=E)}n&amp;&amp;((f=!y&amp;&amp;f)&amp;&amp;v--,o&amp;&amp;x.push(f))}if(v+=m,n&amp;&amp;m!==v){h=0;while(y=t[h++])y(x,b,a,s);if(o){if(v&gt;0)while(m--)x[m]||b[m]||(b[m]=j.call(u));b=we(b)}L.apply(u,b),c&amp;&amp;!o&amp;&amp;b.length&gt;0&amp;&amp;v+t.length&gt;1&amp;&amp;oe.uniqueSort(u)}return c&amp;&amp;(T=E,l=w),x};return n?se(o):o}return s=oe.compile=function(e,t){var n,r=[],i=[],o=S[e+&quot; &quot;];if(!o){t||(t=a(e)),n=t.length;while(n--)(o=Ce(t[n]))[b]?r.push(o):i.push(o);(o=S(e,Ee(i,r))).selector=e}return o},u=oe.select=function(e,t,n,i){var o,u,l,c,f,p=&quot;function&quot;==typeof e&amp;&amp;e,d=!i&amp;&amp;a(e=p.selector||e);if(n=n||[],1===d.length){if((u=d[0]=d[0].slice(0)).length&gt;2&amp;&amp;&quot;ID&quot;===(l=u[0]).type&amp;&amp;9===t.nodeType&amp;&amp;g&amp;&amp;r.relative[u[1].type]){if(!(t=(r.find.ID(l.matches[0].replace(Z,ee),t)||[])[0]))return n;p&amp;&amp;(t=t.parentNode),e=e.slice(u.shift().value.length)}o=V.needsContext.test(e)?0:u.length;while(o--){if(l=u[o],r.relative[c=l.type])break;if((f=r.find[c])&amp;&amp;(i=f(l.matches[0].replace(Z,ee),K.test(u[0].type)&amp;&amp;ge(t.parentNode)||t))){if(u.splice(o,1),!(e=i.length&amp;&amp;ve(u)))return L.apply(n,i),n;break}}}return(p||s(e,d))(i,t,!g,n,!t||K.test(e)&amp;&amp;ge(t.parentNode)||t),n},n.sortStable=b.split(&quot;&quot;).sort(D).join(&quot;&quot;)===b,n.detectDuplicates=!!f,p(),n.sortDetached=ue(function(e){return 1&amp;e.compareDocumentPosition(d.createElement(&quot;fieldset&quot;))}),ue(function(e){return e.innerHTML=&quot;&lt;a href=&#39;#&#39;&gt;&lt;/a&gt;&quot;,&quot;#&quot;===e.firstChild.getAttribute(&quot;href&quot;)})||le(&quot;type|href|height|width&quot;,function(e,t,n){if(!n)return e.getAttribute(t,&quot;type&quot;===t.toLowerCase()?1:2)}),n.attributes&amp;&amp;ue(function(e){return e.innerHTML=&quot;&lt;input/&gt;&quot;,e.firstChild.setAttribute(&quot;value&quot;,&quot;&quot;),&quot;&quot;===e.firstChild.getAttribute(&quot;value&quot;)})||le(&quot;value&quot;,function(e,t,n){if(!n&amp;&amp;&quot;input&quot;===e.nodeName.toLowerCase())return e.defaultValue}),ue(function(e){return null==e.getAttribute(&quot;disabled&quot;)})||le(P,function(e,t,n){var r;if(!n)return!0===e[t]?t.toLowerCase():(r=e.getAttributeNode(t))&amp;&amp;r.specified?r.value:null}),oe}(e);w.find=E,w.expr=E.selectors,w.expr[&quot;:&quot;]=w.expr.pseudos,w.uniqueSort=w.unique=E.uniqueSort,w.text=E.getText,w.isXMLDoc=E.isXML,w.contains=E.contains,w.escapeSelector=E.escape;var k=function(e,t,n){var r=[],i=void 0!==n;while((e=e[t])&amp;&amp;9!==e.nodeType)if(1===e.nodeType){if(i&amp;&amp;w(e).is(n))break;r.push(e)}return r},S=function(e,t){for(var n=[];e;e=e.nextSibling)1===e.nodeType&amp;&amp;e!==t&amp;&amp;n.push(e);return n},D=w.expr.match.needsContext;function N(e,t){return e.nodeName&amp;&amp;e.nodeName.toLowerCase()===t.toLowerCase()}var A=/^&lt;([a-z][^\/\0&gt;:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?&gt;(?:&lt;\/\1&gt;|)$/i;function j(e,t,n){return g(t)?w.grep(e,function(e,r){return!!t.call(e,r,e)!==n}):t.nodeType?w.grep(e,function(e){return e===t!==n}):&quot;string&quot;!=typeof t?w.grep(e,function(e){return u.call(t,e)&gt;-1!==n}):w.filter(t,e,n)}w.filter=function(e,t,n){var r=t[0];return n&amp;&amp;(e=&quot;:not(&quot;+e+&quot;)&quot;),1===t.length&amp;&amp;1===r.nodeType?w.find.matchesSelector(r,e)?[r]:[]:w.find.matches(e,w.grep(t,function(e){return 1===e.nodeType}))},w.fn.extend({find:function(e){var t,n,r=this.length,i=this;if(&quot;string&quot;!=typeof e)return this.pushStack(w(e).filter(function(){for(t=0;t&lt;r;t++)if(w.contains(i[t],this))return!0}));for(n=this.pushStack([]),t=0;t&lt;r;t++)w.find(e,i[t],n);return r&gt;1?w.uniqueSort(n):n},filter:function(e){return this.pushStack(j(this,e||[],!1))},not:function(e){return this.pushStack(j(this,e||[],!0))},is:function(e){return!!j(this,&quot;string&quot;==typeof e&amp;&amp;D.test(e)?w(e):e||[],!1).length}});var q,L=/^(?:\s*(&lt;[\w\W]+&gt;)[^&gt;]*|#([\w-]+))$/;(w.fn.init=function(e,t,n){var i,o;if(!e)return this;if(n=n||q,&quot;string&quot;==typeof e){if(!(i=&quot;&lt;&quot;===e[0]&amp;&amp;&quot;&gt;&quot;===e[e.length-1]&amp;&amp;e.length&gt;=3?[null,e,null]:L.exec(e))||!i[1]&amp;&amp;t)return!t||t.jquery?(t||n).find(e):this.constructor(t).find(e);if(i[1]){if(t=t instanceof w?t[0]:t,w.merge(this,w.parseHTML(i[1],t&amp;&amp;t.nodeType?t.ownerDocument||t:r,!0)),A.test(i[1])&amp;&amp;w.isPlainObject(t))for(i in t)g(this[i])?this[i](t[i]):this.attr(i,t[i]);return this}return(o=r.getElementById(i[2]))&amp;&amp;(this[0]=o,this.length=1),this}return e.nodeType?(this[0]=e,this.length=1,this):g(e)?void 0!==n.ready?n.ready(e):e(w):w.makeArray(e,this)}).prototype=w.fn,q=w(r);var H=/^(?:parents|prev(?:Until|All))/,O={children:!0,contents:!0,next:!0,prev:!0};w.fn.extend({has:function(e){var t=w(e,this),n=t.length;return this.filter(function(){for(var e=0;e&lt;n;e++)if(w.contains(this,t[e]))return!0})},closest:function(e,t){var n,r=0,i=this.length,o=[],a=&quot;string&quot;!=typeof e&amp;&amp;w(e);if(!D.test(e))for(;r&lt;i;r++)for(n=this[r];n&amp;&amp;n!==t;n=n.parentNode)if(n.nodeType&lt;11&amp;&amp;(a?a.index(n)&gt;-1:1===n.nodeType&amp;&amp;w.find.matchesSelector(n,e))){o.push(n);break}return this.pushStack(o.length&gt;1?w.uniqueSort(o):o)},index:function(e){return e?&quot;string&quot;==typeof e?u.call(w(e),this[0]):u.call(this,e.jquery?e[0]:e):this[0]&amp;&amp;this[0].parentNode?this.first().prevAll().length:-1},add:function(e,t){return this.pushStack(w.uniqueSort(w.merge(this.get(),w(e,t))))},addBack:function(e){return this.add(null==e?this.prevObject:this.prevObject.filter(e))}});function P(e,t){while((e=e[t])&amp;&amp;1!==e.nodeType);return e}w.each({parent:function(e){var t=e.parentNode;return t&amp;&amp;11!==t.nodeType?t:null},parents:function(e){return k(e,&quot;parentNode&quot;)},parentsUntil:function(e,t,n){return k(e,&quot;parentNode&quot;,n)},next:function(e){return P(e,&quot;nextSibling&quot;)},prev:function(e){return P(e,&quot;previousSibling&quot;)},nextAll:function(e){return k(e,&quot;nextSibling&quot;)},prevAll:function(e){return k(e,&quot;previousSibling&quot;)},nextUntil:function(e,t,n){return k(e,&quot;nextSibling&quot;,n)},prevUntil:function(e,t,n){return k(e,&quot;previousSibling&quot;,n)},siblings:function(e){return S((e.parentNode||{}).firstChild,e)},children:function(e){return S(e.firstChild)},contents:function(e){return N(e,&quot;iframe&quot;)?e.contentDocument:(N(e,&quot;template&quot;)&amp;&amp;(e=e.content||e),w.merge([],e.childNodes))}},function(e,t){w.fn[e]=function(n,r){var i=w.map(this,t,n);return&quot;Until&quot;!==e.slice(-5)&amp;&amp;(r=n),r&amp;&amp;&quot;string&quot;==typeof r&amp;&amp;(i=w.filter(r,i)),this.length&gt;1&amp;&amp;(O[e]||w.uniqueSort(i),H.test(e)&amp;&amp;i.reverse()),this.pushStack(i)}});var M=/[^\x20\t\r\n\f]+/g;function R(e){var t={};return w.each(e.match(M)||[],function(e,n){t[n]=!0}),t}w.Callbacks=function(e){e=&quot;string&quot;==typeof e?R(e):w.extend({},e);var t,n,r,i,o=[],a=[],s=-1,u=function(){for(i=i||e.once,r=t=!0;a.length;s=-1){n=a.shift();while(++s&lt;o.length)!1===o[s].apply(n[0],n[1])&amp;&amp;e.stopOnFalse&amp;&amp;(s=o.length,n=!1)}e.memory||(n=!1),t=!1,i&amp;&amp;(o=n?[]:&quot;&quot;)},l={add:function(){return o&amp;&amp;(n&amp;&amp;!t&amp;&amp;(s=o.length-1,a.push(n)),function t(n){w.each(n,function(n,r){g(r)?e.unique&amp;&amp;l.has(r)||o.push(r):r&amp;&amp;r.length&amp;&amp;&quot;string&quot;!==x(r)&amp;&amp;t(r)})}(arguments),n&amp;&amp;!t&amp;&amp;u()),this},remove:function(){return w.each(arguments,function(e,t){var n;while((n=w.inArray(t,o,n))&gt;-1)o.splice(n,1),n&lt;=s&amp;&amp;s--}),this},has:function(e){return e?w.inArray(e,o)&gt;-1:o.length&gt;0},empty:function(){return o&amp;&amp;(o=[]),this},disable:function(){return i=a=[],o=n=&quot;&quot;,this},disabled:function(){return!o},lock:function(){return i=a=[],n||t||(o=n=&quot;&quot;),this},locked:function(){return!!i},fireWith:function(e,n){return i||(n=[e,(n=n||[]).slice?n.slice():n],a.push(n),t||u()),this},fire:function(){return l.fireWith(this,arguments),this},fired:function(){return!!r}};return l};function I(e){return e}function W(e){throw e}function $(e,t,n,r){var i;try{e&amp;&amp;g(i=e.promise)?i.call(e).done(t).fail(n):e&amp;&amp;g(i=e.then)?i.call(e,t,n):t.apply(void 0,[e].slice(r))}catch(e){n.apply(void 0,[e])}}w.extend({Deferred:function(t){var n=[[&quot;notify&quot;,&quot;progress&quot;,w.Callbacks(&quot;memory&quot;),w.Callbacks(&quot;memory&quot;),2],[&quot;resolve&quot;,&quot;done&quot;,w.Callbacks(&quot;once memory&quot;),w.Callbacks(&quot;once memory&quot;),0,&quot;resolved&quot;],[&quot;reject&quot;,&quot;fail&quot;,w.Callbacks(&quot;once memory&quot;),w.Callbacks(&quot;once memory&quot;),1,&quot;rejected&quot;]],r=&quot;pending&quot;,i={state:function(){return r},always:function(){return o.done(arguments).fail(arguments),this},&quot;catch&quot;:function(e){return i.then(null,e)},pipe:function(){var e=arguments;return w.Deferred(function(t){w.each(n,function(n,r){var i=g(e[r[4]])&amp;&amp;e[r[4]];o[r[1]](function(){var e=i&amp;&amp;i.apply(this,arguments);e&amp;&amp;g(e.promise)?e.promise().progress(t.notify).done(t.resolve).fail(t.reject):t[r[0]+&quot;With&quot;](this,i?[e]:arguments)})}),e=null}).promise()},then:function(t,r,i){var o=0;function a(t,n,r,i){return function(){var s=this,u=arguments,l=function(){var e,l;if(!(t&lt;o)){if((e=r.apply(s,u))===n.promise())throw new TypeError(&quot;Thenable self-resolution&quot;);l=e&amp;&amp;(&quot;object&quot;==typeof e||&quot;function&quot;==typeof e)&amp;&amp;e.then,g(l)?i?l.call(e,a(o,n,I,i),a(o,n,W,i)):(o++,l.call(e,a(o,n,I,i),a(o,n,W,i),a(o,n,I,n.notifyWith))):(r!==I&amp;&amp;(s=void 0,u=[e]),(i||n.resolveWith)(s,u))}},c=i?l:function(){try{l()}catch(e){w.Deferred.exceptionHook&amp;&amp;w.Deferred.exceptionHook(e,c.stackTrace),t+1&gt;=o&amp;&amp;(r!==W&amp;&amp;(s=void 0,u=[e]),n.rejectWith(s,u))}};t?c():(w.Deferred.getStackHook&amp;&amp;(c.stackTrace=w.Deferred.getStackHook()),e.setTimeout(c))}}return w.Deferred(function(e){n[0][3].add(a(0,e,g(i)?i:I,e.notifyWith)),n[1][3].add(a(0,e,g(t)?t:I)),n[2][3].add(a(0,e,g(r)?r:W))}).promise()},promise:function(e){return null!=e?w.extend(e,i):i}},o={};return w.each(n,function(e,t){var a=t[2],s=t[5];i[t[1]]=a.add,s&amp;&amp;a.add(function(){r=s},n[3-e][2].disable,n[3-e][3].disable,n[0][2].lock,n[0][3].lock),a.add(t[3].fire),o[t[0]]=function(){return o[t[0]+&quot;With&quot;](this===o?void 0:this,arguments),this},o[t[0]+&quot;With&quot;]=a.fireWith}),i.promise(o),t&amp;&amp;t.call(o,o),o},when:function(e){var t=arguments.length,n=t,r=Array(n),i=o.call(arguments),a=w.Deferred(),s=function(e){return function(n){r[e]=this,i[e]=arguments.length&gt;1?o.call(arguments):n,--t||a.resolveWith(r,i)}};if(t&lt;=1&amp;&amp;($(e,a.done(s(n)).resolve,a.reject,!t),&quot;pending&quot;===a.state()||g(i[n]&amp;&amp;i[n].then)))return a.then();while(n--)$(i[n],s(n),a.reject);return a.promise()}});var B=/^(Eval|Internal|Range|Reference|Syntax|Type|URI)Error$/;w.Deferred.exceptionHook=function(t,n){e.console&amp;&amp;e.console.warn&amp;&amp;t&amp;&amp;B.test(t.name)&amp;&amp;e.console.warn(&quot;jQuery.Deferred exception: &quot;+t.message,t.stack,n)},w.readyException=function(t){e.setTimeout(function(){throw t})};var F=w.Deferred();w.fn.ready=function(e){return F.then(e)[&quot;catch&quot;](function(e){w.readyException(e)}),this},w.extend({isReady:!1,readyWait:1,ready:function(e){(!0===e?--w.readyWait:w.isReady)||(w.isReady=!0,!0!==e&amp;&amp;--w.readyWait&gt;0||F.resolveWith(r,[w]))}}),w.ready.then=F.then;function _(){r.removeEventListener(&quot;DOMContentLoaded&quot;,_),e.removeEventListener(&quot;load&quot;,_),w.ready()}&quot;complete&quot;===r.readyState||&quot;loading&quot;!==r.readyState&amp;&amp;!r.documentElement.doScroll?e.setTimeout(w.ready):(r.addEventListener(&quot;DOMContentLoaded&quot;,_),e.addEventListener(&quot;load&quot;,_));var z=function(e,t,n,r,i,o,a){var s=0,u=e.length,l=null==n;if(&quot;object&quot;===x(n)){i=!0;for(s in n)z(e,t,s,n[s],!0,o,a)}else if(void 0!==r&amp;&amp;(i=!0,g(r)||(a=!0),l&amp;&amp;(a?(t.call(e,r),t=null):(l=t,t=function(e,t,n){return l.call(w(e),n)})),t))for(;s&lt;u;s++)t(e[s],n,a?r:r.call(e[s],s,t(e[s],n)));return i?e:l?t.call(e):u?t(e[0],n):o},X=/^-ms-/,U=/-([a-z])/g;function V(e,t){return t.toUpperCase()}function G(e){return e.replace(X,&quot;ms-&quot;).replace(U,V)}var Y=function(e){return 1===e.nodeType||9===e.nodeType||!+e.nodeType};function Q(){this.expando=w.expando+Q.uid++}Q.uid=1,Q.prototype={cache:function(e){var t=e[this.expando];return t||(t={},Y(e)&amp;&amp;(e.nodeType?e[this.expando]=t:Object.defineProperty(e,this.expando,{value:t,configurable:!0}))),t},set:function(e,t,n){var r,i=this.cache(e);if(&quot;string&quot;==typeof t)i[G(t)]=n;else for(r in t)i[G(r)]=t[r];return i},get:function(e,t){return void 0===t?this.cache(e):e[this.expando]&amp;&amp;e[this.expando][G(t)]},access:function(e,t,n){return void 0===t||t&amp;&amp;&quot;string&quot;==typeof t&amp;&amp;void 0===n?this.get(e,t):(this.set(e,t,n),void 0!==n?n:t)},remove:function(e,t){var n,r=e[this.expando];if(void 0!==r){if(void 0!==t){n=(t=Array.isArray(t)?t.map(G):(t=G(t))in r?[t]:t.match(M)||[]).length;while(n--)delete r[t[n]]}(void 0===t||w.isEmptyObject(r))&amp;&amp;(e.nodeType?e[this.expando]=void 0:delete e[this.expando])}},hasData:function(e){var t=e[this.expando];return void 0!==t&amp;&amp;!w.isEmptyObject(t)}};var J=new Q,K=new Q,Z=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,ee=/[A-Z]/g;function te(e){return&quot;true&quot;===e||&quot;false&quot;!==e&amp;&amp;(&quot;null&quot;===e?null:e===+e+&quot;&quot;?+e:Z.test(e)?JSON.parse(e):e)}function ne(e,t,n){var r;if(void 0===n&amp;&amp;1===e.nodeType)if(r=&quot;data-&quot;+t.replace(ee,&quot;-$&amp;&quot;).toLowerCase(),&quot;string&quot;==typeof(n=e.getAttribute(r))){try{n=te(n)}catch(e){}K.set(e,t,n)}else n=void 0;return n}w.extend({hasData:function(e){return K.hasData(e)||J.hasData(e)},data:function(e,t,n){return K.access(e,t,n)},removeData:function(e,t){K.remove(e,t)},_data:function(e,t,n){return J.access(e,t,n)},_removeData:function(e,t){J.remove(e,t)}}),w.fn.extend({data:function(e,t){var n,r,i,o=this[0],a=o&amp;&amp;o.attributes;if(void 0===e){if(this.length&amp;&amp;(i=K.get(o),1===o.nodeType&amp;&amp;!J.get(o,&quot;hasDataAttrs&quot;))){n=a.length;while(n--)a[n]&amp;&amp;0===(r=a[n].name).indexOf(&quot;data-&quot;)&amp;&amp;(r=G(r.slice(5)),ne(o,r,i[r]));J.set(o,&quot;hasDataAttrs&quot;,!0)}return i}return&quot;object&quot;==typeof e?this.each(function(){K.set(this,e)}):z(this,function(t){var n;if(o&amp;&amp;void 0===t){if(void 0!==(n=K.get(o,e)))return n;if(void 0!==(n=ne(o,e)))return n}else this.each(function(){K.set(this,e,t)})},null,t,arguments.length&gt;1,null,!0)},removeData:function(e){return this.each(function(){K.remove(this,e)})}}),w.extend({queue:function(e,t,n){var r;if(e)return t=(t||&quot;fx&quot;)+&quot;queue&quot;,r=J.get(e,t),n&amp;&amp;(!r||Array.isArray(n)?r=J.access(e,t,w.makeArray(n)):r.push(n)),r||[]},dequeue:function(e,t){t=t||&quot;fx&quot;;var n=w.queue(e,t),r=n.length,i=n.shift(),o=w._queueHooks(e,t),a=function(){w.dequeue(e,t)};&quot;inprogress&quot;===i&amp;&amp;(i=n.shift(),r--),i&amp;&amp;(&quot;fx&quot;===t&amp;&amp;n.unshift(&quot;inprogress&quot;),delete o.stop,i.call(e,a,o)),!r&amp;&amp;o&amp;&amp;o.empty.fire()},_queueHooks:function(e,t){var n=t+&quot;queueHooks&quot;;return J.get(e,n)||J.access(e,n,{empty:w.Callbacks(&quot;once memory&quot;).add(function(){J.remove(e,[t+&quot;queue&quot;,n])})})}}),w.fn.extend({queue:function(e,t){var n=2;return&quot;string&quot;!=typeof e&amp;&amp;(t=e,e=&quot;fx&quot;,n--),arguments.length&lt;n?w.queue(this[0],e):void 0===t?this:this.each(function(){var n=w.queue(this,e,t);w._queueHooks(this,e),&quot;fx&quot;===e&amp;&amp;&quot;inprogress&quot;!==n[0]&amp;&amp;w.dequeue(this,e)})},dequeue:function(e){return this.each(function(){w.dequeue(this,e)})},clearQueue:function(e){return this.queue(e||&quot;fx&quot;,[])},promise:function(e,t){var n,r=1,i=w.Deferred(),o=this,a=this.length,s=function(){--r||i.resolveWith(o,[o])};&quot;string&quot;!=typeof e&amp;&amp;(t=e,e=void 0),e=e||&quot;fx&quot;;while(a--)(n=J.get(o[a],e+&quot;queueHooks&quot;))&amp;&amp;n.empty&amp;&amp;(r++,n.empty.add(s));return s(),i.promise(t)}});var re=/[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,ie=new RegExp(&quot;^(?:([+-])=|)(&quot;+re+&quot;)([a-z%]*)$&quot;,&quot;i&quot;),oe=[&quot;Top&quot;,&quot;Right&quot;,&quot;Bottom&quot;,&quot;Left&quot;],ae=function(e,t){return&quot;none&quot;===(e=t||e).style.display||&quot;&quot;===e.style.display&amp;&amp;w.contains(e.ownerDocument,e)&amp;&amp;&quot;none&quot;===w.css(e,&quot;display&quot;)},se=function(e,t,n,r){var i,o,a={};for(o in t)a[o]=e.style[o],e.style[o]=t[o];i=n.apply(e,r||[]);for(o in t)e.style[o]=a[o];return i};function ue(e,t,n,r){var i,o,a=20,s=r?function(){return r.cur()}:function(){return w.css(e,t,&quot;&quot;)},u=s(),l=n&amp;&amp;n[3]||(w.cssNumber[t]?&quot;&quot;:&quot;px&quot;),c=(w.cssNumber[t]||&quot;px&quot;!==l&amp;&amp;+u)&amp;&amp;ie.exec(w.css(e,t));if(c&amp;&amp;c[3]!==l){u/=2,l=l||c[3],c=+u||1;while(a--)w.style(e,t,c+l),(1-o)*(1-(o=s()/u||.5))&lt;=0&amp;&amp;(a=0),c/=o;c*=2,w.style(e,t,c+l),n=n||[]}return n&amp;&amp;(c=+c||+u||0,i=n[1]?c+(n[1]+1)*n[2]:+n[2],r&amp;&amp;(r.unit=l,r.start=c,r.end=i)),i}var le={};function ce(e){var t,n=e.ownerDocument,r=e.nodeName,i=le[r];return i||(t=n.body.appendChild(n.createElement(r)),i=w.css(t,&quot;display&quot;),t.parentNode.removeChild(t),&quot;none&quot;===i&amp;&amp;(i=&quot;block&quot;),le[r]=i,i)}function fe(e,t){for(var n,r,i=[],o=0,a=e.length;o&lt;a;o++)(r=e[o]).style&amp;&amp;(n=r.style.display,t?(&quot;none&quot;===n&amp;&amp;(i[o]=J.get(r,&quot;display&quot;)||null,i[o]||(r.style.display=&quot;&quot;)),&quot;&quot;===r.style.display&amp;&amp;ae(r)&amp;&amp;(i[o]=ce(r))):&quot;none&quot;!==n&amp;&amp;(i[o]=&quot;none&quot;,J.set(r,&quot;display&quot;,n)));for(o=0;o&lt;a;o++)null!=i[o]&amp;&amp;(e[o].style.display=i[o]);return e}w.fn.extend({show:function(){return fe(this,!0)},hide:function(){return fe(this)},toggle:function(e){return&quot;boolean&quot;==typeof e?e?this.show():this.hide():this.each(function(){ae(this)?w(this).show():w(this).hide()})}});var pe=/^(?:checkbox|radio)$/i,de=/&lt;([a-z][^\/\0&gt;\x20\t\r\n\f]+)/i,he=/^$|^module$|\/(?:java|ecma)script/i,ge={option:[1,&quot;&lt;select multiple=&#39;multiple&#39;&gt;&quot;,&quot;&lt;/select&gt;&quot;],thead:[1,&quot;&lt;table&gt;&quot;,&quot;&lt;/table&gt;&quot;],col:[2,&quot;&lt;table&gt;&lt;colgroup&gt;&quot;,&quot;&lt;/colgroup&gt;&lt;/table&gt;&quot;],tr:[2,&quot;&lt;table&gt;&lt;tbody&gt;&quot;,&quot;&lt;/tbody&gt;&lt;/table&gt;&quot;],td:[3,&quot;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&quot;,&quot;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&quot;],_default:[0,&quot;&quot;,&quot;&quot;]};ge.optgroup=ge.option,ge.tbody=ge.tfoot=ge.colgroup=ge.caption=ge.thead,ge.th=ge.td;function ye(e,t){var n;return n=&quot;undefined&quot;!=typeof e.getElementsByTagName?e.getElementsByTagName(t||&quot;*&quot;):&quot;undefined&quot;!=typeof e.querySelectorAll?e.querySelectorAll(t||&quot;*&quot;):[],void 0===t||t&amp;&amp;N(e,t)?w.merge([e],n):n}function ve(e,t){for(var n=0,r=e.length;n&lt;r;n++)J.set(e[n],&quot;globalEval&quot;,!t||J.get(t[n],&quot;globalEval&quot;))}var me=/&lt;|&amp;#?\w+;/;function xe(e,t,n,r,i){for(var o,a,s,u,l,c,f=t.createDocumentFragment(),p=[],d=0,h=e.length;d&lt;h;d++)if((o=e[d])||0===o)if(&quot;object&quot;===x(o))w.merge(p,o.nodeType?[o]:o);else if(me.test(o)){a=a||f.appendChild(t.createElement(&quot;div&quot;)),s=(de.exec(o)||[&quot;&quot;,&quot;&quot;])[1].toLowerCase(),u=ge[s]||ge._default,a.innerHTML=u[1]+w.htmlPrefilter(o)+u[2],c=u[0];while(c--)a=a.lastChild;w.merge(p,a.childNodes),(a=f.firstChild).textContent=&quot;&quot;}else p.push(t.createTextNode(o));f.textContent=&quot;&quot;,d=0;while(o=p[d++])if(r&amp;&amp;w.inArray(o,r)&gt;-1)i&amp;&amp;i.push(o);else if(l=w.contains(o.ownerDocument,o),a=ye(f.appendChild(o),&quot;script&quot;),l&amp;&amp;ve(a),n){c=0;while(o=a[c++])he.test(o.type||&quot;&quot;)&amp;&amp;n.push(o)}return f}!function(){var e=r.createDocumentFragment().appendChild(r.createElement(&quot;div&quot;)),t=r.createElement(&quot;input&quot;);t.setAttribute(&quot;type&quot;,&quot;radio&quot;),t.setAttribute(&quot;checked&quot;,&quot;checked&quot;),t.setAttribute(&quot;name&quot;,&quot;t&quot;),e.appendChild(t),h.checkClone=e.cloneNode(!0).cloneNode(!0).lastChild.checked,e.innerHTML=&quot;&lt;textarea&gt;x&lt;/textarea&gt;&quot;,h.noCloneChecked=!!e.cloneNode(!0).lastChild.defaultValue}();var be=r.documentElement,we=/^key/,Te=/^(?:mouse|pointer|contextmenu|drag|drop)|click/,Ce=/^([^.]*)(?:\.(.+)|)/;function Ee(){return!0}function ke(){return!1}function Se(){try{return r.activeElement}catch(e){}}function De(e,t,n,r,i,o){var a,s;if(&quot;object&quot;==typeof t){&quot;string&quot;!=typeof n&amp;&amp;(r=r||n,n=void 0);for(s in t)De(e,s,n,r,t[s],o);return e}if(null==r&amp;&amp;null==i?(i=n,r=n=void 0):null==i&amp;&amp;(&quot;string&quot;==typeof n?(i=r,r=void 0):(i=r,r=n,n=void 0)),!1===i)i=ke;else if(!i)return e;return 1===o&amp;&amp;(a=i,(i=function(e){return w().off(e),a.apply(this,arguments)}).guid=a.guid||(a.guid=w.guid++)),e.each(function(){w.event.add(this,t,i,r,n)})}w.event={global:{},add:function(e,t,n,r,i){var o,a,s,u,l,c,f,p,d,h,g,y=J.get(e);if(y){n.handler&amp;&amp;(n=(o=n).handler,i=o.selector),i&amp;&amp;w.find.matchesSelector(be,i),n.guid||(n.guid=w.guid++),(u=y.events)||(u=y.events={}),(a=y.handle)||(a=y.handle=function(t){return&quot;undefined&quot;!=typeof w&amp;&amp;w.event.triggered!==t.type?w.event.dispatch.apply(e,arguments):void 0}),l=(t=(t||&quot;&quot;).match(M)||[&quot;&quot;]).length;while(l--)d=g=(s=Ce.exec(t[l])||[])[1],h=(s[2]||&quot;&quot;).split(&quot;.&quot;).sort(),d&amp;&amp;(f=w.event.special[d]||{},d=(i?f.delegateType:f.bindType)||d,f=w.event.special[d]||{},c=w.extend({type:d,origType:g,data:r,handler:n,guid:n.guid,selector:i,needsContext:i&amp;&amp;w.expr.match.needsContext.test(i),namespace:h.join(&quot;.&quot;)},o),(p=u[d])||((p=u[d]=[]).delegateCount=0,f.setup&amp;&amp;!1!==f.setup.call(e,r,h,a)||e.addEventListener&amp;&amp;e.addEventListener(d,a)),f.add&amp;&amp;(f.add.call(e,c),c.handler.guid||(c.handler.guid=n.guid)),i?p.splice(p.delegateCount++,0,c):p.push(c),w.event.global[d]=!0)}},remove:function(e,t,n,r,i){var o,a,s,u,l,c,f,p,d,h,g,y=J.hasData(e)&amp;&amp;J.get(e);if(y&amp;&amp;(u=y.events)){l=(t=(t||&quot;&quot;).match(M)||[&quot;&quot;]).length;while(l--)if(s=Ce.exec(t[l])||[],d=g=s[1],h=(s[2]||&quot;&quot;).split(&quot;.&quot;).sort(),d){f=w.event.special[d]||{},p=u[d=(r?f.delegateType:f.bindType)||d]||[],s=s[2]&amp;&amp;new RegExp(&quot;(^|\\.)&quot;+h.join(&quot;\\.(?:.*\\.|)&quot;)+&quot;(\\.|$)&quot;),a=o=p.length;while(o--)c=p[o],!i&amp;&amp;g!==c.origType||n&amp;&amp;n.guid!==c.guid||s&amp;&amp;!s.test(c.namespace)||r&amp;&amp;r!==c.selector&amp;&amp;(&quot;**&quot;!==r||!c.selector)||(p.splice(o,1),c.selector&amp;&amp;p.delegateCount--,f.remove&amp;&amp;f.remove.call(e,c));a&amp;&amp;!p.length&amp;&amp;(f.teardown&amp;&amp;!1!==f.teardown.call(e,h,y.handle)||w.removeEvent(e,d,y.handle),delete u[d])}else for(d in u)w.event.remove(e,d+t[l],n,r,!0);w.isEmptyObject(u)&amp;&amp;J.remove(e,&quot;handle events&quot;)}},dispatch:function(e){var t=w.event.fix(e),n,r,i,o,a,s,u=new Array(arguments.length),l=(J.get(this,&quot;events&quot;)||{})[t.type]||[],c=w.event.special[t.type]||{};for(u[0]=t,n=1;n&lt;arguments.length;n++)u[n]=arguments[n];if(t.delegateTarget=this,!c.preDispatch||!1!==c.preDispatch.call(this,t)){s=w.event.handlers.call(this,t,l),n=0;while((o=s[n++])&amp;&amp;!t.isPropagationStopped()){t.currentTarget=o.elem,r=0;while((a=o.handlers[r++])&amp;&amp;!t.isImmediatePropagationStopped())t.rnamespace&amp;&amp;!t.rnamespace.test(a.namespace)||(t.handleObj=a,t.data=a.data,void 0!==(i=((w.event.special[a.origType]||{}).handle||a.handler).apply(o.elem,u))&amp;&amp;!1===(t.result=i)&amp;&amp;(t.preventDefault(),t.stopPropagation()))}return c.postDispatch&amp;&amp;c.postDispatch.call(this,t),t.result}},handlers:function(e,t){var n,r,i,o,a,s=[],u=t.delegateCount,l=e.target;if(u&amp;&amp;l.nodeType&amp;&amp;!(&quot;click&quot;===e.type&amp;&amp;e.button&gt;=1))for(;l!==this;l=l.parentNode||this)if(1===l.nodeType&amp;&amp;(&quot;click&quot;!==e.type||!0!==l.disabled)){for(o=[],a={},n=0;n&lt;u;n++)void 0===a[i=(r=t[n]).selector+&quot; &quot;]&amp;&amp;(a[i]=r.needsContext?w(i,this).index(l)&gt;-1:w.find(i,this,null,[l]).length),a[i]&amp;&amp;o.push(r);o.length&amp;&amp;s.push({elem:l,handlers:o})}return l=this,u&lt;t.length&amp;&amp;s.push({elem:l,handlers:t.slice(u)}),s},addProp:function(e,t){Object.defineProperty(w.Event.prototype,e,{enumerable:!0,configurable:!0,get:g(t)?function(){if(this.originalEvent)return t(this.originalEvent)}:function(){if(this.originalEvent)return this.originalEvent[e]},set:function(t){Object.defineProperty(this,e,{enumerable:!0,configurable:!0,writable:!0,value:t})}})},fix:function(e){return e[w.expando]?e:new w.Event(e)},special:{load:{noBubble:!0},focus:{trigger:function(){if(this!==Se()&amp;&amp;this.focus)return this.focus(),!1},delegateType:&quot;focusin&quot;},blur:{trigger:function(){if(this===Se()&amp;&amp;this.blur)return this.blur(),!1},delegateType:&quot;focusout&quot;},click:{trigger:function(){if(&quot;checkbox&quot;===this.type&amp;&amp;this.click&amp;&amp;N(this,&quot;input&quot;))return this.click(),!1},_default:function(e){return N(e.target,&quot;a&quot;)}},beforeunload:{postDispatch:function(e){void 0!==e.result&amp;&amp;e.originalEvent&amp;&amp;(e.originalEvent.returnValue=e.result)}}}},w.removeEvent=function(e,t,n){e.removeEventListener&amp;&amp;e.removeEventListener(t,n)},w.Event=function(e,t){if(!(this instanceof w.Event))return new w.Event(e,t);e&amp;&amp;e.type?(this.originalEvent=e,this.type=e.type,this.isDefaultPrevented=e.defaultPrevented||void 0===e.defaultPrevented&amp;&amp;!1===e.returnValue?Ee:ke,this.target=e.target&amp;&amp;3===e.target.nodeType?e.target.parentNode:e.target,this.currentTarget=e.currentTarget,this.relatedTarget=e.relatedTarget):this.type=e,t&amp;&amp;w.extend(this,t),this.timeStamp=e&amp;&amp;e.timeStamp||Date.now(),this[w.expando]=!0},w.Event.prototype={constructor:w.Event,isDefaultPrevented:ke,isPropagationStopped:ke,isImmediatePropagationStopped:ke,isSimulated:!1,preventDefault:function(){var e=this.originalEvent;this.isDefaultPrevented=Ee,e&amp;&amp;!this.isSimulated&amp;&amp;e.preventDefault()},stopPropagation:function(){var e=this.originalEvent;this.isPropagationStopped=Ee,e&amp;&amp;!this.isSimulated&amp;&amp;e.stopPropagation()},stopImmediatePropagation:function(){var e=this.originalEvent;this.isImmediatePropagationStopped=Ee,e&amp;&amp;!this.isSimulated&amp;&amp;e.stopImmediatePropagation(),this.stopPropagation()}},w.each({altKey:!0,bubbles:!0,cancelable:!0,changedTouches:!0,ctrlKey:!0,detail:!0,eventPhase:!0,metaKey:!0,pageX:!0,pageY:!0,shiftKey:!0,view:!0,&quot;char&quot;:!0,charCode:!0,key:!0,keyCode:!0,button:!0,buttons:!0,clientX:!0,clientY:!0,offsetX:!0,offsetY:!0,pointerId:!0,pointerType:!0,screenX:!0,screenY:!0,targetTouches:!0,toElement:!0,touches:!0,which:function(e){var t=e.button;return null==e.which&amp;&amp;we.test(e.type)?null!=e.charCode?e.charCode:e.keyCode:!e.which&amp;&amp;void 0!==t&amp;&amp;Te.test(e.type)?1&amp;t?1:2&amp;t?3:4&amp;t?2:0:e.which}},w.event.addProp),w.each({mouseenter:&quot;mouseover&quot;,mouseleave:&quot;mouseout&quot;,pointerenter:&quot;pointerover&quot;,pointerleave:&quot;pointerout&quot;},function(e,t){w.event.special[e]={delegateType:t,bindType:t,handle:function(e){var n,r=this,i=e.relatedTarget,o=e.handleObj;return i&amp;&amp;(i===r||w.contains(r,i))||(e.type=o.origType,n=o.handler.apply(this,arguments),e.type=t),n}}}),w.fn.extend({on:function(e,t,n,r){return De(this,e,t,n,r)},one:function(e,t,n,r){return De(this,e,t,n,r,1)},off:function(e,t,n){var r,i;if(e&amp;&amp;e.preventDefault&amp;&amp;e.handleObj)return r=e.handleObj,w(e.delegateTarget).off(r.namespace?r.origType+&quot;.&quot;+r.namespace:r.origType,r.selector,r.handler),this;if(&quot;object&quot;==typeof e){for(i in e)this.off(i,t,e[i]);return this}return!1!==t&amp;&amp;&quot;function&quot;!=typeof t||(n=t,t=void 0),!1===n&amp;&amp;(n=ke),this.each(function(){w.event.remove(this,e,n,t)})}});var Ne=/&lt;(?!area|br|col|embed|hr|img|input|link|meta|param)(([a-z][^\/\0&gt;\x20\t\r\n\f]*)[^&gt;]*)\/&gt;/gi,Ae=/&lt;script|&lt;style|&lt;link/i,je=/checked\s*(?:[^=]|=\s*.checked.)/i,qe=/^\s*&lt;!(?:\[CDATA\[|--)|(?:\]\]|--)&gt;\s*$/g;function Le(e,t){return N(e,&quot;table&quot;)&amp;&amp;N(11!==t.nodeType?t:t.firstChild,&quot;tr&quot;)?w(e).children(&quot;tbody&quot;)[0]||e:e}function He(e){return e.type=(null!==e.getAttribute(&quot;type&quot;))+&quot;/&quot;+e.type,e}function Oe(e){return&quot;true/&quot;===(e.type||&quot;&quot;).slice(0,5)?e.type=e.type.slice(5):e.removeAttribute(&quot;type&quot;),e}function Pe(e,t){var n,r,i,o,a,s,u,l;if(1===t.nodeType){if(J.hasData(e)&amp;&amp;(o=J.access(e),a=J.set(t,o),l=o.events)){delete a.handle,a.events={};for(i in l)for(n=0,r=l[i].length;n&lt;r;n++)w.event.add(t,i,l[i][n])}K.hasData(e)&amp;&amp;(s=K.access(e),u=w.extend({},s),K.set(t,u))}}function Me(e,t){var n=t.nodeName.toLowerCase();&quot;input&quot;===n&amp;&amp;pe.test(e.type)?t.checked=e.checked:&quot;input&quot;!==n&amp;&amp;&quot;textarea&quot;!==n||(t.defaultValue=e.defaultValue)}function Re(e,t,n,r){t=a.apply([],t);var i,o,s,u,l,c,f=0,p=e.length,d=p-1,y=t[0],v=g(y);if(v||p&gt;1&amp;&amp;&quot;string&quot;==typeof y&amp;&amp;!h.checkClone&amp;&amp;je.test(y))return e.each(function(i){var o=e.eq(i);v&amp;&amp;(t[0]=y.call(this,i,o.html())),Re(o,t,n,r)});if(p&amp;&amp;(i=xe(t,e[0].ownerDocument,!1,e,r),o=i.firstChild,1===i.childNodes.length&amp;&amp;(i=o),o||r)){for(u=(s=w.map(ye(i,&quot;script&quot;),He)).length;f&lt;p;f++)l=i,f!==d&amp;&amp;(l=w.clone(l,!0,!0),u&amp;&amp;w.merge(s,ye(l,&quot;script&quot;))),n.call(e[f],l,f);if(u)for(c=s[s.length-1].ownerDocument,w.map(s,Oe),f=0;f&lt;u;f++)l=s[f],he.test(l.type||&quot;&quot;)&amp;&amp;!J.access(l,&quot;globalEval&quot;)&amp;&amp;w.contains(c,l)&amp;&amp;(l.src&amp;&amp;&quot;module&quot;!==(l.type||&quot;&quot;).toLowerCase()?w._evalUrl&amp;&amp;w._evalUrl(l.src):m(l.textContent.replace(qe,&quot;&quot;),c,l))}return e}function Ie(e,t,n){for(var r,i=t?w.filter(t,e):e,o=0;null!=(r=i[o]);o++)n||1!==r.nodeType||w.cleanData(ye(r)),r.parentNode&amp;&amp;(n&amp;&amp;w.contains(r.ownerDocument,r)&amp;&amp;ve(ye(r,&quot;script&quot;)),r.parentNode.removeChild(r));return e}w.extend({htmlPrefilter:function(e){return e.replace(Ne,&quot;&lt;$1&gt;&lt;/$2&gt;&quot;)},clone:function(e,t,n){var r,i,o,a,s=e.cloneNode(!0),u=w.contains(e.ownerDocument,e);if(!(h.noCloneChecked||1!==e.nodeType&amp;&amp;11!==e.nodeType||w.isXMLDoc(e)))for(a=ye(s),r=0,i=(o=ye(e)).length;r&lt;i;r++)Me(o[r],a[r]);if(t)if(n)for(o=o||ye(e),a=a||ye(s),r=0,i=o.length;r&lt;i;r++)Pe(o[r],a[r]);else Pe(e,s);return(a=ye(s,&quot;script&quot;)).length&gt;0&amp;&amp;ve(a,!u&amp;&amp;ye(e,&quot;script&quot;)),s},cleanData:function(e){for(var t,n,r,i=w.event.special,o=0;void 0!==(n=e[o]);o++)if(Y(n)){if(t=n[J.expando]){if(t.events)for(r in t.events)i[r]?w.event.remove(n,r):w.removeEvent(n,r,t.handle);n[J.expando]=void 0}n[K.expando]&amp;&amp;(n[K.expando]=void 0)}}}),w.fn.extend({detach:function(e){return Ie(this,e,!0)},remove:function(e){return Ie(this,e)},text:function(e){return z(this,function(e){return void 0===e?w.text(this):this.empty().each(function(){1!==this.nodeType&amp;&amp;11!==this.nodeType&amp;&amp;9!==this.nodeType||(this.textContent=e)})},null,e,arguments.length)},append:function(){return Re(this,arguments,function(e){1!==this.nodeType&amp;&amp;11!==this.nodeType&amp;&amp;9!==this.nodeType||Le(this,e).appendChild(e)})},prepend:function(){return Re(this,arguments,function(e){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var t=Le(this,e);t.insertBefore(e,t.firstChild)}})},before:function(){return Re(this,arguments,function(e){this.parentNode&amp;&amp;this.parentNode.insertBefore(e,this)})},after:function(){return Re(this,arguments,function(e){this.parentNode&amp;&amp;this.parentNode.insertBefore(e,this.nextSibling)})},empty:function(){for(var e,t=0;null!=(e=this[t]);t++)1===e.nodeType&amp;&amp;(w.cleanData(ye(e,!1)),e.textContent=&quot;&quot;);return this},clone:function(e,t){return e=null!=e&amp;&amp;e,t=null==t?e:t,this.map(function(){return w.clone(this,e,t)})},html:function(e){return z(this,function(e){var t=this[0]||{},n=0,r=this.length;if(void 0===e&amp;&amp;1===t.nodeType)return t.innerHTML;if(&quot;string&quot;==typeof e&amp;&amp;!Ae.test(e)&amp;&amp;!ge[(de.exec(e)||[&quot;&quot;,&quot;&quot;])[1].toLowerCase()]){e=w.htmlPrefilter(e);try{for(;n&lt;r;n++)1===(t=this[n]||{}).nodeType&amp;&amp;(w.cleanData(ye(t,!1)),t.innerHTML=e);t=0}catch(e){}}t&amp;&amp;this.empty().append(e)},null,e,arguments.length)},replaceWith:function(){var e=[];return Re(this,arguments,function(t){var n=this.parentNode;w.inArray(this,e)&lt;0&amp;&amp;(w.cleanData(ye(this)),n&amp;&amp;n.replaceChild(t,this))},e)}}),w.each({appendTo:&quot;append&quot;,prependTo:&quot;prepend&quot;,insertBefore:&quot;before&quot;,insertAfter:&quot;after&quot;,replaceAll:&quot;replaceWith&quot;},function(e,t){w.fn[e]=function(e){for(var n,r=[],i=w(e),o=i.length-1,a=0;a&lt;=o;a++)n=a===o?this:this.clone(!0),w(i[a])[t](n),s.apply(r,n.get());return this.pushStack(r)}});var We=new RegExp(&quot;^(&quot;+re+&quot;)(?!px)[a-z%]+$&quot;,&quot;i&quot;),$e=function(t){var n=t.ownerDocument.defaultView;return n&amp;&amp;n.opener||(n=e),n.getComputedStyle(t)},Be=new RegExp(oe.join(&quot;|&quot;),&quot;i&quot;);!function(){function t(){if(c){l.style.cssText=&quot;position:absolute;left:-11111px;width:60px;margin-top:1px;padding:0;border:0&quot;,c.style.cssText=&quot;position:relative;display:block;box-sizing:border-box;overflow:scroll;margin:auto;border:1px;padding:1px;width:60%;top:1%&quot;,be.appendChild(l).appendChild(c);var t=e.getComputedStyle(c);i=&quot;1%&quot;!==t.top,u=12===n(t.marginLeft),c.style.right=&quot;60%&quot;,s=36===n(t.right),o=36===n(t.width),c.style.position=&quot;absolute&quot;,a=36===c.offsetWidth||&quot;absolute&quot;,be.removeChild(l),c=null}}function n(e){return Math.round(parseFloat(e))}var i,o,a,s,u,l=r.createElement(&quot;div&quot;),c=r.createElement(&quot;div&quot;);c.style&amp;&amp;(c.style.backgroundClip=&quot;content-box&quot;,c.cloneNode(!0).style.backgroundClip=&quot;&quot;,h.clearCloneStyle=&quot;content-box&quot;===c.style.backgroundClip,w.extend(h,{boxSizingReliable:function(){return t(),o},pixelBoxStyles:function(){return t(),s},pixelPosition:function(){return t(),i},reliableMarginLeft:function(){return t(),u},scrollboxSize:function(){return t(),a}}))}();function Fe(e,t,n){var r,i,o,a,s=e.style;return(n=n||$e(e))&amp;&amp;(&quot;&quot;!==(a=n.getPropertyValue(t)||n[t])||w.contains(e.ownerDocument,e)||(a=w.style(e,t)),!h.pixelBoxStyles()&amp;&amp;We.test(a)&amp;&amp;Be.test(t)&amp;&amp;(r=s.width,i=s.minWidth,o=s.maxWidth,s.minWidth=s.maxWidth=s.width=a,a=n.width,s.width=r,s.minWidth=i,s.maxWidth=o)),void 0!==a?a+&quot;&quot;:a}function _e(e,t){return{get:function(){if(!e())return(this.get=t).apply(this,arguments);delete this.get}}}var ze=/^(none|table(?!-c[ea]).+)/,Xe=/^--/,Ue={position:&quot;absolute&quot;,visibility:&quot;hidden&quot;,display:&quot;block&quot;},Ve={letterSpacing:&quot;0&quot;,fontWeight:&quot;400&quot;},Ge=[&quot;Webkit&quot;,&quot;Moz&quot;,&quot;ms&quot;],Ye=r.createElement(&quot;div&quot;).style;function Qe(e){if(e in Ye)return e;var t=e[0].toUpperCase()+e.slice(1),n=Ge.length;while(n--)if((e=Ge[n]+t)in Ye)return e}function Je(e){var t=w.cssProps[e];return t||(t=w.cssProps[e]=Qe(e)||e),t}function Ke(e,t,n){var r=ie.exec(t);return r?Math.max(0,r[2]-(n||0))+(r[3]||&quot;px&quot;):t}function Ze(e,t,n,r,i,o){var a=&quot;width&quot;===t?1:0,s=0,u=0;if(n===(r?&quot;border&quot;:&quot;content&quot;))return 0;for(;a&lt;4;a+=2)&quot;margin&quot;===n&amp;&amp;(u+=w.css(e,n+oe[a],!0,i)),r?(&quot;content&quot;===n&amp;&amp;(u-=w.css(e,&quot;padding&quot;+oe[a],!0,i)),&quot;margin&quot;!==n&amp;&amp;(u-=w.css(e,&quot;border&quot;+oe[a]+&quot;Width&quot;,!0,i))):(u+=w.css(e,&quot;padding&quot;+oe[a],!0,i),&quot;padding&quot;!==n?u+=w.css(e,&quot;border&quot;+oe[a]+&quot;Width&quot;,!0,i):s+=w.css(e,&quot;border&quot;+oe[a]+&quot;Width&quot;,!0,i));return!r&amp;&amp;o&gt;=0&amp;&amp;(u+=Math.max(0,Math.ceil(e[&quot;offset&quot;+t[0].toUpperCase()+t.slice(1)]-o-u-s-.5))),u}function et(e,t,n){var r=$e(e),i=Fe(e,t,r),o=&quot;border-box&quot;===w.css(e,&quot;boxSizing&quot;,!1,r),a=o;if(We.test(i)){if(!n)return i;i=&quot;auto&quot;}return a=a&amp;&amp;(h.boxSizingReliable()||i===e.style[t]),(&quot;auto&quot;===i||!parseFloat(i)&amp;&amp;&quot;inline&quot;===w.css(e,&quot;display&quot;,!1,r))&amp;&amp;(i=e[&quot;offset&quot;+t[0].toUpperCase()+t.slice(1)],a=!0),(i=parseFloat(i)||0)+Ze(e,t,n||(o?&quot;border&quot;:&quot;content&quot;),a,r,i)+&quot;px&quot;}w.extend({cssHooks:{opacity:{get:function(e,t){if(t){var n=Fe(e,&quot;opacity&quot;);return&quot;&quot;===n?&quot;1&quot;:n}}}},cssNumber:{animationIterationCount:!0,columnCount:!0,fillOpacity:!0,flexGrow:!0,flexShrink:!0,fontWeight:!0,lineHeight:!0,opacity:!0,order:!0,orphans:!0,widows:!0,zIndex:!0,zoom:!0},cssProps:{},style:function(e,t,n,r){if(e&amp;&amp;3!==e.nodeType&amp;&amp;8!==e.nodeType&amp;&amp;e.style){var i,o,a,s=G(t),u=Xe.test(t),l=e.style;if(u||(t=Je(s)),a=w.cssHooks[t]||w.cssHooks[s],void 0===n)return a&amp;&amp;&quot;get&quot;in a&amp;&amp;void 0!==(i=a.get(e,!1,r))?i:l[t];&quot;string&quot;==(o=typeof n)&amp;&amp;(i=ie.exec(n))&amp;&amp;i[1]&amp;&amp;(n=ue(e,t,i),o=&quot;number&quot;),null!=n&amp;&amp;n===n&amp;&amp;(&quot;number&quot;===o&amp;&amp;(n+=i&amp;&amp;i[3]||(w.cssNumber[s]?&quot;&quot;:&quot;px&quot;)),h.clearCloneStyle||&quot;&quot;!==n||0!==t.indexOf(&quot;background&quot;)||(l[t]=&quot;inherit&quot;),a&amp;&amp;&quot;set&quot;in a&amp;&amp;void 0===(n=a.set(e,n,r))||(u?l.setProperty(t,n):l[t]=n))}},css:function(e,t,n,r){var i,o,a,s=G(t);return Xe.test(t)||(t=Je(s)),(a=w.cssHooks[t]||w.cssHooks[s])&amp;&amp;&quot;get&quot;in a&amp;&amp;(i=a.get(e,!0,n)),void 0===i&amp;&amp;(i=Fe(e,t,r)),&quot;normal&quot;===i&amp;&amp;t in Ve&amp;&amp;(i=Ve[t]),&quot;&quot;===n||n?(o=parseFloat(i),!0===n||isFinite(o)?o||0:i):i}}),w.each([&quot;height&quot;,&quot;width&quot;],function(e,t){w.cssHooks[t]={get:function(e,n,r){if(n)return!ze.test(w.css(e,&quot;display&quot;))||e.getClientRects().length&amp;&amp;e.getBoundingClientRect().width?et(e,t,r):se(e,Ue,function(){return et(e,t,r)})},set:function(e,n,r){var i,o=$e(e),a=&quot;border-box&quot;===w.css(e,&quot;boxSizing&quot;,!1,o),s=r&amp;&amp;Ze(e,t,r,a,o);return a&amp;&amp;h.scrollboxSize()===o.position&amp;&amp;(s-=Math.ceil(e[&quot;offset&quot;+t[0].toUpperCase()+t.slice(1)]-parseFloat(o[t])-Ze(e,t,&quot;border&quot;,!1,o)-.5)),s&amp;&amp;(i=ie.exec(n))&amp;&amp;&quot;px&quot;!==(i[3]||&quot;px&quot;)&amp;&amp;(e.style[t]=n,n=w.css(e,t)),Ke(e,n,s)}}}),w.cssHooks.marginLeft=_e(h.reliableMarginLeft,function(e,t){if(t)return(parseFloat(Fe(e,&quot;marginLeft&quot;))||e.getBoundingClientRect().left-se(e,{marginLeft:0},function(){return e.getBoundingClientRect().left}))+&quot;px&quot;}),w.each({margin:&quot;&quot;,padding:&quot;&quot;,border:&quot;Width&quot;},function(e,t){w.cssHooks[e+t]={expand:function(n){for(var r=0,i={},o=&quot;string&quot;==typeof n?n.split(&quot; &quot;):[n];r&lt;4;r++)i[e+oe[r]+t]=o[r]||o[r-2]||o[0];return i}},&quot;margin&quot;!==e&amp;&amp;(w.cssHooks[e+t].set=Ke)}),w.fn.extend({css:function(e,t){return z(this,function(e,t,n){var r,i,o={},a=0;if(Array.isArray(t)){for(r=$e(e),i=t.length;a&lt;i;a++)o[t[a]]=w.css(e,t[a],!1,r);return o}return void 0!==n?w.style(e,t,n):w.css(e,t)},e,t,arguments.length&gt;1)}});function tt(e,t,n,r,i){return new tt.prototype.init(e,t,n,r,i)}w.Tween=tt,tt.prototype={constructor:tt,init:function(e,t,n,r,i,o){this.elem=e,this.prop=n,this.easing=i||w.easing._default,this.options=t,this.start=this.now=this.cur(),this.end=r,this.unit=o||(w.cssNumber[n]?&quot;&quot;:&quot;px&quot;)},cur:function(){var e=tt.propHooks[this.prop];return e&amp;&amp;e.get?e.get(this):tt.propHooks._default.get(this)},run:function(e){var t,n=tt.propHooks[this.prop];return this.options.duration?this.pos=t=w.easing[this.easing](e,this.options.duration*e,0,1,this.options.duration):this.pos=t=e,this.now=(this.end-this.start)*t+this.start,this.options.step&amp;&amp;this.options.step.call(this.elem,this.now,this),n&amp;&amp;n.set?n.set(this):tt.propHooks._default.set(this),this}},tt.prototype.init.prototype=tt.prototype,tt.propHooks={_default:{get:function(e){var t;return 1!==e.elem.nodeType||null!=e.elem[e.prop]&amp;&amp;null==e.elem.style[e.prop]?e.elem[e.prop]:(t=w.css(e.elem,e.prop,&quot;&quot;))&amp;&amp;&quot;auto&quot;!==t?t:0},set:function(e){w.fx.step[e.prop]?w.fx.step[e.prop](e):1!==e.elem.nodeType||null==e.elem.style[w.cssProps[e.prop]]&amp;&amp;!w.cssHooks[e.prop]?e.elem[e.prop]=e.now:w.style(e.elem,e.prop,e.now+e.unit)}}},tt.propHooks.scrollTop=tt.propHooks.scrollLeft={set:function(e){e.elem.nodeType&amp;&amp;e.elem.parentNode&amp;&amp;(e.elem[e.prop]=e.now)}},w.easing={linear:function(e){return e},swing:function(e){return.5-Math.cos(e*Math.PI)/2},_default:&quot;swing&quot;},w.fx=tt.prototype.init,w.fx.step={};var nt,rt,it=/^(?:toggle|show|hide)$/,ot=/queueHooks$/;function at(){rt&amp;&amp;(!1===r.hidden&amp;&amp;e.requestAnimationFrame?e.requestAnimationFrame(at):e.setTimeout(at,w.fx.interval),w.fx.tick())}function st(){return e.setTimeout(function(){nt=void 0}),nt=Date.now()}function ut(e,t){var n,r=0,i={height:e};for(t=t?1:0;r&lt;4;r+=2-t)i[&quot;margin&quot;+(n=oe[r])]=i[&quot;padding&quot;+n]=e;return t&amp;&amp;(i.opacity=i.width=e),i}function lt(e,t,n){for(var r,i=(pt.tweeners[t]||[]).concat(pt.tweeners[&quot;*&quot;]),o=0,a=i.length;o&lt;a;o++)if(r=i[o].call(n,t,e))return r}function ct(e,t,n){var r,i,o,a,s,u,l,c,f=&quot;width&quot;in t||&quot;height&quot;in t,p=this,d={},h=e.style,g=e.nodeType&amp;&amp;ae(e),y=J.get(e,&quot;fxshow&quot;);n.queue||(null==(a=w._queueHooks(e,&quot;fx&quot;)).unqueued&amp;&amp;(a.unqueued=0,s=a.empty.fire,a.empty.fire=function(){a.unqueued||s()}),a.unqueued++,p.always(function(){p.always(function(){a.unqueued--,w.queue(e,&quot;fx&quot;).length||a.empty.fire()})}));for(r in t)if(i=t[r],it.test(i)){if(delete t[r],o=o||&quot;toggle&quot;===i,i===(g?&quot;hide&quot;:&quot;show&quot;)){if(&quot;show&quot;!==i||!y||void 0===y[r])continue;g=!0}d[r]=y&amp;&amp;y[r]||w.style(e,r)}if((u=!w.isEmptyObject(t))||!w.isEmptyObject(d)){f&amp;&amp;1===e.nodeType&amp;&amp;(n.overflow=[h.overflow,h.overflowX,h.overflowY],null==(l=y&amp;&amp;y.display)&amp;&amp;(l=J.get(e,&quot;display&quot;)),&quot;none&quot;===(c=w.css(e,&quot;display&quot;))&amp;&amp;(l?c=l:(fe([e],!0),l=e.style.display||l,c=w.css(e,&quot;display&quot;),fe([e]))),(&quot;inline&quot;===c||&quot;inline-block&quot;===c&amp;&amp;null!=l)&amp;&amp;&quot;none&quot;===w.css(e,&quot;float&quot;)&amp;&amp;(u||(p.done(function(){h.display=l}),null==l&amp;&amp;(c=h.display,l=&quot;none&quot;===c?&quot;&quot;:c)),h.display=&quot;inline-block&quot;)),n.overflow&amp;&amp;(h.overflow=&quot;hidden&quot;,p.always(function(){h.overflow=n.overflow[0],h.overflowX=n.overflow[1],h.overflowY=n.overflow[2]})),u=!1;for(r in d)u||(y?&quot;hidden&quot;in y&amp;&amp;(g=y.hidden):y=J.access(e,&quot;fxshow&quot;,{display:l}),o&amp;&amp;(y.hidden=!g),g&amp;&amp;fe([e],!0),p.done(function(){g||fe([e]),J.remove(e,&quot;fxshow&quot;);for(r in d)w.style(e,r,d[r])})),u=lt(g?y[r]:0,r,p),r in y||(y[r]=u.start,g&amp;&amp;(u.end=u.start,u.start=0))}}function ft(e,t){var n,r,i,o,a;for(n in e)if(r=G(n),i=t[r],o=e[n],Array.isArray(o)&amp;&amp;(i=o[1],o=e[n]=o[0]),n!==r&amp;&amp;(e[r]=o,delete e[n]),(a=w.cssHooks[r])&amp;&amp;&quot;expand&quot;in a){o=a.expand(o),delete e[r];for(n in o)n in e||(e[n]=o[n],t[n]=i)}else t[r]=i}function pt(e,t,n){var r,i,o=0,a=pt.prefilters.length,s=w.Deferred().always(function(){delete u.elem}),u=function(){if(i)return!1;for(var t=nt||st(),n=Math.max(0,l.startTime+l.duration-t),r=1-(n/l.duration||0),o=0,a=l.tweens.length;o&lt;a;o++)l.tweens[o].run(r);return s.notifyWith(e,[l,r,n]),r&lt;1&amp;&amp;a?n:(a||s.notifyWith(e,[l,1,0]),s.resolveWith(e,[l]),!1)},l=s.promise({elem:e,props:w.extend({},t),opts:w.extend(!0,{specialEasing:{},easing:w.easing._default},n),originalProperties:t,originalOptions:n,startTime:nt||st(),duration:n.duration,tweens:[],createTween:function(t,n){var r=w.Tween(e,l.opts,t,n,l.opts.specialEasing[t]||l.opts.easing);return l.tweens.push(r),r},stop:function(t){var n=0,r=t?l.tweens.length:0;if(i)return this;for(i=!0;n&lt;r;n++)l.tweens[n].run(1);return t?(s.notifyWith(e,[l,1,0]),s.resolveWith(e,[l,t])):s.rejectWith(e,[l,t]),this}}),c=l.props;for(ft(c,l.opts.specialEasing);o&lt;a;o++)if(r=pt.prefilters[o].call(l,e,c,l.opts))return g(r.stop)&amp;&amp;(w._queueHooks(l.elem,l.opts.queue).stop=r.stop.bind(r)),r;return w.map(c,lt,l),g(l.opts.start)&amp;&amp;l.opts.start.call(e,l),l.progress(l.opts.progress).done(l.opts.done,l.opts.complete).fail(l.opts.fail).always(l.opts.always),w.fx.timer(w.extend(u,{elem:e,anim:l,queue:l.opts.queue})),l}w.Animation=w.extend(pt,{tweeners:{&quot;*&quot;:[function(e,t){var n=this.createTween(e,t);return ue(n.elem,e,ie.exec(t),n),n}]},tweener:function(e,t){g(e)?(t=e,e=[&quot;*&quot;]):e=e.match(M);for(var n,r=0,i=e.length;r&lt;i;r++)n=e[r],pt.tweeners[n]=pt.tweeners[n]||[],pt.tweeners[n].unshift(t)},prefilters:[ct],prefilter:function(e,t){t?pt.prefilters.unshift(e):pt.prefilters.push(e)}}),w.speed=function(e,t,n){var r=e&amp;&amp;&quot;object&quot;==typeof e?w.extend({},e):{complete:n||!n&amp;&amp;t||g(e)&amp;&amp;e,duration:e,easing:n&amp;&amp;t||t&amp;&amp;!g(t)&amp;&amp;t};return w.fx.off?r.duration=0:&quot;number&quot;!=typeof r.duration&amp;&amp;(r.duration in w.fx.speeds?r.duration=w.fx.speeds[r.duration]:r.duration=w.fx.speeds._default),null!=r.queue&amp;&amp;!0!==r.queue||(r.queue=&quot;fx&quot;),r.old=r.complete,r.complete=function(){g(r.old)&amp;&amp;r.old.call(this),r.queue&amp;&amp;w.dequeue(this,r.queue)},r},w.fn.extend({fadeTo:function(e,t,n,r){return this.filter(ae).css(&quot;opacity&quot;,0).show().end().animate({opacity:t},e,n,r)},animate:function(e,t,n,r){var i=w.isEmptyObject(e),o=w.speed(t,n,r),a=function(){var t=pt(this,w.extend({},e),o);(i||J.get(this,&quot;finish&quot;))&amp;&amp;t.stop(!0)};return a.finish=a,i||!1===o.queue?this.each(a):this.queue(o.queue,a)},stop:function(e,t,n){var r=function(e){var t=e.stop;delete e.stop,t(n)};return&quot;string&quot;!=typeof e&amp;&amp;(n=t,t=e,e=void 0),t&amp;&amp;!1!==e&amp;&amp;this.queue(e||&quot;fx&quot;,[]),this.each(function(){var t=!0,i=null!=e&amp;&amp;e+&quot;queueHooks&quot;,o=w.timers,a=J.get(this);if(i)a[i]&amp;&amp;a[i].stop&amp;&amp;r(a[i]);else for(i in a)a[i]&amp;&amp;a[i].stop&amp;&amp;ot.test(i)&amp;&amp;r(a[i]);for(i=o.length;i--;)o[i].elem!==this||null!=e&amp;&amp;o[i].queue!==e||(o[i].anim.stop(n),t=!1,o.splice(i,1));!t&amp;&amp;n||w.dequeue(this,e)})},finish:function(e){return!1!==e&amp;&amp;(e=e||&quot;fx&quot;),this.each(function(){var t,n=J.get(this),r=n[e+&quot;queue&quot;],i=n[e+&quot;queueHooks&quot;],o=w.timers,a=r?r.length:0;for(n.finish=!0,w.queue(this,e,[]),i&amp;&amp;i.stop&amp;&amp;i.stop.call(this,!0),t=o.length;t--;)o[t].elem===this&amp;&amp;o[t].queue===e&amp;&amp;(o[t].anim.stop(!0),o.splice(t,1));for(t=0;t&lt;a;t++)r[t]&amp;&amp;r[t].finish&amp;&amp;r[t].finish.call(this);delete n.finish})}}),w.each([&quot;toggle&quot;,&quot;show&quot;,&quot;hide&quot;],function(e,t){var n=w.fn[t];w.fn[t]=function(e,r,i){return null==e||&quot;boolean&quot;==typeof e?n.apply(this,arguments):this.animate(ut(t,!0),e,r,i)}}),w.each({slideDown:ut(&quot;show&quot;),slideUp:ut(&quot;hide&quot;),slideToggle:ut(&quot;toggle&quot;),fadeIn:{opacity:&quot;show&quot;},fadeOut:{opacity:&quot;hide&quot;},fadeToggle:{opacity:&quot;toggle&quot;}},function(e,t){w.fn[e]=function(e,n,r){return this.animate(t,e,n,r)}}),w.timers=[],w.fx.tick=function(){var e,t=0,n=w.timers;for(nt=Date.now();t&lt;n.length;t++)(e=n[t])()||n[t]!==e||n.splice(t--,1);n.length||w.fx.stop(),nt=void 0},w.fx.timer=function(e){w.timers.push(e),w.fx.start()},w.fx.interval=13,w.fx.start=function(){rt||(rt=!0,at())},w.fx.stop=function(){rt=null},w.fx.speeds={slow:600,fast:200,_default:400},w.fn.delay=function(t,n){return t=w.fx?w.fx.speeds[t]||t:t,n=n||&quot;fx&quot;,this.queue(n,function(n,r){var i=e.setTimeout(n,t);r.stop=function(){e.clearTimeout(i)}})},function(){var e=r.createElement(&quot;input&quot;),t=r.createElement(&quot;select&quot;).appendChild(r.createElement(&quot;option&quot;));e.type=&quot;checkbox&quot;,h.checkOn=&quot;&quot;!==e.value,h.optSelected=t.selected,(e=r.createElement(&quot;input&quot;)).value=&quot;t&quot;,e.type=&quot;radio&quot;,h.radioValue=&quot;t&quot;===e.value}();var dt,ht=w.expr.attrHandle;w.fn.extend({attr:function(e,t){return z(this,w.attr,e,t,arguments.length&gt;1)},removeAttr:function(e){return this.each(function(){w.removeAttr(this,e)})}}),w.extend({attr:function(e,t,n){var r,i,o=e.nodeType;if(3!==o&amp;&amp;8!==o&amp;&amp;2!==o)return&quot;undefined&quot;==typeof e.getAttribute?w.prop(e,t,n):(1===o&amp;&amp;w.isXMLDoc(e)||(i=w.attrHooks[t.toLowerCase()]||(w.expr.match.bool.test(t)?dt:void 0)),void 0!==n?null===n?void w.removeAttr(e,t):i&amp;&amp;&quot;set&quot;in i&amp;&amp;void 0!==(r=i.set(e,n,t))?r:(e.setAttribute(t,n+&quot;&quot;),n):i&amp;&amp;&quot;get&quot;in i&amp;&amp;null!==(r=i.get(e,t))?r:null==(r=w.find.attr(e,t))?void 0:r)},attrHooks:{type:{set:function(e,t){if(!h.radioValue&amp;&amp;&quot;radio&quot;===t&amp;&amp;N(e,&quot;input&quot;)){var n=e.value;return e.setAttribute(&quot;type&quot;,t),n&amp;&amp;(e.value=n),t}}}},removeAttr:function(e,t){var n,r=0,i=t&amp;&amp;t.match(M);if(i&amp;&amp;1===e.nodeType)while(n=i[r++])e.removeAttribute(n)}}),dt={set:function(e,t,n){return!1===t?w.removeAttr(e,n):e.setAttribute(n,n),n}},w.each(w.expr.match.bool.source.match(/\w+/g),function(e,t){var n=ht[t]||w.find.attr;ht[t]=function(e,t,r){var i,o,a=t.toLowerCase();return r||(o=ht[a],ht[a]=i,i=null!=n(e,t,r)?a:null,ht[a]=o),i}});var gt=/^(?:input|select|textarea|button)$/i,yt=/^(?:a|area)$/i;w.fn.extend({prop:function(e,t){return z(this,w.prop,e,t,arguments.length&gt;1)},removeProp:function(e){return this.each(function(){delete this[w.propFix[e]||e]})}}),w.extend({prop:function(e,t,n){var r,i,o=e.nodeType;if(3!==o&amp;&amp;8!==o&amp;&amp;2!==o)return 1===o&amp;&amp;w.isXMLDoc(e)||(t=w.propFix[t]||t,i=w.propHooks[t]),void 0!==n?i&amp;&amp;&quot;set&quot;in i&amp;&amp;void 0!==(r=i.set(e,n,t))?r:e[t]=n:i&amp;&amp;&quot;get&quot;in i&amp;&amp;null!==(r=i.get(e,t))?r:e[t]},propHooks:{tabIndex:{get:function(e){var t=w.find.attr(e,&quot;tabindex&quot;);return t?parseInt(t,10):gt.test(e.nodeName)||yt.test(e.nodeName)&amp;&amp;e.href?0:-1}}},propFix:{&quot;for&quot;:&quot;htmlFor&quot;,&quot;class&quot;:&quot;className&quot;}}),h.optSelected||(w.propHooks.selected={get:function(e){var t=e.parentNode;return t&amp;&amp;t.parentNode&amp;&amp;t.parentNode.selectedIndex,null},set:function(e){var t=e.parentNode;t&amp;&amp;(t.selectedIndex,t.parentNode&amp;&amp;t.parentNode.selectedIndex)}}),w.each([&quot;tabIndex&quot;,&quot;readOnly&quot;,&quot;maxLength&quot;,&quot;cellSpacing&quot;,&quot;cellPadding&quot;,&quot;rowSpan&quot;,&quot;colSpan&quot;,&quot;useMap&quot;,&quot;frameBorder&quot;,&quot;contentEditable&quot;],function(){w.propFix[this.toLowerCase()]=this});function vt(e){return(e.match(M)||[]).join(&quot; &quot;)}function mt(e){return e.getAttribute&amp;&amp;e.getAttribute(&quot;class&quot;)||&quot;&quot;}function xt(e){return Array.isArray(e)?e:&quot;string&quot;==typeof e?e.match(M)||[]:[]}w.fn.extend({addClass:function(e){var t,n,r,i,o,a,s,u=0;if(g(e))return this.each(function(t){w(this).addClass(e.call(this,t,mt(this)))});if((t=xt(e)).length)while(n=this[u++])if(i=mt(n),r=1===n.nodeType&amp;&amp;&quot; &quot;+vt(i)+&quot; &quot;){a=0;while(o=t[a++])r.indexOf(&quot; &quot;+o+&quot; &quot;)&lt;0&amp;&amp;(r+=o+&quot; &quot;);i!==(s=vt(r))&amp;&amp;n.setAttribute(&quot;class&quot;,s)}return this},removeClass:function(e){var t,n,r,i,o,a,s,u=0;if(g(e))return this.each(function(t){w(this).removeClass(e.call(this,t,mt(this)))});if(!arguments.length)return this.attr(&quot;class&quot;,&quot;&quot;);if((t=xt(e)).length)while(n=this[u++])if(i=mt(n),r=1===n.nodeType&amp;&amp;&quot; &quot;+vt(i)+&quot; &quot;){a=0;while(o=t[a++])while(r.indexOf(&quot; &quot;+o+&quot; &quot;)&gt;-1)r=r.replace(&quot; &quot;+o+&quot; &quot;,&quot; &quot;);i!==(s=vt(r))&amp;&amp;n.setAttribute(&quot;class&quot;,s)}return this},toggleClass:function(e,t){var n=typeof e,r=&quot;string&quot;===n||Array.isArray(e);return&quot;boolean&quot;==typeof t&amp;&amp;r?t?this.addClass(e):this.removeClass(e):g(e)?this.each(function(n){w(this).toggleClass(e.call(this,n,mt(this),t),t)}):this.each(function(){var t,i,o,a;if(r){i=0,o=w(this),a=xt(e);while(t=a[i++])o.hasClass(t)?o.removeClass(t):o.addClass(t)}else void 0!==e&amp;&amp;&quot;boolean&quot;!==n||((t=mt(this))&amp;&amp;J.set(this,&quot;__className__&quot;,t),this.setAttribute&amp;&amp;this.setAttribute(&quot;class&quot;,t||!1===e?&quot;&quot;:J.get(this,&quot;__className__&quot;)||&quot;&quot;))})},hasClass:function(e){var t,n,r=0;t=&quot; &quot;+e+&quot; &quot;;while(n=this[r++])if(1===n.nodeType&amp;&amp;(&quot; &quot;+vt(mt(n))+&quot; &quot;).indexOf(t)&gt;-1)return!0;return!1}});var bt=/\r/g;w.fn.extend({val:function(e){var t,n,r,i=this[0];{if(arguments.length)return r=g(e),this.each(function(n){var i;1===this.nodeType&amp;&amp;(null==(i=r?e.call(this,n,w(this).val()):e)?i=&quot;&quot;:&quot;number&quot;==typeof i?i+=&quot;&quot;:Array.isArray(i)&amp;&amp;(i=w.map(i,function(e){return null==e?&quot;&quot;:e+&quot;&quot;})),(t=w.valHooks[this.type]||w.valHooks[this.nodeName.toLowerCase()])&amp;&amp;&quot;set&quot;in t&amp;&amp;void 0!==t.set(this,i,&quot;value&quot;)||(this.value=i))});if(i)return(t=w.valHooks[i.type]||w.valHooks[i.nodeName.toLowerCase()])&amp;&amp;&quot;get&quot;in t&amp;&amp;void 0!==(n=t.get(i,&quot;value&quot;))?n:&quot;string&quot;==typeof(n=i.value)?n.replace(bt,&quot;&quot;):null==n?&quot;&quot;:n}}}),w.extend({valHooks:{option:{get:function(e){var t=w.find.attr(e,&quot;value&quot;);return null!=t?t:vt(w.text(e))}},select:{get:function(e){var t,n,r,i=e.options,o=e.selectedIndex,a=&quot;select-one&quot;===e.type,s=a?null:[],u=a?o+1:i.length;for(r=o&lt;0?u:a?o:0;r&lt;u;r++)if(((n=i[r]).selected||r===o)&amp;&amp;!n.disabled&amp;&amp;(!n.parentNode.disabled||!N(n.parentNode,&quot;optgroup&quot;))){if(t=w(n).val(),a)return t;s.push(t)}return s},set:function(e,t){var n,r,i=e.options,o=w.makeArray(t),a=i.length;while(a--)((r=i[a]).selected=w.inArray(w.valHooks.option.get(r),o)&gt;-1)&amp;&amp;(n=!0);return n||(e.selectedIndex=-1),o}}}}),w.each([&quot;radio&quot;,&quot;checkbox&quot;],function(){w.valHooks[this]={set:function(e,t){if(Array.isArray(t))return e.checked=w.inArray(w(e).val(),t)&gt;-1}},h.checkOn||(w.valHooks[this].get=function(e){return null===e.getAttribute(&quot;value&quot;)?&quot;on&quot;:e.value})}),h.focusin=&quot;onfocusin&quot;in e;var wt=/^(?:focusinfocus|focusoutblur)$/,Tt=function(e){e.stopPropagation()};w.extend(w.event,{trigger:function(t,n,i,o){var a,s,u,l,c,p,d,h,v=[i||r],m=f.call(t,&quot;type&quot;)?t.type:t,x=f.call(t,&quot;namespace&quot;)?t.namespace.split(&quot;.&quot;):[];if(s=h=u=i=i||r,3!==i.nodeType&amp;&amp;8!==i.nodeType&amp;&amp;!wt.test(m+w.event.triggered)&amp;&amp;(m.indexOf(&quot;.&quot;)&gt;-1&amp;&amp;(m=(x=m.split(&quot;.&quot;)).shift(),x.sort()),c=m.indexOf(&quot;:&quot;)&lt;0&amp;&amp;&quot;on&quot;+m,t=t[w.expando]?t:new w.Event(m,&quot;object&quot;==typeof t&amp;&amp;t),t.isTrigger=o?2:3,t.namespace=x.join(&quot;.&quot;),t.rnamespace=t.namespace?new RegExp(&quot;(^|\\.)&quot;+x.join(&quot;\\.(?:.*\\.|)&quot;)+&quot;(\\.|$)&quot;):null,t.result=void 0,t.target||(t.target=i),n=null==n?[t]:w.makeArray(n,[t]),d=w.event.special[m]||{},o||!d.trigger||!1!==d.trigger.apply(i,n))){if(!o&amp;&amp;!d.noBubble&amp;&amp;!y(i)){for(l=d.delegateType||m,wt.test(l+m)||(s=s.parentNode);s;s=s.parentNode)v.push(s),u=s;u===(i.ownerDocument||r)&amp;&amp;v.push(u.defaultView||u.parentWindow||e)}a=0;while((s=v[a++])&amp;&amp;!t.isPropagationStopped())h=s,t.type=a&gt;1?l:d.bindType||m,(p=(J.get(s,&quot;events&quot;)||{})[t.type]&amp;&amp;J.get(s,&quot;handle&quot;))&amp;&amp;p.apply(s,n),(p=c&amp;&amp;s[c])&amp;&amp;p.apply&amp;&amp;Y(s)&amp;&amp;(t.result=p.apply(s,n),!1===t.result&amp;&amp;t.preventDefault());return t.type=m,o||t.isDefaultPrevented()||d._default&amp;&amp;!1!==d._default.apply(v.pop(),n)||!Y(i)||c&amp;&amp;g(i[m])&amp;&amp;!y(i)&amp;&amp;((u=i[c])&amp;&amp;(i[c]=null),w.event.triggered=m,t.isPropagationStopped()&amp;&amp;h.addEventListener(m,Tt),i[m](),t.isPropagationStopped()&amp;&amp;h.removeEventListener(m,Tt),w.event.triggered=void 0,u&amp;&amp;(i[c]=u)),t.result}},simulate:function(e,t,n){var r=w.extend(new w.Event,n,{type:e,isSimulated:!0});w.event.trigger(r,null,t)}}),w.fn.extend({trigger:function(e,t){return this.each(function(){w.event.trigger(e,t,this)})},triggerHandler:function(e,t){var n=this[0];if(n)return w.event.trigger(e,t,n,!0)}}),h.focusin||w.each({focus:&quot;focusin&quot;,blur:&quot;focusout&quot;},function(e,t){var n=function(e){w.event.simulate(t,e.target,w.event.fix(e))};w.event.special[t]={setup:function(){var r=this.ownerDocument||this,i=J.access(r,t);i||r.addEventListener(e,n,!0),J.access(r,t,(i||0)+1)},teardown:function(){var r=this.ownerDocument||this,i=J.access(r,t)-1;i?J.access(r,t,i):(r.removeEventListener(e,n,!0),J.remove(r,t))}}});var Ct=e.location,Et=Date.now(),kt=/\?/;w.parseXML=function(t){var n;if(!t||&quot;string&quot;!=typeof t)return null;try{n=(new e.DOMParser).parseFromString(t,&quot;text/xml&quot;)}catch(e){n=void 0}return n&amp;&amp;!n.getElementsByTagName(&quot;parsererror&quot;).length||w.error(&quot;Invalid XML: &quot;+t),n};var St=/\[\]$/,Dt=/\r?\n/g,Nt=/^(?:submit|button|image|reset|file)$/i,At=/^(?:input|select|textarea|keygen)/i;function jt(e,t,n,r){var i;if(Array.isArray(t))w.each(t,function(t,i){n||St.test(e)?r(e,i):jt(e+&quot;[&quot;+(&quot;object&quot;==typeof i&amp;&amp;null!=i?t:&quot;&quot;)+&quot;]&quot;,i,n,r)});else if(n||&quot;object&quot;!==x(t))r(e,t);else for(i in t)jt(e+&quot;[&quot;+i+&quot;]&quot;,t[i],n,r)}w.param=function(e,t){var n,r=[],i=function(e,t){var n=g(t)?t():t;r[r.length]=encodeURIComponent(e)+&quot;=&quot;+encodeURIComponent(null==n?&quot;&quot;:n)};if(Array.isArray(e)||e.jquery&amp;&amp;!w.isPlainObject(e))w.each(e,function(){i(this.name,this.value)});else for(n in e)jt(n,e[n],t,i);return r.join(&quot;&amp;&quot;)},w.fn.extend({serialize:function(){return w.param(this.serializeArray())},serializeArray:function(){return this.map(function(){var e=w.prop(this,&quot;elements&quot;);return e?w.makeArray(e):this}).filter(function(){var e=this.type;return this.name&amp;&amp;!w(this).is(&quot;:disabled&quot;)&amp;&amp;At.test(this.nodeName)&amp;&amp;!Nt.test(e)&amp;&amp;(this.checked||!pe.test(e))}).map(function(e,t){var n=w(this).val();return null==n?null:Array.isArray(n)?w.map(n,function(e){return{name:t.name,value:e.replace(Dt,&quot;\r\n&quot;)}}):{name:t.name,value:n.replace(Dt,&quot;\r\n&quot;)}}).get()}});var qt=/%20/g,Lt=/#.*$/,Ht=/([?&amp;])_=[^&amp;]*/,Ot=/^(.*?):[ \t]*([^\r\n]*)$/gm,Pt=/^(?:about|app|app-storage|.+-extension|file|res|widget):$/,Mt=/^(?:GET|HEAD)$/,Rt=/^\/\//,It={},Wt={},$t=&quot;*/&quot;.concat(&quot;*&quot;),Bt=r.createElement(&quot;a&quot;);Bt.href=Ct.href;function Ft(e){return function(t,n){&quot;string&quot;!=typeof t&amp;&amp;(n=t,t=&quot;*&quot;);var r,i=0,o=t.toLowerCase().match(M)||[];if(g(n))while(r=o[i++])&quot;+&quot;===r[0]?(r=r.slice(1)||&quot;*&quot;,(e[r]=e[r]||[]).unshift(n)):(e[r]=e[r]||[]).push(n)}}function _t(e,t,n,r){var i={},o=e===Wt;function a(s){var u;return i[s]=!0,w.each(e[s]||[],function(e,s){var l=s(t,n,r);return&quot;string&quot;!=typeof l||o||i[l]?o?!(u=l):void 0:(t.dataTypes.unshift(l),a(l),!1)}),u}return a(t.dataTypes[0])||!i[&quot;*&quot;]&amp;&amp;a(&quot;*&quot;)}function zt(e,t){var n,r,i=w.ajaxSettings.flatOptions||{};for(n in t)void 0!==t[n]&amp;&amp;((i[n]?e:r||(r={}))[n]=t[n]);return r&amp;&amp;w.extend(!0,e,r),e}function Xt(e,t,n){var r,i,o,a,s=e.contents,u=e.dataTypes;while(&quot;*&quot;===u[0])u.shift(),void 0===r&amp;&amp;(r=e.mimeType||t.getResponseHeader(&quot;Content-Type&quot;));if(r)for(i in s)if(s[i]&amp;&amp;s[i].test(r)){u.unshift(i);break}if(u[0]in n)o=u[0];else{for(i in n){if(!u[0]||e.converters[i+&quot; &quot;+u[0]]){o=i;break}a||(a=i)}o=o||a}if(o)return o!==u[0]&amp;&amp;u.unshift(o),n[o]}function Ut(e,t,n,r){var i,o,a,s,u,l={},c=e.dataTypes.slice();if(c[1])for(a in e.converters)l[a.toLowerCase()]=e.converters[a];o=c.shift();while(o)if(e.responseFields[o]&amp;&amp;(n[e.responseFields[o]]=t),!u&amp;&amp;r&amp;&amp;e.dataFilter&amp;&amp;(t=e.dataFilter(t,e.dataType)),u=o,o=c.shift())if(&quot;*&quot;===o)o=u;else if(&quot;*&quot;!==u&amp;&amp;u!==o){if(!(a=l[u+&quot; &quot;+o]||l[&quot;* &quot;+o]))for(i in l)if((s=i.split(&quot; &quot;))[1]===o&amp;&amp;(a=l[u+&quot; &quot;+s[0]]||l[&quot;* &quot;+s[0]])){!0===a?a=l[i]:!0!==l[i]&amp;&amp;(o=s[0],c.unshift(s[1]));break}if(!0!==a)if(a&amp;&amp;e[&quot;throws&quot;])t=a(t);else try{t=a(t)}catch(e){return{state:&quot;parsererror&quot;,error:a?e:&quot;No conversion from &quot;+u+&quot; to &quot;+o}}}return{state:&quot;success&quot;,data:t}}w.extend({active:0,lastModified:{},etag:{},ajaxSettings:{url:Ct.href,type:&quot;GET&quot;,isLocal:Pt.test(Ct.protocol),global:!0,processData:!0,async:!0,contentType:&quot;application/x-www-form-urlencoded; charset=UTF-8&quot;,accepts:{&quot;*&quot;:$t,text:&quot;text/plain&quot;,html:&quot;text/html&quot;,xml:&quot;application/xml, text/xml&quot;,json:&quot;application/json, text/javascript&quot;},contents:{xml:/\bxml\b/,html:/\bhtml/,json:/\bjson\b/},responseFields:{xml:&quot;responseXML&quot;,text:&quot;responseText&quot;,json:&quot;responseJSON&quot;},converters:{&quot;* text&quot;:String,&quot;text html&quot;:!0,&quot;text json&quot;:JSON.parse,&quot;text xml&quot;:w.parseXML},flatOptions:{url:!0,context:!0}},ajaxSetup:function(e,t){return t?zt(zt(e,w.ajaxSettings),t):zt(w.ajaxSettings,e)},ajaxPrefilter:Ft(It),ajaxTransport:Ft(Wt),ajax:function(t,n){&quot;object&quot;==typeof t&amp;&amp;(n=t,t=void 0),n=n||{};var i,o,a,s,u,l,c,f,p,d,h=w.ajaxSetup({},n),g=h.context||h,y=h.context&amp;&amp;(g.nodeType||g.jquery)?w(g):w.event,v=w.Deferred(),m=w.Callbacks(&quot;once memory&quot;),x=h.statusCode||{},b={},T={},C=&quot;canceled&quot;,E={readyState:0,getResponseHeader:function(e){var t;if(c){if(!s){s={};while(t=Ot.exec(a))s[t[1].toLowerCase()]=t[2]}t=s[e.toLowerCase()]}return null==t?null:t},getAllResponseHeaders:function(){return c?a:null},setRequestHeader:function(e,t){return null==c&amp;&amp;(e=T[e.toLowerCase()]=T[e.toLowerCase()]||e,b[e]=t),this},overrideMimeType:function(e){return null==c&amp;&amp;(h.mimeType=e),this},statusCode:function(e){var t;if(e)if(c)E.always(e[E.status]);else for(t in e)x[t]=[x[t],e[t]];return this},abort:function(e){var t=e||C;return i&amp;&amp;i.abort(t),k(0,t),this}};if(v.promise(E),h.url=((t||h.url||Ct.href)+&quot;&quot;).replace(Rt,Ct.protocol+&quot;//&quot;),h.type=n.method||n.type||h.method||h.type,h.dataTypes=(h.dataType||&quot;*&quot;).toLowerCase().match(M)||[&quot;&quot;],null==h.crossDomain){l=r.createElement(&quot;a&quot;);try{l.href=h.url,l.href=l.href,h.crossDomain=Bt.protocol+&quot;//&quot;+Bt.host!=l.protocol+&quot;//&quot;+l.host}catch(e){h.crossDomain=!0}}if(h.data&amp;&amp;h.processData&amp;&amp;&quot;string&quot;!=typeof h.data&amp;&amp;(h.data=w.param(h.data,h.traditional)),_t(It,h,n,E),c)return E;(f=w.event&amp;&amp;h.global)&amp;&amp;0==w.active++&amp;&amp;w.event.trigger(&quot;ajaxStart&quot;),h.type=h.type.toUpperCase(),h.hasContent=!Mt.test(h.type),o=h.url.replace(Lt,&quot;&quot;),h.hasContent?h.data&amp;&amp;h.processData&amp;&amp;0===(h.contentType||&quot;&quot;).indexOf(&quot;application/x-www-form-urlencoded&quot;)&amp;&amp;(h.data=h.data.replace(qt,&quot;+&quot;)):(d=h.url.slice(o.length),h.data&amp;&amp;(h.processData||&quot;string&quot;==typeof h.data)&amp;&amp;(o+=(kt.test(o)?&quot;&amp;&quot;:&quot;?&quot;)+h.data,delete h.data),!1===h.cache&amp;&amp;(o=o.replace(Ht,&quot;$1&quot;),d=(kt.test(o)?&quot;&amp;&quot;:&quot;?&quot;)+&quot;_=&quot;+Et+++d),h.url=o+d),h.ifModified&amp;&amp;(w.lastModified[o]&amp;&amp;E.setRequestHeader(&quot;If-Modified-Since&quot;,w.lastModified[o]),w.etag[o]&amp;&amp;E.setRequestHeader(&quot;If-None-Match&quot;,w.etag[o])),(h.data&amp;&amp;h.hasContent&amp;&amp;!1!==h.contentType||n.contentType)&amp;&amp;E.setRequestHeader(&quot;Content-Type&quot;,h.contentType),E.setRequestHeader(&quot;Accept&quot;,h.dataTypes[0]&amp;&amp;h.accepts[h.dataTypes[0]]?h.accepts[h.dataTypes[0]]+(&quot;*&quot;!==h.dataTypes[0]?&quot;, &quot;+$t+&quot;; q=0.01&quot;:&quot;&quot;):h.accepts[&quot;*&quot;]);for(p in h.headers)E.setRequestHeader(p,h.headers[p]);if(h.beforeSend&amp;&amp;(!1===h.beforeSend.call(g,E,h)||c))return E.abort();if(C=&quot;abort&quot;,m.add(h.complete),E.done(h.success),E.fail(h.error),i=_t(Wt,h,n,E)){if(E.readyState=1,f&amp;&amp;y.trigger(&quot;ajaxSend&quot;,[E,h]),c)return E;h.async&amp;&amp;h.timeout&gt;0&amp;&amp;(u=e.setTimeout(function(){E.abort(&quot;timeout&quot;)},h.timeout));try{c=!1,i.send(b,k)}catch(e){if(c)throw e;k(-1,e)}}else k(-1,&quot;No Transport&quot;);function k(t,n,r,s){var l,p,d,b,T,C=n;c||(c=!0,u&amp;&amp;e.clearTimeout(u),i=void 0,a=s||&quot;&quot;,E.readyState=t&gt;0?4:0,l=t&gt;=200&amp;&amp;t&lt;300||304===t,r&amp;&amp;(b=Xt(h,E,r)),b=Ut(h,b,E,l),l?(h.ifModified&amp;&amp;((T=E.getResponseHeader(&quot;Last-Modified&quot;))&amp;&amp;(w.lastModified[o]=T),(T=E.getResponseHeader(&quot;etag&quot;))&amp;&amp;(w.etag[o]=T)),204===t||&quot;HEAD&quot;===h.type?C=&quot;nocontent&quot;:304===t?C=&quot;notmodified&quot;:(C=b.state,p=b.data,l=!(d=b.error))):(d=C,!t&amp;&amp;C||(C=&quot;error&quot;,t&lt;0&amp;&amp;(t=0))),E.status=t,E.statusText=(n||C)+&quot;&quot;,l?v.resolveWith(g,[p,C,E]):v.rejectWith(g,[E,C,d]),E.statusCode(x),x=void 0,f&amp;&amp;y.trigger(l?&quot;ajaxSuccess&quot;:&quot;ajaxError&quot;,[E,h,l?p:d]),m.fireWith(g,[E,C]),f&amp;&amp;(y.trigger(&quot;ajaxComplete&quot;,[E,h]),--w.active||w.event.trigger(&quot;ajaxStop&quot;)))}return E},getJSON:function(e,t,n){return w.get(e,t,n,&quot;json&quot;)},getScript:function(e,t){return w.get(e,void 0,t,&quot;script&quot;)}}),w.each([&quot;get&quot;,&quot;post&quot;],function(e,t){w[t]=function(e,n,r,i){return g(n)&amp;&amp;(i=i||r,r=n,n=void 0),w.ajax(w.extend({url:e,type:t,dataType:i,data:n,success:r},w.isPlainObject(e)&amp;&amp;e))}}),w._evalUrl=function(e){return w.ajax({url:e,type:&quot;GET&quot;,dataType:&quot;script&quot;,cache:!0,async:!1,global:!1,&quot;throws&quot;:!0})},w.fn.extend({wrapAll:function(e){var t;return this[0]&amp;&amp;(g(e)&amp;&amp;(e=e.call(this[0])),t=w(e,this[0].ownerDocument).eq(0).clone(!0),this[0].parentNode&amp;&amp;t.insertBefore(this[0]),t.map(function(){var e=this;while(e.firstElementChild)e=e.firstElementChild;return e}).append(this)),this},wrapInner:function(e){return g(e)?this.each(function(t){w(this).wrapInner(e.call(this,t))}):this.each(function(){var t=w(this),n=t.contents();n.length?n.wrapAll(e):t.append(e)})},wrap:function(e){var t=g(e);return this.each(function(n){w(this).wrapAll(t?e.call(this,n):e)})},unwrap:function(e){return this.parent(e).not(&quot;body&quot;).each(function(){w(this).replaceWith(this.childNodes)}),this}}),w.expr.pseudos.hidden=function(e){return!w.expr.pseudos.visible(e)},w.expr.pseudos.visible=function(e){return!!(e.offsetWidth||e.offsetHeight||e.getClientRects().length)},w.ajaxSettings.xhr=function(){try{return new e.XMLHttpRequest}catch(e){}};var Vt={0:200,1223:204},Gt=w.ajaxSettings.xhr();h.cors=!!Gt&amp;&amp;&quot;withCredentials&quot;in Gt,h.ajax=Gt=!!Gt,w.ajaxTransport(function(t){var n,r;if(h.cors||Gt&amp;&amp;!t.crossDomain)return{send:function(i,o){var a,s=t.xhr();if(s.open(t.type,t.url,t.async,t.username,t.password),t.xhrFields)for(a in t.xhrFields)s[a]=t.xhrFields[a];t.mimeType&amp;&amp;s.overrideMimeType&amp;&amp;s.overrideMimeType(t.mimeType),t.crossDomain||i[&quot;X-Requested-With&quot;]||(i[&quot;X-Requested-With&quot;]=&quot;XMLHttpRequest&quot;);for(a in i)s.setRequestHeader(a,i[a]);n=function(e){return function(){n&amp;&amp;(n=r=s.onload=s.onerror=s.onabort=s.ontimeout=s.onreadystatechange=null,&quot;abort&quot;===e?s.abort():&quot;error&quot;===e?&quot;number&quot;!=typeof s.status?o(0,&quot;error&quot;):o(s.status,s.statusText):o(Vt[s.status]||s.status,s.statusText,&quot;text&quot;!==(s.responseType||&quot;text&quot;)||&quot;string&quot;!=typeof s.responseText?{binary:s.response}:{text:s.responseText},s.getAllResponseHeaders()))}},s.onload=n(),r=s.onerror=s.ontimeout=n(&quot;error&quot;),void 0!==s.onabort?s.onabort=r:s.onreadystatechange=function(){4===s.readyState&amp;&amp;e.setTimeout(function(){n&amp;&amp;r()})},n=n(&quot;abort&quot;);try{s.send(t.hasContent&amp;&amp;t.data||null)}catch(e){if(n)throw e}},abort:function(){n&amp;&amp;n()}}}),w.ajaxPrefilter(function(e){e.crossDomain&amp;&amp;(e.contents.script=!1)}),w.ajaxSetup({accepts:{script:&quot;text/javascript, application/javascript, application/ecmascript, application/x-ecmascript&quot;},contents:{script:/\b(?:java|ecma)script\b/},converters:{&quot;text script&quot;:function(e){return w.globalEval(e),e}}}),w.ajaxPrefilter(&quot;script&quot;,function(e){void 0===e.cache&amp;&amp;(e.cache=!1),e.crossDomain&amp;&amp;(e.type=&quot;GET&quot;)}),w.ajaxTransport(&quot;script&quot;,function(e){if(e.crossDomain){var t,n;return{send:function(i,o){t=w(&quot;&lt;script&gt;&quot;).prop({charset:e.scriptCharset,src:e.url}).on(&quot;load error&quot;,n=function(e){t.remove(),n=null,e&amp;&amp;o(&quot;error&quot;===e.type?404:200,e.type)}),r.head.appendChild(t[0])},abort:function(){n&amp;&amp;n()}}}});var Yt=[],Qt=/(=)\?(?=&amp;|$)|\?\?/;w.ajaxSetup({jsonp:&quot;callback&quot;,jsonpCallback:function(){var e=Yt.pop()||w.expando+&quot;_&quot;+Et++;return this[e]=!0,e}}),w.ajaxPrefilter(&quot;json jsonp&quot;,function(t,n,r){var i,o,a,s=!1!==t.jsonp&amp;&amp;(Qt.test(t.url)?&quot;url&quot;:&quot;string&quot;==typeof t.data&amp;&amp;0===(t.contentType||&quot;&quot;).indexOf(&quot;application/x-www-form-urlencoded&quot;)&amp;&amp;Qt.test(t.data)&amp;&amp;&quot;data&quot;);if(s||&quot;jsonp&quot;===t.dataTypes[0])return i=t.jsonpCallback=g(t.jsonpCallback)?t.jsonpCallback():t.jsonpCallback,s?t[s]=t[s].replace(Qt,&quot;$1&quot;+i):!1!==t.jsonp&amp;&amp;(t.url+=(kt.test(t.url)?&quot;&amp;&quot;:&quot;?&quot;)+t.jsonp+&quot;=&quot;+i),t.converters[&quot;script json&quot;]=function(){return a||w.error(i+&quot; was not called&quot;),a[0]},t.dataTypes[0]=&quot;json&quot;,o=e[i],e[i]=function(){a=arguments},r.always(function(){void 0===o?w(e).removeProp(i):e[i]=o,t[i]&amp;&amp;(t.jsonpCallback=n.jsonpCallback,Yt.push(i)),a&amp;&amp;g(o)&amp;&amp;o(a[0]),a=o=void 0}),&quot;script&quot;}),h.createHTMLDocument=function(){var e=r.implementation.createHTMLDocument(&quot;&quot;).body;return e.innerHTML=&quot;&lt;form&gt;&lt;/form&gt;&lt;form&gt;&lt;/form&gt;&quot;,2===e.childNodes.length}(),w.parseHTML=function(e,t,n){if(&quot;string&quot;!=typeof e)return[];&quot;boolean&quot;==typeof t&amp;&amp;(n=t,t=!1);var i,o,a;return t||(h.createHTMLDocument?((i=(t=r.implementation.createHTMLDocument(&quot;&quot;)).createElement(&quot;base&quot;)).href=r.location.href,t.head.appendChild(i)):t=r),o=A.exec(e),a=!n&amp;&amp;[],o?[t.createElement(o[1])]:(o=xe([e],t,a),a&amp;&amp;a.length&amp;&amp;w(a).remove(),w.merge([],o.childNodes))},w.fn.load=function(e,t,n){var r,i,o,a=this,s=e.indexOf(&quot; &quot;);return s&gt;-1&amp;&amp;(r=vt(e.slice(s)),e=e.slice(0,s)),g(t)?(n=t,t=void 0):t&amp;&amp;&quot;object&quot;==typeof t&amp;&amp;(i=&quot;POST&quot;),a.length&gt;0&amp;&amp;w.ajax({url:e,type:i||&quot;GET&quot;,dataType:&quot;html&quot;,data:t}).done(function(e){o=arguments,a.html(r?w(&quot;&lt;div&gt;&quot;).append(w.parseHTML(e)).find(r):e)}).always(n&amp;&amp;function(e,t){a.each(function(){n.apply(this,o||[e.responseText,t,e])})}),this},w.each([&quot;ajaxStart&quot;,&quot;ajaxStop&quot;,&quot;ajaxComplete&quot;,&quot;ajaxError&quot;,&quot;ajaxSuccess&quot;,&quot;ajaxSend&quot;],function(e,t){w.fn[t]=function(e){return this.on(t,e)}}),w.expr.pseudos.animated=function(e){return w.grep(w.timers,function(t){return e===t.elem}).length},w.offset={setOffset:function(e,t,n){var r,i,o,a,s,u,l,c=w.css(e,&quot;position&quot;),f=w(e),p={};&quot;static&quot;===c&amp;&amp;(e.style.position=&quot;relative&quot;),s=f.offset(),o=w.css(e,&quot;top&quot;),u=w.css(e,&quot;left&quot;),(l=(&quot;absolute&quot;===c||&quot;fixed&quot;===c)&amp;&amp;(o+u).indexOf(&quot;auto&quot;)&gt;-1)?(a=(r=f.position()).top,i=r.left):(a=parseFloat(o)||0,i=parseFloat(u)||0),g(t)&amp;&amp;(t=t.call(e,n,w.extend({},s))),null!=t.top&amp;&amp;(p.top=t.top-s.top+a),null!=t.left&amp;&amp;(p.left=t.left-s.left+i),&quot;using&quot;in t?t.using.call(e,p):f.css(p)}},w.fn.extend({offset:function(e){if(arguments.length)return void 0===e?this:this.each(function(t){w.offset.setOffset(this,e,t)});var t,n,r=this[0];if(r)return r.getClientRects().length?(t=r.getBoundingClientRect(),n=r.ownerDocument.defaultView,{top:t.top+n.pageYOffset,left:t.left+n.pageXOffset}):{top:0,left:0}},position:function(){if(this[0]){var e,t,n,r=this[0],i={top:0,left:0};if(&quot;fixed&quot;===w.css(r,&quot;position&quot;))t=r.getBoundingClientRect();else{t=this.offset(),n=r.ownerDocument,e=r.offsetParent||n.documentElement;while(e&amp;&amp;(e===n.body||e===n.documentElement)&amp;&amp;&quot;static&quot;===w.css(e,&quot;position&quot;))e=e.parentNode;e&amp;&amp;e!==r&amp;&amp;1===e.nodeType&amp;&amp;((i=w(e).offset()).top+=w.css(e,&quot;borderTopWidth&quot;,!0),i.left+=w.css(e,&quot;borderLeftWidth&quot;,!0))}return{top:t.top-i.top-w.css(r,&quot;marginTop&quot;,!0),left:t.left-i.left-w.css(r,&quot;marginLeft&quot;,!0)}}},offsetParent:function(){return this.map(function(){var e=this.offsetParent;while(e&amp;&amp;&quot;static&quot;===w.css(e,&quot;position&quot;))e=e.offsetParent;return e||be})}}),w.each({scrollLeft:&quot;pageXOffset&quot;,scrollTop:&quot;pageYOffset&quot;},function(e,t){var n=&quot;pageYOffset&quot;===t;w.fn[e]=function(r){return z(this,function(e,r,i){var o;if(y(e)?o=e:9===e.nodeType&amp;&amp;(o=e.defaultView),void 0===i)return o?o[t]:e[r];o?o.scrollTo(n?o.pageXOffset:i,n?i:o.pageYOffset):e[r]=i},e,r,arguments.length)}}),w.each([&quot;top&quot;,&quot;left&quot;],function(e,t){w.cssHooks[t]=_e(h.pixelPosition,function(e,n){if(n)return n=Fe(e,t),We.test(n)?w(e).position()[t]+&quot;px&quot;:n})}),w.each({Height:&quot;height&quot;,Width:&quot;width&quot;},function(e,t){w.each({padding:&quot;inner&quot;+e,content:t,&quot;&quot;:&quot;outer&quot;+e},function(n,r){w.fn[r]=function(i,o){var a=arguments.length&amp;&amp;(n||&quot;boolean&quot;!=typeof i),s=n||(!0===i||!0===o?&quot;margin&quot;:&quot;border&quot;);return z(this,function(t,n,i){var o;return y(t)?0===r.indexOf(&quot;outer&quot;)?t[&quot;inner&quot;+e]:t.document.documentElement[&quot;client&quot;+e]:9===t.nodeType?(o=t.documentElement,Math.max(t.body[&quot;scroll&quot;+e],o[&quot;scroll&quot;+e],t.body[&quot;offset&quot;+e],o[&quot;offset&quot;+e],o[&quot;client&quot;+e])):void 0===i?w.css(t,n,s):w.style(t,n,i,s)},t,a?i:void 0,a)}})}),w.each(&quot;blur focus focusin focusout resize scroll click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup contextmenu&quot;.split(&quot; &quot;),function(e,t){w.fn[t]=function(e,n){return arguments.length&gt;0?this.on(t,null,e,n):this.trigger(t)}}),w.fn.extend({hover:function(e,t){return this.mouseenter(e).mouseleave(t||e)}}),w.fn.extend({bind:function(e,t,n){return this.on(e,null,t,n)},unbind:function(e,t){return this.off(e,null,t)},delegate:function(e,t,n,r){return this.on(t,e,n,r)},undelegate:function(e,t,n){return 1===arguments.length?this.off(e,&quot;**&quot;):this.off(t,e||&quot;**&quot;,n)}}),w.proxy=function(e,t){var n,r,i;if(&quot;string&quot;==typeof t&amp;&amp;(n=e[t],t=e,e=n),g(e))return r=o.call(arguments,2),i=function(){return e.apply(t||this,r.concat(o.call(arguments)))},i.guid=e.guid=e.guid||w.guid++,i},w.holdReady=function(e){e?w.readyWait++:w.ready(!0)},w.isArray=Array.isArray,w.parseJSON=JSON.parse,w.nodeName=N,w.isFunction=g,w.isWindow=y,w.camelCase=G,w.type=x,w.now=Date.now,w.isNumeric=function(e){var t=w.type(e);return(&quot;number&quot;===t||&quot;string&quot;===t)&amp;&amp;!isNaN(e-parseFloat(e))},&quot;function&quot;==typeof define&amp;&amp;define.amd&amp;&amp;define(&quot;jquery&quot;,[],function(){return w});var Jt=e.jQuery,Kt=e.$;return w.noConflict=function(t){return e.$===w&amp;&amp;(e.$=Kt),t&amp;&amp;e.jQuery===w&amp;&amp;(e.jQuery=Jt),w},t||(e.jQuery=e.$=w),w});
+</code></pre>
+				
+				
+			</details></td>
+	</tr>
+	
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>/*! jQuery v3.3.1</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>Upgrade to the latest version of the affected library.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+						
+						
+					</ol>
+				</li>
+				  
+				 
+				
+				
+				
+				
+				<li id="alerts--risk-0-confidence-2">
+					<h3>
+						<span>Risk</span>=<span
+							class="risk-level">Informational</span>, <span>Confidence</span>=<span
+							class="confidence-level">Medium</span> <span>(1)</span>
+					</h3>
+					<ol>
+						
+						
+						
+						
+						
+						
+						
+						<li class="alerts--site-li">
+							<h4>
+								<span class="site">https://hrservice.iium.edu.my</span> <span>(1)</span>
+							</h4>
+							<ol>
+								
+								<li>
+									<h5>
+										<a
+											href="#alert-type-4">Session Management Response Identified</a> <span>(1)</span>
+									</h5>
+									<ol>
+										<li><details>
+												<summary>
+													<span class="request-method-n-url">GET https://hrservice.iium.edu.my/apariium/</span>
+												</summary>
+												
+<table class="alerts-table">
+	<tr>
+		<th scope="row">Alert tags</th>
+		<td>
+			<ul class="alert-tags-list">
+				
+			</ul>
+		</td>
+	</tr>
+	<tr>
+		<th scope="row">Alert description</th>
+		<td> 
+<p>The given response has been identified as containing a session management token. The &#39;Other Info&#39; field contains a set of header tokens that can be used in the Header Based Session Management Method. If the request is in a context which has a Session Management Method set to &quot;Auto-Detect&quot; then this rule will change the session management to use the tokens identified.</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Other info</th>
+		<td> 
+<p>cookie:JSESSIONID</p>
+ </td>
+	</tr>
+	<tr>
+		<th scope="row">Request</th>
+		<td><details open="open">
+				<summary>Request line and header section (666 bytes)</summary>
+				
+				<pre><code>GET https://hrservice.iium.edu.my/apariium/ HTTP/1.1
+host: hrservice.iium.edu.my
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-User: ?1
+Sec-Fetch-Dest: document
+sec-ch-ua: &quot;Not)A;Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;138&quot;, &quot;Google Chrome&quot;;v=&quot;138&quot;
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: &quot;Windows&quot;
+Accept-Language: en-US,en;q=0.9
+
+</code></pre>
+				
+				
+			</details> <details class="request-body" open="open">
+				<summary>Request body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Response</th>
+		<td><details open="open">
+				<summary>Status line and header section (562 bytes)</summary>
+				
+				<pre><code>HTTP/1.1 302
+Date: Fri, 04 Jul 2025 12:41:34 GMT
+Server: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Location: https://cas.iium.edu.my:8448/cas/login?service=https%3A%2F%2Fhrservice.iium.edu.my%2Fapariium%2Flogin%2Fcas
+Content-Length: 0
+Set-Cookie: JSESSIONID=404463DA19E09A9F44F53C033004FAB7; Path=/apariium; HttpOnly
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+
+</code></pre>
+				
+				
+			</details> <details class="response-body" open="open">
+				<summary>Response body (0 bytes)</summary>
+				
+				<pre><code></code></pre>
+				
+				
+			</details></td>
+	</tr>
+	<tr>
+		<th scope="row">Parameter</th>
+		<td><pre><code>JSESSIONID</code></pre></td>
+	</tr>
+	
+	<tr>
+		<th scope="row">Evidence</th>
+		<td><pre><code>JSESSIONID</code></pre></td>
+	</tr>
+	<tr>
+		<th scope="row">Solution</th>
+		<td> 
+<p>This is an informational alert rather than a vulnerability and so there is nothing to fix.</p>
+ </td>
+	</tr>
+</table>
+
+											</details></li>
+									</ol>
+								</li>
+								
+							</ol>
+						</li>
+						
+					</ol>
+				</li>
+				  
+			</ol>
+		</section>
+
+		<section id="appendix" class="appendix">
+			<h2>Appendix</h2>
+
+			<section id="alert-types" class="alert-types">
+				<h3>Alert Types</h3>
+				<p class="alert-types-intro">This section contains additional information on the types of alerts in the report.</p>
+				<ol>
+					<li
+						id="alert-type-0">
+						<h4>Content Security Policy (CSP) Header Not Set</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10038/">Content Security Policy (CSP) Header Not Set</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/693.html">693</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy">https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy</a></li>
+										<li><a
+											href="https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html">https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html</a></li>
+										<li><a
+											href="https://www.w3.org/TR/CSP/">https://www.w3.org/TR/CSP/</a></li>
+										<li><a
+											href="https://w3c.github.io/webappsec-csp/">https://w3c.github.io/webappsec-csp/</a></li>
+										<li><a
+											href="https://web.dev/articles/csp">https://web.dev/articles/csp</a></li>
+										<li><a
+											href="https://caniuse.com/#feat=contentsecuritypolicy">https://caniuse.com/#feat=contentsecuritypolicy</a></li>
+										<li><a
+											href="https://content-security-policy.com/">https://content-security-policy.com/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-1">
+						<h4>Cross-Domain Misconfiguration</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10098/">Cross-Domain Misconfiguration</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/264.html">264</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>14</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy">https://vulncat.fortify.com/en/detail?id=desc.config.dotnet.html5_overly_permissive_cors_policy</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-2">
+						<h4>Missing Anti-clickjacking Header</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10020/">Anti-clickjacking Header</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1021.html">1021</a></td>
+							</tr>
+							<tr>
+								<th scope="row">WASC ID</th>
+								<td>15</td>
+							</tr>
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-3">
+						<h4>Vulnerable JS Library</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10003/">Vulnerable JS Library (Powered by Retire.js)</a>)
+									</span>   
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">CWE ID</th>
+								<td><a
+									href="https://cwe.mitre.org/data/definitions/1395.html">1395</a></td>
+							</tr>
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/">https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+					<li
+						id="alert-type-4">
+						<h4>Session Management Response Identified</h4>
+						<table class="alert-types-table">
+							<tr>
+								<th scope="row">Source</th>
+								<td>
+									
+									   <span>raised by a passive scanner</span> <span>(<a
+										href="https://www.zaproxy.org/docs/alerts/10112/">Session Management Response Identified</a>)
+									</span>   
+								</td>
+							</tr>
+							
+							
+							<tr>
+								<th scope="row">Reference</th>
+								<td>
+									<ol>
+										<li><a
+											href="https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id">https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id</a></li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</li>
+				</ol>
+			</section>
+		</section>
+		 
+	</main>
+</body>
+</html>
+
+
+
