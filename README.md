@@ -32,6 +32,11 @@ Dr. MUHAMAD SADRY ABU SEMAN
 
 ---
 ### Key takeaways
+| URL              | Key takeaways | 
+|------------------|--------------|
+|(https://hrservice.iium.edu.my) |    | 
+| (http://hrservice.iium.edu.my/apariium) | The scan reveals several medium to high-risk vulnerabilities that expose the site to threats like cross-site scripting, clickjacking, and insecure cross-origin access. The absence of key security headers such as CSP and X-Frame-Options, combined with outdated JavaScript libraries, increases the risk of code injection and unauthorized access. Immediate attention should be given to implementing proper security headers, updating vulnerable components, and reviewing cross-domain policies to reduce the site’s exposure to common web attacks.| 
+| (http://hrservice.iium.edu.my/adm) |    | 
 
 
 ---
