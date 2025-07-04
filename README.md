@@ -22,7 +22,7 @@ Dr. MUHAMAD SADRY ABU SEMAN
 |------------------|--------------|--------------|-------------------------------------------------------|
 |(https://hrservice.iium.edu.my) | 23/5/2025 | Automated scan/Manual explore | 10 minutes |
 | (http://hrservice.iium.edu.my/apariium) | 22/5/2025 | Automated scan/Manual explore | 15 Minutes |
-| (http://hrservice.iium.edu.my/adm) |    | Automated scan/Manual explore |  | |
+| (http://hrservice.iium.edu.my/adm) |  20/5/2025  | Automated scan/Manual explore | 15 minutes | |
 
 ---
 ### Metric Values
@@ -51,13 +51,22 @@ Dr. MUHAMAD SADRY ABU SEMAN
    
 3. Muhammad Afiff Firdaus Bin Abdullah (2120573)
 
+| *Metric*                         | *Value*         |
+|----------------------------------|------------------|
+| Total Issues Identified          | 4                |
+| Critical Issues                  | 0                |
+| High-Risk Issues                 | 0                |
+| Medium-Risk Issues               | 2                |
+| Low-Risk/Informational Issues    | 2                |
+| Remediation Status               | Pending          |
+
 ---
 ### Key takeaways
 | URL              | Key takeaways | 
 |------------------|--------------|
 |(https://hrservice.iium.edu.my) | The scan revealed *2 medium-risk vulnerabilities* that impact client-side security (missing CSP and anti-clickjacking headers). These should be addressed soon. No critical or high-risk issues were found. Two informational findings were also recorded. | 
 | (http://hrservice.iium.edu.my/apariium) | The scan reveals several medium to high-risk vulnerabilities that expose the site to threats like cross-site scripting, clickjacking, and insecure cross-origin access. The absence of key security headers such as CSP and X-Frame-Options, combined with outdated JavaScript libraries, increases the risk of code injection and unauthorized access. Immediate attention should be given to implementing proper security headers, updating vulnerable components, and reviewing cross-domain policies to reduce the site’s exposure to common web attacks.| 
-| (http://hrservice.iium.edu.my/adm) |    | 
+| (http://hrservice.iium.edu.my/adm) |  The security assessment identified several medium-risk and informational vulnerabilities in the application, primarily due to missing security headers, lack of anti-CSRF protections, and outdated JavaScript libraries. These weaknesses increase the risk of common web attacks such as cross-site scripting (XSS), cross-site request forgery (CSRF), and clickjacking. Addressing these issues through the recommended security measures will significantly strengthen the application's resilience against exploitation and enhance overall web security.  | 
 
 
 ---
