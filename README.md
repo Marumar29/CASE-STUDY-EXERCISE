@@ -49,12 +49,12 @@ Dr. MUHAMAD SADRY ABU SEMAN
 
 | *Metric*                         | *Value*         |
 |-----------------------------------|-------------------|
-| Total Issues Identified           | 4                 |
+| Total Issues Identified           | 6                 |
 | Critical Issues                   | 0                 |
 | High-Risk Issues                  | 0                 |
 | Medium-Risk Issues                | 2                 |
-| Low-Risk/Informational Issues     | 2                 |
-| Remediation Status                | Pending           |
+| Low-Risk/Informational Issues     | 4                 |
+
 
 2. Muhammad Afzal Bin Mohd Nor (2123032)
 
@@ -65,7 +65,7 @@ Dr. MUHAMAD SADRY ABU SEMAN
 | High-Risk Issues                 | 0                |
 | Medium-Risk Issues               | 3                |
 | Low-Risk/Informational Issues    | 2                |
-| Remediation Status               | Pending          |
+
 
 3. Muhammad Afiff Firdaus Bin Abdullah (2120573)
 
@@ -76,7 +76,7 @@ Dr. MUHAMAD SADRY ABU SEMAN
 | High-Risk Issues                 | 0                |
 | Medium-Risk Issues               | 2                |
 | Low-Risk/Informational Issues    | 2                |
-| Remediation Status               | Pending          |
+
 
 ---
 ### Key takeaways
@@ -109,17 +109,17 @@ Dr. MUHAMAD SADRY ABU SEMAN
 
 ### Identified Vulnerabilities  
 
-1. Raja Muhamad Umar bin Raja Kamarul Izham (2119191)
-URL: https://hrservice.iium.edu.my
+1. Raja Muhamad Umar bin Raja Kamarul Izham (2119191)  
+**URL:** https://hrservice.iium.edu.my
 
-| No | Vulnerability       | Risk   | Affected URL   | CWE ID   | Description                                   | Suggested Fix         |
-|----|---------------------|--------|----------------|----------|-----------------------------------------------|-----------------------|
-| 1 | Cross-Domain Misconfiguration | Medium | (https://fonts.googleapis.com/css%3Ffamily=Lato:700,400,300,100%257CSignika:400,700%257CCourgette) | CWE-264 | Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server. | Ensure that your web server, application server, load balancer, etc. is configured to set the Content-Security-Policy header |
-| 2 | Missing Anti-clickjacking Header | Medium | (https://hrservice.iium.edu.my/) | CWE-1021 | The response does not protect against 'ClickJacking' attacks | Ensure one the Modern Web Browser supports the Content-Security-Policy and X-Frame-Options HTTP headers of them is set on all web pages returned by your site/app |
-| 3 | Vulnerable JS Library | Medium | (https://nvd.nist.gov/vuln/detail/CVE-2024-6485) | CWE-1395 | The identified library appears to be vulnerable. | Upgrade to the latest version of the affected library. |
-| 4 | Information Disclosure - Sensitive Information in URL | Medium(Informational) | (https://hrservice.iium.edu.my/adm/j_spring_cas_security_check%3Fticket=ST-1228398-Y4HU63-WgweM2Nt-6wFTebR-QJs-cas1) | CWE-598 | he request appeared to contain sensitive information leaked in the URL. | Do not pass sensitive information in URIs |
-
-
+| No | Vulnerability                          | Risk       | Affected URL                                | CWE ID  | Description                                                                                   | Suggested Fix                                                                                          |
+|----|----------------------------------------|------------|---------------------------------------------|---------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| 1  | Content Security Policy Header Missing | Medium     | https://hrservice.iium.edu.my/              | CWE-693 | No CSP set in HTTP response, increasing risk of cross-site scripting (XSS).                  | Configure Content-Security-Policy header to restrict allowable sources for scripts and styles.         |
+| 2  | Missing Anti-clickjacking Header       | Medium     | https://hrservice.iium.edu.my/              | CWE-1021| No X-Frame-Options or frame-ancestors CSP found.                                               | Use 'X-Frame-Options: DENY' or CSP 'frame-ancestors' to prevent UI redress attacks.                    |
+| 3  | Server Version Disclosure              | Informational | https://hrservice.iium.edu.my/           | CWE-200 | HTTP response reveals the server version, which can assist attackers in targeted exploits.    | Configure server to hide version details using Apache or Nginx directives.                            |
+| 4  | Strict-Transport-Security Missing      | Medium     | https://hrservice.iium.edu.my/              | CWE-319 | Lack of HSTS header allows attackers to downgrade HTTPS connections.                         | Set Strict-Transport-Security header to enforce secure communication over HTTPS.                       |
+| 5  | X-Content-Type-Options Missing         | Medium     | https://hrservice.iium.edu.my/              | CWE-16  | Without this header, browsers may MIME-sniff responses, leading to execution of malicious files.| Add 'X-Content-Type-Options: nosniff' in the HTTP response headers.                                |
+| 6  | Re-examine Cache-control Directives    | Informational | https://hrservice.iium.edu.my/           | CWE-524 | Response headers allow content caching, which may leak sensitive data.                        | Configure cache-control headers to prevent sensitive content from being cached.                       |
 
 
 2. Muhammad Afzal Bin Mohd Nor (2123032)
@@ -131,7 +131,6 @@ URL: http://hrservice.iium.edu.my/apariium
 | 2 | Cross-Domain Misconfiguration | Medium | (https://fonts.googleapis.com/css%3Ffamily=Lato:700,400,300,100%257CSignika:400,700%257CCourgette) | CWE-264 | Web browser data loading may be possible, due to a Cross Origin Resource Sharing (CORS) misconfiguration on the web server. | Ensure that sensitive data is not available in an unauthenticated manner (using IP address white-listing, for instance) |
 | 3 | Missing Anti-clickjacking Header | Medium | (https://hrservice.iium.edu.my/) | CWE-1021 | The response does not protect against 'ClickJacking' attacks. It should include either Content-Security-Policy with 'frame-ancestors' directive or X-Frame-Options | Modern Web browsers support the Content-Security-Policy and X-Frame-Options HTTP headers. Ensure one of them is set on all web pages returned by your site/app.|
 | 4 | Vulnerable JS Library | Medium | (https://cas.iium.edu.my:8448/cas/webjars/bootstrap/3.3.7-1/js/bootstrap.min.js) | CWE-1395 | The identified library appears to be vulnerable. | Upgrade to the latest version of the affected library.|
-
 
 
 4. Muhammad Afiff Firdaus Bin Abdullah (2120573)
@@ -148,11 +147,13 @@ URL: http://hrservice.iium.edu.my/adm
 
 ## Evaluation of Vulnerabilities
 
-URL: https://hrservice.iium.edu.my/
-- Cross-Domain Misconfiguration: This could allow attackers to load or manipulate external resources
-- Missing Anti-clickjacking Header: Without X-Frame-Options or Content-Security-Policy, the site is vulnerable to clickjacking attacks — tricking users into clicking hidden elements embedded via iframes. This is a common and preventable issue.
-- Vulnerable JavaScript Library: Usage of an outdated JS library (linked to a known CVE) can open the application to a wide range of exploits including XSS or logic manipulation, depending on the vulnerability. This is a serious issue if the library is actively used.
-- Information Disclosure in URL: 	Sensitive tokens in URLs are risky because they may be logged in browser history or server logs. In the worst case, a leaked token could allow session hijacking or unauthorized access.
+URL: https://hrservice.iium.edu.my
+- **Content Security Policy (CSP) Header Not Set:** This leaves the site open to XSS attacks by allowing any inline scripts or external sources to be executed.
+- **Missing Anti-clickjacking Header:** Without X-Frame-Options or `frame-ancestors`, the site is vulnerable to clickjacking attacks where attackers trick users into interacting with invisible UI elements.
+- **Server Version Disclosure:** Revealing the server version can allow attackers to tailor their attacks using known exploits.
+- **Strict-Transport-Security Header Missing:** Without HSTS, users could be downgraded from HTTPS to HTTP via MITM attacks.
+- **X-Content-Type-Options Missing:** Without this header, browsers might incorrectly guess content types, which could lead to file execution.
+- **Cache-control Directives Not Set Properly:** Caching sensitive content might expose user data in shared or public environments.
 
 
 URL: http://hrservice.iium.edu.my/apariium
@@ -175,12 +176,14 @@ URL: http://hrservice.iium.edu.my/adm
 
 ### URL: `https://hrservice.iium.edu.my/`
 
-| Vulnerability                    | Recommendation (Code)                                                                                                                             | Explanation                                                                              |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| Cross-Domain Misconfiguration    | **Apache**:`Header set Access-Control-Allow-Origin "https://yourdomain.com"`**Express.js**:`app.use(cors({ origin: 'https://yourdomain.com' }));` | Prevents external websites from loading your resources and making unauthorized requests. |
-| Missing Anti-clickjacking Header | **Apache**:`Header set X-Frame-Options "DENY"`**Express.js**:`app.use(helmet.frameguard({ action: 'deny' }))`                                     | Prevents clickjacking by stopping your site from being embedded in an iframe.            |
-| Vulnerable JS Library            | Replace outdated versions:`<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>`                                                   | Ensures libraries are secure and not exploitable via known CVEs.                         |
-| Information Disclosure in URL    | Use POST instead of GET:`<form method="POST"><input type="hidden" name="ticket" value="secure-token"></form>`                                     | Prevents session tokens from being exposed in browser history or server logs.            |
+| Vulnerability                              | Recommendation (Code)                                                                                                                                                     | Explanation                                                                                              |
+|-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| Content Security Policy (CSP) Header Not Set | **Apache**: `Header set Content-Security-Policy "default-src 'self';"`<br>**Express.js**: `app.use(helmet.contentSecurityPolicy({ directives: { defaultSrc: ["'self'"] } }))` | CSP restricts what content (e.g., scripts, styles) the browser is allowed to load, preventing XSS risks. |
+| Missing Anti-clickjacking Header          | **Apache**: `Header set X-Frame-Options "DENY"`<br>**Express.js**: `app.use(helmet.frameguard({ action: 'deny' }))`                                                         | Prevents clickjacking by blocking your pages from being embedded in iframes.                           |
+| Server Version Disclosure via HTTP Header | **Apache**: `ServerTokens Prod` and `ServerSignature Off`<br>**Nginx**: `server_tokens off;`                                                                               | Hides server version to reduce fingerprinting and minimize attack vectors.                             |
+| Strict-Transport-Security Header Missing  | **Apache**: `Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"`<br>**Express.js**: `app.use(helmet.hsts({ maxAge: 63072000 }))`     | Enforces HTTPS and prevents protocol downgrade attacks.                                                  |
+| X-Content-Type-Options Header Missing     | **Apache**: `Header set X-Content-Type-Options "nosniff"`<br>**Express.js**: `app.use(helmet.noSniff())`                                                                   | Stops browsers from trying to MIME-sniff the content type, reducing XSS risks.                         |
+| Re-examine Cache-control Directives       | **Apache**: `Header set Cache-Control "no-store, no-cache, must-revalidate"`                                                                                             | Prevents sensitive content from being cached by browsers or proxies.    
 
 ---
 
@@ -207,9 +210,10 @@ URL: http://hrservice.iium.edu.my/adm
 ---
 
 ## References
-1. OWASP Top 10
-2. https://owasp.org/www-project-zap/
+1. OWASP Top 10: https://owasp.org/www-project-top-ten/
+2. OWASP ZAP: https://owasp.org/www-project-zap/
 3. CWE Database: https://cwe.mitre.org/
+4. Helmet.js Docs: https://helmetjs.github.io/
 
 ---
 
@@ -229,12 +233,14 @@ These are the exported vulnerability scan reports from OWASP ZAP for each assign
 
 #### URL: https://hrservice.iium.edu.my
 
-| Vulnerability                     | Risk Level        | CWE ID  |
-|----------------------------------|-------------------|---------|
-| Information Disclosure in URL    | Informational     | CWE-598 |
-| Missing Anti-clickjacking Header | Medium            | CWE-1021|
-| Vulnerable JavaScript Library    | Medium            | CWE-1104|
-| Cross-Domain Misconfiguration    | Medium            | CWE-264 |
+| Vulnerability                          | Risk Level    | CWE ID   |
+|---------------------------------------|---------------|----------|
+| Content Security Policy Header Missing| Medium        | CWE-693  |
+| Missing Anti-clickjacking Header      | Medium        | CWE-1021 |
+| Server Version Disclosure             | Informational | CWE-200  |
+| Strict-Transport-Security Missing     | Medium        | CWE-319  |
+| X-Content-Type-Options Missing        | Medium        | CWE-16   |
+| Cache-Control Insecure Settings       | Informational | CWE-524  |
 
 ---
 
