@@ -82,12 +82,7 @@ Dr. MUHAMAD SADRY ABU SEMAN
 | URL              | Key takeaways |
 |------------------|--------------|
 |(https://hrservice.iium.edu.my) | The scan revealed *2 medium-risk vulnerabilities* that impact client-side security (missing CSP and anti-clickjacking headers). These should be addressed soon. No critical or high-risk issues were found. Two informational findings were also recorded. |
-| (http://hrservice.iium.edu.my/apariium)  
-|- All three scanned websites showed alerts related to **Cross-Site Request Forgery (CSRF)** vulnerabilities, indicating a common pattern of weak or missing CSRF protection mechanisms.
-- This suggests that CSRF protection is either improperly implemented or entirely absent in many IIUM-affiliated web applications.
-- CSRF attacks can lead to unauthorized actions being performed on behalf of authenticated users, which can have serious consequences such as data modification, unauthorized transactions, or account hijacking.
-- The issue may stem from reliance on outdated frameworks, missing security headers (like `SameSite` or CSRF tokens), or improper session validation.
-- This finding highlights the **urgent need for developers and system administrators** to enforce CSRF mitigation best practices across all university-managed web applications.|
+| (http://hrservice.iium.edu.my/apariium) | The scan reveals several medium to high-risk vulnerabilities that expose the site to threats like cross-site scripting, clickjacking, and insecure cross-origin access. The absence of key security headers such as CSP and X-Frame-Options, combined with outdated JavaScript libraries, increases the risk of code injection and unauthorized access. Immediate attention should be given to implementing proper security headers, updating vulnerable components, and reviewing cross-domain policies to reduce the site’s exposure to common web attacks.|
 | (http://hrservice.iium.edu.my/adm) |  The security assessment identified several medium-risk and informational vulnerabilities in the application, primarily due to missing security headers, lack of anti-CSRF protections, and outdated JavaScript libraries. These weaknesses increase the risk of common web attacks such as cross-site scripting (XSS), cross-site request forgery (CSRF), and clickjacking. Addressing these issues through the recommended security measures will significantly strengthen the application's resilience against exploitation and enhance overall web security.  |
 
 ---
