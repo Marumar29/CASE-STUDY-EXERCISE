@@ -287,6 +287,30 @@ These are the exported vulnerability scan reports from OWASP ZAP for each assign
 
 #### URL: https://hrservice.iium.edu.my
 
+Zap Alerts:
+![zap Alerts](https://github.com/Marumar29/CASE-STUDY-EXERCISE/blob/main/images/Zap-Alerts.png)
+
+Sites Included:
+![Sites Included](https://github.com/Marumar29/CASE-STUDY-EXERCISE/blob/main/images/Sites%20Included.png)
+
+Risk and Confidence levels:
+![Risk and Confidence levels](https://github.com/Marumar29/CASE-STUDY-EXERCISE/blob/main/images/Risk%20and%20Confidence%20Levels.png)
+
+Alert counts by risk and confidence:
+![Alert counts by risk and confidence)](https://github.com/Marumar29/CASE-STUDY-EXERCISE/blob/main/images/Alert%20Counts%20by%20Risk%20and%20Confidence.png)
+
+Alert counts by site and risk:
+![Alert counts by site and risk](https://github.com/Marumar29/CASE-STUDY-EXERCISE/blob/main/images/Alert%20counts%20by%20site%20and%20risk.png)
+
+Alert counts by alert type:
+![Alert counts by alert type)](https://github.com/Marumar29/CASE-STUDY-EXERCISE/blob/main/images/Alert%20Counts%20by%20Alert%20Type.png)
+
+Alerts:
+![Alerts 1)](https://github.com/Marumar29/CASE-STUDY-EXERCISE/blob/main/images/Alerts.png)
+![Alerts 2)](https://github.com/Marumar29/CASE-STUDY-EXERCISE/blob/main/images/Screenshot%202025-07-04%20222830.png)
+
+
+
 #### URL: http://hrservice.iium.edu.my/apariium
 
 Zap Alerts:
