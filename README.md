@@ -27,6 +27,8 @@ Dr. MUHAMAD SADRY ABU SEMAN
 ---
 ### Metric Values
 1. Raja Muhamad Umar bin Raja Kamarul Izham (2119191)
+
+   
    
 2. Muhammad Afzal Bin Mohd Nor (2123032)
 
@@ -34,12 +36,10 @@ Dr. MUHAMAD SADRY ABU SEMAN
 3. Muhammad Afiff Firdaus Bin Abdullah (2120573)
 
 ---
-
----
 ### Key takeaways
 | URL              | Key takeaways | 
 |------------------|--------------|
-|(https://hrservice.iium.edu.my) |    | 
+|(https://hrservice.iium.edu.my) | The scan revealed *2 medium-risk vulnerabilities* that impact client-side security (missing CSP and anti-clickjacking headers). These should be addressed soon. No critical or high-risk issues were found. Two informational findings were also recorded. | 
 | (http://hrservice.iium.edu.my/apariium) | The scan reveals several medium to high-risk vulnerabilities that expose the site to threats like cross-site scripting, clickjacking, and insecure cross-origin access. The absence of key security headers such as CSP and X-Frame-Options, combined with outdated JavaScript libraries, increases the risk of code injection and unauthorized access. Immediate attention should be given to implementing proper security headers, updating vulnerable components, and reviewing cross-domain policies to reduce the site’s exposure to common web attacks.| 
 | (http://hrservice.iium.edu.my/adm) |    | 
 
