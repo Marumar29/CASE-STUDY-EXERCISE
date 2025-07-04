@@ -293,21 +293,27 @@ Zap Alerts:
 ![zap Alerts](https://github.com/user-attachments/assets/abb5ad35-6a31-40ff-8b1c-1eccce0700f4)
 
 Sites Included:
+
 ![Sites Included](https://github.com/user-attachments/assets/2648b79f-c72e-4f0a-bbbb-28b0857cfdda)
 
 Risk and Confidence levels:
+
 ![Risk and Confidence levels](https://github.com/user-attachments/assets/ab52ead5-48c3-42dd-8e94-a3bf5337ef12)
 
 Alert counts by risk and confidence:
+
 ![Alert counts by risk and confidence)](https://github.com/user-attachments/assets/e1dafa6e-10ab-4e08-9e47-a5618015fc8c)
 
 Alert counts by site and risk:
+
 ![Alert counts by site and risk](https://github.com/user-attachments/assets/6fc4b5f5-d1b8-4009-8faa-9720fbcf9e85)
 
 Alert counts by alert type:
+
 ![Alert counts by alert type)](https://github.com/user-attachments/assets/9c840042-cf86-4f4a-8463-efbff60b459c)
 
 Alerts:
+
 ![Alerts 1)](https://github.com/user-attachments/assets/cd5f4740-cad7-4c5e-9c41-246468687e80)
 
 ![Alerts 2)](https://github.com/user-attachments/assets/c57ca930-d038-4d64-b826-10f5b1946876)
